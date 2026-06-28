@@ -1,0 +1,45 @@
+{
+  "ageGate": {
+    "title": "Welcome to Quinta da Touriga Chã",
+    "prompt": "Are you of legal drinking age in your country?",
+    "yes": "Yes, I am",
+    "no": "No",
+    "error": "You must be of legal drinking age to enter."
+  },
+  "hero": {
+    "headline": "AN IDEAL OF PERFECTION",
+    "subheadline": "Muscular and elegant.",
+    "douro": "Douro: The oldest Demarcated Region + Douro Superior.",
+    "heritage": "Family heritage: 5 generations producing wine."
+  },
+  "wines": {
+    "title": "The Style: QTC + Puro",
+    "puro": {
+      "name": "Puro",
+      "concept": "The concept of a virgin, unfortified wine.",
+      "tasting": "Raw expression of the schistous soil. Authentic and profound."
+    },
+    "tinto": {
+      "name": "Quinta da Touriga Chã",
+      "concept": "Our flagship Tinto. Predominantly Touriga Nacional.",
+      "tasting": "Deep concentration, violet notes, and elegant tannins."
+    }
+  },
+  "heritage": {
+    "terroir_title": "The Terroir",
+    "terroir_text": "A raw reality of schist. Unique altitude and solar exposure forging an unforgiving but perfect ecosystem.",
+    "viticulture_title": "Viticulture",
+    "viticulture_text": "Safeguarding the genetic heritage of the Douro through integrated, sustainable production.",
+    "adega_title": "The Winery",
+    "adega_text": "The 2004 architectural masterpiece. Designed with intentional false symmetries, blending raw functionality with award-winning aesthetic integration into the valley."
+  },
+  "footer": {
+    "contact": "Company Coordinates",
+    "where_to_find": "Where to find our wines?",
+    "photolibrary": "Photo Library",
+    "press": "Press Articles",
+    "tech_sheets": "Tech Sheets",
+    "prizes": "List of Prizes",
+    "download_note": "* Available for download"
+  }
+}

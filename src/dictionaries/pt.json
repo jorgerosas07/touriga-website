@@ -1,0 +1,45 @@
+{
+  "ageGate": {
+    "title": "Bem-vindo à Quinta da Touriga Chã",
+    "prompt": "Tem idade legal para consumir álcool no seu país?",
+    "yes": "Sim",
+    "no": "Não",
+    "error": "Deve ter idade legal para entrar."
+  },
+  "hero": {
+    "headline": "UM IDEAL DE PERFEIÇÃO",
+    "subheadline": "Musculado e elegante.",
+    "douro": "Douro: Região Demarcada mais antiga + Douro Superior.",
+    "heritage": "A herança familiar: 5 gerações a produzir vinho."
+  },
+  "wines": {
+    "title": "O Estilo: QTC + Puro",
+    "puro": {
+      "name": "Puro",
+      "concept": "O conceito de um vinho virgem, não fortificado.",
+      "tasting": "Expressão crua do solo xistoso. Autêntico e profundo."
+    },
+    "tinto": {
+      "name": "Quinta da Touriga Chã",
+      "concept": "O nosso Tinto de excelência. Maioritariamente Touriga Nacional.",
+      "tasting": "Concentração profunda, notas de violeta e taninos elegantes."
+    }
+  },
+  "heritage": {
+    "terroir_title": "O Terroir",
+    "terroir_text": "Uma crua realidade de xisto. Quota única e exposição solar forjando um ecossistema implacável, mas perfeito.",
+    "viticulture_title": "A Viticultura",
+    "viticulture_text": "Salvaguardando o património genético do Douro através de uma produção integrada e sustentável.",
+    "adega_title": "A Adega",
+    "adega_text": "Uma obra-prima arquitetónica de 2004. Desenhada com falsas simetrias intencionais, fundindo funcionalidade pura com integração premiada no vale."
+  },
+  "footer": {
+    "contact": "Coordenadas da Empresa",
+    "where_to_find": "Onde encontrar os nossos vinhos?",
+    "photolibrary": "Fototeca",
+    "press": "Artigos de Imprensa",
+    "tech_sheets": "Fichas Técnicas",
+    "prizes": "Lista de Prémios",
+    "download_note": "* Disponível para download"
+  }
+}

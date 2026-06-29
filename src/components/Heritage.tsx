@@ -89,7 +89,7 @@ export default function Heritage({ dictionary }: { dictionary: any }) {
           </div>
 
           {/* Pillar 3: Adega */}
-          <div ref={el => { textRefs.current[2] = el }} className="max-w-xl pb-32">
+          <div ref={el => { textRefs.current[2] = el }} className="max-w-xl">
             <h2 className="text-sm font-body uppercase tracking-[0.3em] text-[var(--color-copper)] mb-4">
               Pilar III
             </h2>
@@ -98,6 +98,19 @@ export default function Heritage({ dictionary }: { dictionary: any }) {
             </h3>
             <p className="text-lg font-body leading-relaxed text-gray-300">
               {dictionary.heritage.adega_text}
+            </p>
+          </div>
+
+          {/* Pillar 4: The Family — ⚠️ FOUNDER REVIEW REQUIRED: placeholder copy below */}
+          <div ref={el => { textRefs.current[3] = el }} className="max-w-xl pb-32">
+            <h2 className="text-sm font-body uppercase tracking-[0.3em] text-[var(--color-copper)] mb-4">
+              Pilar IV
+            </h2>
+            <h3 className="text-4xl md:text-6xl font-heading mb-6 leading-tight">
+              {dictionary.heritage.family_title}
+            </h3>
+            <p className="text-lg font-body leading-relaxed text-gray-300">
+              {dictionary.heritage.family_text}
             </p>
           </div>
 

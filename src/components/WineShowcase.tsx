@@ -5,6 +5,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { calculateLuminance } from '@/lib/contrast-engine'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -107,23 +108,10 @@ function BackgroundShader({ progressRef }: { progressRef: React.MutableRefObject
   )
 }
 
-// --- DYNAMIC CONTRAST ENGINE (Math-Synced) ---
-// Mirrors the exact GLSL mix math (smoothstep(0.2, 0.8, uProgress)) to determine
-// background brightness without reading DOM pixels — runs at 0 re-render cost.
-function calculateLuminance(progress: number): number {
-  const mixFactor = Math.max(0, Math.min(1, (progress - 0.2) / 0.6))
-  const r = 0.12 * (1 - mixFactor) + 0.35 * mixFactor
-  const g = 0.12 * (1 - mixFactor) + 0.05 * mixFactor
-  const b = 0.13 * (1 - mixFactor) + 0.08 * mixFactor
-  return 0.2126 * r + 0.7152 * g + 0.0722 * b
-}
+// Dynamic Contrast Engine imported from @/lib/contrast-engine
 
-// Bottle image paths.
-// TODO: Replace with real product photos when supplied by photography team.
-// Expected: /public/images/puro_bottle.png and /public/images/tinto_bottle.png
-// (transparent-background PNGs, portrait orientation)
-const PURO_BOTTLE_SRC = '/images/puro_bottle.png'
-const TINTO_BOTTLE_SRC = '/images/tinto_bottle.png'
+const PURO_BOTTLE_SRC = '/images/puro_bottle.jpg'
+const TINTO_BOTTLE_SRC = '/images/tinto_bottle.jpg'
 
 export default function WineShowcase({ dictionary }: { dictionary: any }) {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -246,14 +234,7 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
               src={PURO_BOTTLE_SRC}
               alt="Puro wine bottle — Quinta da Touriga Chã"
               className="absolute inset-0 w-full h-full object-contain drop-shadow-2xl"
-              style={{ opacity: 1, transition: 'opacity 0ms' /* JS controls opacity, no CSS lag */ }}
-              // Fallback: only shows in development, never in production build
-              onError={(e) => {
-                if (process.env.NODE_ENV === 'development') {
-                  const t = e.target as HTMLImageElement
-                  t.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 260'%3E%3Crect x='28' y='0' width='24' height='30' rx='4' fill='%23D4AF37' opacity='.6'/%3E%3Crect x='10' y='30' width='60' height='220' rx='8' fill='%23D4AF37' opacity='.3'/%3E%3Ctext x='50%25' y='55%25' fill='%23D4AF37' text-anchor='middle' font-size='10' font-family='serif'%3EPURO%3C/text%3E%3C/svg%3E"
-                }
-              }}
+              style={{ opacity: 1, transition: 'opacity 0ms' }}
             />
 
             {/* Tinto bottle — crossfades in at scroll 0.60–0.68 */}
@@ -263,12 +244,6 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
               alt="Quinta da Touriga Chã Tinto wine bottle"
               className="absolute inset-0 w-full h-full object-contain drop-shadow-2xl"
               style={{ opacity: 0, transition: 'opacity 0ms' }}
-              onError={(e) => {
-                if (process.env.NODE_ENV === 'development') {
-                  const t = e.target as HTMLImageElement
-                  t.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 260'%3E%3Crect x='28' y='0' width='24' height='30' rx='4' fill='%235B1D30' opacity='.8'/%3E%3Crect x='10' y='30' width='60' height='220' rx='8' fill='%235B1D30' opacity='.6'/%3E%3Ctext x='50%25' y='55%25' fill='%23F9F8F6' text-anchor='middle' font-size='7' font-family='serif'%3EQta Touriga%3C/text%3E%3C/svg%3E"
-                }
-              }}
             />
           </div>
         </div>

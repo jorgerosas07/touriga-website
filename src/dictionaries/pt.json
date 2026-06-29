@@ -25,27 +25,99 @@
       "tasting": "Concentração profunda, notas de violeta e taninos elegantes."
     }
   },
-  "heritage": {
-    "terroir_title": "O Terroir",
-    "terroir_text": "Uma crua realidade de xisto. Quota única e exposição solar forjando um ecossistema implacável, mas perfeito.",
-    "viticulture_title": "A Viticultura",
-    "viticulture_text": "Salvaguardando o património genético do Douro através de uma produção integrada e sustentável.",
-    "adega_title": "A Adega",
-    "adega_text": "Uma obra-prima arquitetónica de 2004. Desenhada com falsas simetrias intencionais, fundindo funcionalidade pura com integração premiada no vale.",
-    "family_title": "A Família",
-    "family_text": "José António Castro Ramos Pinto Rosas (1919–1996) dedicou mais de 50 anos ao Vale do Douro — fundador da ADVID, co-criador dos modernos sistemas de vinha e reconhecido internacionalmente como o Pioneiro do Douro. Aos 72 anos, encontrou uma propriedade virgem de 20 hectares perto de Vila Nova de Foz Côa e plantou 8,5 hectares de vinha do zero, com mais de 80% de Touriga Nacional — o primeiro a reconhecê-la como a melhor casta portuguesa. Hoje, o seu filho Jorge Rosas, a quinta geração de produtores de vinho, continua esse legado na premiada adega construída em 2004."
+  "terroir": {
+    "title": "O Terroir",
+    "subtitle": "Xisto, sol e o Douro Superior.",
+    "soil": {
+      "title": "O Solo Xistoso",
+      "text": "Xisto pré-câmbrico — placas verticais fracturadas de rocha metamórfica que forçam as raízes das videiras a penetrar profundamente na terra. Esta geologia ancestral proporciona uma drenagem extraordinária, forçando as videiras a lutar e a concentrar sabor. O xisto absorve o calor durante os dias escaldantes de verão e irradia-o suavemente durante a noite, prolongando o período de maturação e construindo complexidade aromática."
+    },
+    "climate": {
+      "title": "O Clima",
+      "text": "O Douro Superior beneficia de mais de 3.000 horas de sol anuais — entre as mais elevadas da Europa. Amplitudes térmicas diurnas de até 20°C preservam a acidez natural enquanto permitem a plena maturação fenólica. As serras do Marão e Montemuro protegem o vale da influência atlântica, criando um microclima continental de extremos que forja vinhos de potência e fineza."
+    },
+    "expression": {
+      "title": "A Expressão",
+      "text": "Xisto e sol — as duas forças que definem os nossos vinhos. A rocha fracturada confere uma assinatura mineral distinta: grafite, pedra molhada e fumo. O sol implacável do Douro constrói concentração e profundidade. Juntos, produzem vinhos de estrutura notável, intensidade aromática e um sentido de lugar singular que não pode ser replicado em nenhum outro lugar do mundo."
+    }
+  },
+  "viticulture": {
+    "eyebrow": "Pilar II",
+    "title": "Viticultura",
+    "subtitle": "Salvaguardando o património genético do Douro através de uma produção integrada e sustentável. Cada videira plantada com intenção. Cada sistema radicular uma ligação directa ao xisto fracturado abaixo.",
+    "text": "A vinha é plantada predominantemente com Touriga Nacional — a casta que José António foi o primeiro a defender como a melhor de Portugal. Rendimentos baixos, densidade elevada e uma filosofia de intervenção mínima permitem que a personalidade de cada parcela se exprima sem interferência. O resultado é fruto de concentração extraordinária e precisão aromática."
+  },
+  "vinificacao": {
+    "eyebrow": "Pilar III",
+    "title": "Vinificação",
+    "subtitle": "A transformação da uva em vinho é um acto de guarda, não de criação. O fruto chega à adega e é tratado com a reverência que merece.",
+    "text": "Fermentação em pequenos lagares e cubas de aço inoxidável com controlo de temperatura. Estágio em barricas de carvalho francês, usadas com subtileza para refinar os taninos sem mascarar o fruto. O objectivo é a transparência — um vinho que sabe à sua vinha, à sua colheita, e a mais nada."
+  },
+  "adega": {
+    "eyebrow": "Pilar IV",
+    "title": "A Adega",
+    "subtitle": "Construída em 2004, a adega é uma afirmação arquitectónica de intenção. Desenhada com falsas simetrias intencionais, funde funcionalidade pura com integração estética premiada no vale do Douro.",
+    "text": "Betão, xisto e luz. O edifício segue o contorno do terreno, afundando-se na encosta para manter uma temperatura constante. O design por gravidade minimiza o bombeamento. Cada decisão — da orientação da sala de fermentação à profundidade da cave de barricas — serve o vinho."
+  },
+  "familia": {
+    "eyebrow": "Pilar V",
+    "title": "A Família",
+    "subtitle": "Cinco gerações. Um vale. Um fio ininterrupto de dedicação ao Douro.",
+    "text": "José António Castro Ramos Pinto Rosas (1919–1996) — fundador da ADVID, co-criador dos modernos sistemas de vinha e reconhecido internacionalmente como o Pioneiro do Douro. Aos 72 anos, encontrou uma propriedade virgem de 20 hectares perto de Vila Nova de Foz Côa e plantou 8,5 hectares de vinha do zero, com mais de 80% de Touriga Nacional. Hoje, o seu filho Jorge Rosas, a quinta geração, continua esse legado na premiada adega construída em 2004."
+  },
+  "allocation": {
+    "title": "A Porta da Adega",
+    "subtitle": "Alocações limitadas. Aquisição discreta.",
+    "puro": {
+      "name": "Puro",
+      "vintage": "2021",
+      "description": "A nossa expressão virgem, não fortificada. Uma tradução pura do xisto e da Touriga Nacional.",
+      "price": "Preço sob consulta"
+    },
+    "tinto": {
+      "name": "Quinta da Touriga Chã",
+      "vintage": "2019",
+      "description": "O vinho de excelência. Predominantemente Touriga Nacional das nossas melhores parcelas.",
+      "price": "Preço sob consulta"
+    },
+    "cta": "Solicitar Alocação",
+    "form": {
+      "title": "Pedido de Alocação",
+      "subtitle": "O nosso mestre de adega responderá em 48 horas.",
+      "name": "O Seu Nome",
+      "email": "Endereço de Email",
+      "message": "A Sua Mensagem",
+      "submit": "Enviar Pedido",
+      "sending": "A enviar…",
+      "success_title": "Pedido Recebido.",
+      "success_body": "O nosso mestre de adega entrará em contacto em 48 horas. Obrigado pelo seu interesse."
+    }
+  },
+  "founders": {
+    "eyebrow": "Pilar VI",
+    "title": "Os Fundadores",
+    "jarpr": {
+      "name": "José António Rosas",
+      "years": "1919 – 1996",
+      "text": "Fundador da ADVID. Co-criador dos modernos sistemas de vinha do Douro. Representante de Portugal no L'Office International du Vin. Fundador da Confraria do Vinho do Porto. Conhecido internacionalmente como o Pioneiro do Douro. Aos 72 anos, plantou 8,5 hectares do zero — o seu último e maior projecto."
+    },
+    "jorge": {
+      "name": "Jorge Rosas",
+      "years": "Quinta Geração",
+      "text": "Filho de José António. Guardião da Quinta da Touriga Chã desde o falecimento do pai. Construiu a premiada adega de 2004. Continua o legado com a mesma dedicação intransigente ao Douro, às suas vinhas e aos seus vinhos."
+    }
   },
   "contact": {
     "eyebrow": "Visitar",
     "title": "A Quinta Aguarda.",
-    "subtitle": "Recebemos convidados para uma experi\u00eancia \u00fanica na adega, nas vinhas e no terroir singular do Douro Superior. Contacte-nos para marcar uma visita.",
+    "subtitle": "Recebemos convidados para uma experiência única na adega, nas vinhas e no terroir singular do Douro Superior. Contacte-nos para marcar uma visita.",
     "name": "O Seu Nome",
-    "email": "Endere\u00e7o de Email",
+    "email": "Endereço de Email",
     "message": "A Sua Mensagem",
     "send": "Enviar Mensagem",
-    "sending": "A enviar\u2026",
+    "sending": "A enviar…",
     "success_title": "Mensagem recebida.",
-    "success_body": "Entraremos em contacto brevemente. Obrigado pelo seu interesse na Quinta da Touriga Ch\u00e3."
+    "success_body": "Entraremos em contacto brevemente. Obrigado pelo seu interesse na Quinta da Touriga Chã."
   },
   "footer": {
     "contact": "Coordenadas da Empresa",

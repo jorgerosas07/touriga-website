@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useEffect, useState } from 'react'
+import Image from 'next/image'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -341,9 +342,21 @@ export default function Contact({ dictionary }: { dictionary: any }) {
       id="contact"
       className="relative w-full bg-[#0e0e10] overflow-hidden"
     >
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/adega-side.jpg"
+          alt="Quinta da Touriga Chã"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+          priority={false}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0e0e10]/95 via-[#0e0e10]/85 to-[#0e0e10]/95" />
+      </div>
+
       {/* Subtle gradient top-edge bleed from Wine Showcase */}
       <div
-        className="absolute top-0 left-0 w-full h-24 pointer-events-none"
+        className="absolute top-0 left-0 w-full h-24 pointer-events-none z-10"
         style={{ background: 'linear-gradient(to bottom, #590D14 0%, transparent 100%)' }}
       />
 

@@ -84,7 +84,7 @@ export default function TerroirDeepDive({ dictionary }: { dictionary: any }) {
       className="relative w-full overflow-hidden"
       style={{ background: '#0e0e10', '--terroir-text': '#F9F8F6' } as React.CSSProperties}
     >
-      <div className="relative z-30 w-full max-w-[1600px] mx-auto px-6 md:px-16 xl:px-24 pt-20 md:pt-32 pb-12 md:pb-16">
+      <div className="relative z-30 w-full max-w-[1600px] mx-auto px-6 md:px-16 xl:px-24 pt-20 md:pt-40 pb-12 md:pb-16">
         <p className="font-body text-xs tracking-[0.3em] text-[var(--color-copper)] uppercase mb-4">
           {dictionary.terroir.title}
         </p>
@@ -109,7 +109,7 @@ export default function TerroirDeepDive({ dictionary }: { dictionary: any }) {
             className="object-cover object-center"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0e0e10]/95 via-[#0e0e10]/60 to-[#0e0e10]/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0e0e10]/90 via-[#0e0e10]/50 to-[#0e0e10]/20" />
         </div>
 
         <div className="relative z-20 w-full max-w-[1600px] mx-auto px-6 md:px-16 xl:px-24 py-16">
@@ -144,7 +144,7 @@ export default function TerroirDeepDive({ dictionary }: { dictionary: any }) {
             className="object-cover object-center"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-l from-[#0e0e10]/95 via-[#0e0e10]/60 to-[#0e0e10]/30" />
+          <div className="absolute inset-0 bg-gradient-to-l from-[#0e0e10]/90 via-[#0e0e10]/45 to-[#0e0e10]/15" />
         </div>
 
         <div className="relative z-20 w-full max-w-[1600px] mx-auto px-6 md:px-16 xl:px-24 py-16 md:flex md:justify-end">
@@ -179,7 +179,7 @@ export default function TerroirDeepDive({ dictionary }: { dictionary: any }) {
             className="object-cover object-center"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0e0e10]/90 via-[#0e0e10]/65 to-[#0e0e10]/95" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0e0e10]/85 via-[#0e0e10]/45 to-[#0e0e10]/90" />
         </div>
 
         <div className="relative z-20 w-full max-w-[1600px] mx-auto px-6 md:px-16 xl:px-24 py-16 flex flex-col items-center text-center">

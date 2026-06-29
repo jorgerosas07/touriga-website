@@ -122,7 +122,7 @@ export default function Founders({ dictionary }: { dictionary: any }) {
                 src="/images/founder-jorge.jpg"
                 alt="Jorge Rosas"
                 fill
-                className="object-cover object-center"
+                className="object-cover object-[center_20%]"
                 sizes="(max-width: 768px) 192px, 224px"
               />
               <div className="absolute inset-0 bg-[#0e0e10]/15" />

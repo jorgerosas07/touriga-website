@@ -33,6 +33,18 @@
     "adega_title": "The Winery",
     "adega_text": "The 2004 architectural masterpiece. Designed with intentional false symmetries, blending raw functionality with award-winning aesthetic integration into the valley."
   },
+  "contact": {
+    "eyebrow": "Visit Us",
+    "title": "The Estate Awaits.",
+    "subtitle": "We welcome guests to experience the winery, the vineyards, and the singular terroir of the Douro Superior. Reach out to arrange a visit.",
+    "name": "Your Name",
+    "email": "Email Address",
+    "message": "Your Message",
+    "send": "Send Message",
+    "sending": "Sending\u2026",
+    "success_title": "Message received.",
+    "success_body": "We will be in touch shortly. Thank you for your interest in Quinta da Touriga Ch\u00e3."
+  },
   "footer": {
     "contact": "Company Coordinates",
     "where_to_find": "Where to find our wines?",

@@ -33,6 +33,18 @@
     "adega_title": "A Adega",
     "adega_text": "Uma obra-prima arquitetónica de 2004. Desenhada com falsas simetrias intencionais, fundindo funcionalidade pura com integração premiada no vale."
   },
+  "contact": {
+    "eyebrow": "Visitar",
+    "title": "A Quinta Aguarda.",
+    "subtitle": "Recebemos convidados para uma experi\u00eancia \u00fanica na adega, nas vinhas e no terroir singular do Douro Superior. Contacte-nos para marcar uma visita.",
+    "name": "O Seu Nome",
+    "email": "Endere\u00e7o de Email",
+    "message": "A Sua Mensagem",
+    "send": "Enviar Mensagem",
+    "sending": "A enviar\u2026",
+    "success_title": "Mensagem recebida.",
+    "success_body": "Entraremos em contacto brevemente. Obrigado pelo seu interesse na Quinta da Touriga Ch\u00e3."
+  },
   "footer": {
     "contact": "Coordenadas da Empresa",
     "where_to_find": "Onde encontrar os nossos vinhos?",

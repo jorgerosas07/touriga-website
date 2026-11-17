@@ -28,10 +28,10 @@ export async function generateStaticParams() {
 export const metadata = {
   metadataBase: new URL('https://touriga-website.vercel.app'),
   title: 'Quinta da Touriga Chã | Douro Superior',
-  description: 'A small family wine estate in the Douro Superior: Touriga Nacional grown on schist near Vila Nova de Foz Côa. Ask for an allocation or arrange a visit.',
+  description: 'The perfect estate in the oldest appellation in the world.',
   openGraph: {
     title: 'Quinta da Touriga Chã | Douro Superior',
-    description: 'Five generations of Touriga Nacional on schist. Limited allocations.',
+    description: 'The perfect estate in the oldest appellation in the world.',
     images: ['/images/hero-bg.jpg'],
   },
 }

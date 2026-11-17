@@ -7,16 +7,15 @@ import Image from 'next/image'
 // foot over the one before. At rest (reduced motion, a screen under 600px tall) the chapters stand side by side.
 const PICS = [
   { src: '/images/vineyard-soil.jpg', alt: 'Young vine leaves over the schist soil' },
-  { src: '/images/viticulture-vines.jpg', alt: 'The vineyard and winery from above at sunset' },
-  { src: '/images/winery-interior.jpg', alt: 'Stainless steel tanks in the fermentation hall' },
-  { src: '/images/adega.jpg', alt: 'The winery, schist walls set into the slope' },
+  { src: '/images/winery-summer.jpg', alt: 'A dry stone wall of schist in summer light' },
+  { src: '/images/adega-floor.jpg', alt: 'Raw schist and concrete inside the winery' },
 ]
 const clamp = (v: number) => Math.min(1, Math.max(0, v))
 const easeOut = (t: number) => 1 - Math.pow(1 - t, 3)
 
 export default function PhotoChapters({ dictionary }: { dictionary: any }) {
-  const c = dictionary.chapters
-  const items = c.items.map((it: any, i: number) => ({ ...it, ...PICS[i] }))
+  const t = dictionary.terroir
+  const items = [t.soil, t.climate, t.expression].map((it: any, i: number) => ({ ...it, ...PICS[i] }))
   const n = items.length
   const hold = n <= 3 ? 2 : 3
   const ref = useRef<HTMLElement>(null)
@@ -63,21 +62,20 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
 
   const head = (
     <div className="max-w-2xl">
-      <p className="label mb-4">{c.label}</p>
-      <h2 className="h2">{c.title}</h2>
-      <p className="lead muted mt-4">{c.lead}</p>
+      <p className="label mb-4">{t.title}</p>
+      <h2 className="h2">{t.subtitle}</h2>
     </div>
   )
 
   if (!live) {
     return (
-      <section id="vineyard" ref={ref} className="bg-[var(--surface)] py-24">
+      <section id="terroir" ref={ref} className="bg-[var(--surface)] py-24">
         <div className="wrap">
           {head}
-          <ol className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <ol className="mt-12 grid gap-10 md:grid-cols-3">
             {items.map((it: any, i: number) => (
               <li key={i}>
-                <div className="photo mb-5 aspect-[4/5]"><Image src={it.src} alt={it.alt} fill sizes="(min-width: 1024px) 25vw, 50vw" className="object-cover" /></div>
+                <div className="photo mb-5 aspect-[4/5]"><Image src={it.src} alt={it.alt} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" /></div>
                 <h3 className="text-2xl leading-tight">{it.title}</h3>
                 <p className="muted mt-2">{it.text}</p>
               </li>
@@ -89,7 +87,7 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
   }
 
   return (
-    <section id="vineyard" ref={ref} className="relative bg-[var(--surface)]" style={{ height: `${(hold + 1) * 100}svh` }}>
+    <section id="terroir" ref={ref} className="relative bg-[var(--surface)]" style={{ height: `${(hold + 1) * 100}svh` }}>
       <div className="wrap sticky top-0 grid h-[100svh] grid-rows-[auto_minmax(0,1fr)] gap-6 pt-[calc(var(--nav-h)+24px)] pb-6">
         {head}
         <div className="relative min-h-0 overflow-hidden">
@@ -98,13 +96,13 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
               <Image src={it.src} alt={it.alt} fill sizes="100vw" className="origin-bottom object-cover" />
             </div>
           ))}
-          <div className="absolute bottom-4 left-4 right-4 grid bg-[var(--bg)] p-6 sm:right-auto sm:w-[440px] md:bottom-6 md:left-6 md:p-8">
+          <div className="absolute bottom-4 left-4 right-4 grid bg-[var(--bg)] p-6 sm:right-auto sm:w-[540px] md:bottom-6 md:left-6 md:p-8">
             <p aria-hidden className="muted mb-3 text-sm tabular-nums">{String(on + 1).padStart(2, '0')} / {String(n).padStart(2, '0')}</p>
             <ol className="grid">
               {items.map((it: any, i: number) => (
                 <li key={i} className="[grid-area:1/1] transition-all duration-500" style={{ opacity: i === on ? 1 : 0, transform: i === on ? 'none' : 'translateY(8px)' }}>
                   <h3 className="text-2xl leading-tight md:text-[28px]">{it.title}</h3>
-                  <p className="muted mt-2">{it.text}</p>
+                  <p className="muted mt-2 text-[15px] md:text-base">{it.text}</p>
                 </li>
               ))}
             </ol>

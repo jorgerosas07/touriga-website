@@ -22,10 +22,10 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
   }
 
   const links = [
-    { href: '#family', label: n.family },
-    { href: '#vineyard', label: n.vineyard },
-    { href: '#wines', label: n.wines },
-    { href: '#visit', label: n.visit },
+    { href: '#family', label: dictionary.familia.title },
+    { href: '#terroir', label: dictionary.terroir.title },
+    { href: '#wines', label: dictionary.wines.title },
+    { href: '#visit', label: dictionary.contact.eyebrow },
   ]
   const light = solid || open
   const tone = light ? 'text-[var(--ink)]' : 'text-[#fbf7f0]'
@@ -45,7 +45,7 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
                 className={`min-h-[44px] px-2 text-sm uppercase ${lang === c ? 'underline underline-offset-4' : 'opacity-70 hover:opacity-100'}`}>{c}</button>
             ))}
           </div>
-          <a href="#allocation" className="btn !min-h-[44px]">{n.enquire}</a>
+          <a href="#allocation" className="btn !min-h-[44px]">{dictionary.allocation.cta}</a>
         </nav>
 
         <button className="min-h-[44px] min-w-[44px] lg:hidden" aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(!open)}>
@@ -64,7 +64,7 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
                 className={`min-h-[44px] px-2 uppercase ${lang === c ? 'underline underline-offset-4' : 'opacity-70'}`}>{c}</button>
             ))}
           </div>
-          <a href="#allocation" onClick={() => setOpen(false)} className="btn mt-6">{n.primary}</a>
+          <a href="#allocation" onClick={() => setOpen(false)} className="btn mt-6">{dictionary.allocation.cta}</a>
         </div>
       )}
     </header>

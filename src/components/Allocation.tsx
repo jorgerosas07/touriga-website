@@ -1,12 +1,9 @@
 'use client'
 
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger)
 
 function FloatingInput({
   id,
@@ -55,7 +52,7 @@ function FloatingInput({
         style={{
           top: isFloating ? '0px' : '20px',
           fontSize: isFloating ? '11px' : '16px',
-          color: isFloating ? 'var(--color-gold)' : '#6b6b6b',
+          color: isFloating ? 'var(--color-gold)' : '#a8a39a',
           transition: 'top 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94), font-size 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94), color 240ms ease',
           letterSpacing: isFloating ? '0.12em' : '0.02em',
           textTransform: isFloating ? 'uppercase' : 'none',
@@ -111,7 +108,7 @@ function FloatingTextarea({
         style={{
           top: isFloating ? '0px' : '22px',
           fontSize: isFloating ? '11px' : '16px',
-          color: isFloating ? 'var(--color-gold)' : '#6b6b6b',
+          color: isFloating ? 'var(--color-gold)' : '#a8a39a',
           transition: 'top 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94), font-size 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94), color 240ms ease',
           letterSpacing: isFloating ? '0.12em' : '0.02em',
           textTransform: isFloating ? 'uppercase' : 'none',
@@ -130,30 +127,6 @@ export default function Allocation({ dictionary }: { dictionary: any }) {
   const [activeWine, setActiveWine] = useState<string | null>(null)
   const [submitState, setSubmitState] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      if (headingRef.current) {
-        gsap.fromTo(headingRef.current,
-          { opacity: 0, y: 40 },
-          {
-            opacity: 1, y: 0, duration: 1, ease: 'power3.out',
-            scrollTrigger: { trigger: headingRef.current, start: 'top 80%' }
-          }
-        )
-      }
-      if (cardsRef.current) {
-        gsap.fromTo(cardsRef.current,
-          { opacity: 0, y: 40 },
-          {
-            opacity: 1, y: 0, duration: 1, ease: 'power3.out', delay: 0.2,
-            scrollTrigger: { trigger: cardsRef.current, start: 'top 80%' }
-          }
-        )
-      }
-    }, sectionRef)
-
-    return () => ctx.revert()
-  }, [])
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -184,6 +157,7 @@ export default function Allocation({ dictionary }: { dictionary: any }) {
   return (
     <section
       ref={sectionRef}
+      id="allocation"
       className="relative w-full overflow-hidden"
       style={{ background: '#0e0e10' }}
     >
@@ -196,7 +170,7 @@ export default function Allocation({ dictionary }: { dictionary: any }) {
           sizes="100vw"
           priority={false}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0e0e10] via-[#0e0e10]/85 to-[#0e0e10]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0e0e10] via-[#0e0e10]/92 to-[#0e0e10]" />
       </div>
 
       <div className="relative z-20 w-full max-w-[1600px] mx-auto px-6 md:px-16 xl:px-24 pt-20 md:pt-32 pb-20 md:pb-40">
@@ -245,7 +219,7 @@ export default function Allocation({ dictionary }: { dictionary: any }) {
 
                 <div className="w-12 h-px bg-[var(--color-copper)]/40" />
 
-                <p className="font-body text-base leading-relaxed text-[#9a9a9a] max-w-md">
+                <p className="font-body text-base leading-relaxed text-[var(--ink-mute)] max-w-md">
                   {wine.description}
                 </p>
 
@@ -306,7 +280,7 @@ export default function Allocation({ dictionary }: { dictionary: any }) {
             >
               <button
                 onClick={() => { setActiveWine(null); setSubmitState('idle') }}
-                className="absolute top-6 right-6 text-[#6b6b6b] hover:text-[#F9F8F6] transition-colors duration-300"
+                className="absolute top-6 right-6 text-[#a8a39a] hover:text-[#F9F8F6] transition-colors duration-300"
                 aria-label="Close"
               >
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -320,7 +294,7 @@ export default function Allocation({ dictionary }: { dictionary: any }) {
                   <p className="font-heading text-2xl text-[var(--color-gold)] mb-4">
                     {dictionary.allocation.form.success_title}
                   </p>
-                  <p className="font-body text-[#6b6b6b]">
+                  <p className="font-body text-[#a8a39a]">
                     {dictionary.allocation.form.success_body}
                   </p>
                 </div>
@@ -329,7 +303,7 @@ export default function Allocation({ dictionary }: { dictionary: any }) {
                   <h3 className="font-heading text-2xl text-[#F9F8F6] mb-2">
                     {dictionary.allocation.form.title}
                   </h3>
-                  <p className="font-body text-sm text-[#6b6b6b] mb-8">
+                  <p className="font-body text-sm text-[#a8a39a] mb-8">
                     {dictionary.allocation.form.subtitle}
                   </p>
 

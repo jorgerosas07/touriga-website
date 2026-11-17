@@ -127,5 +127,20 @@
     "tech_sheets": "Fichas Técnicas",
     "prizes": "Lista de Prémios",
     "download_note": "* Disponível para download"
+  },
+  "nav": {
+    "terroir": "Terroir",
+    "wines": "Vinhos",
+    "family": "Família",
+    "visit": "Visita",
+    "enquire": "Contactar",
+    "menu": "Menu",
+    "close": "Fechar",
+    "primary": "Solicitar alocação",
+    "secondary": "Os nossos vinhos",
+    "fact": "5 gerações · Douro Superior",
+    "skip": "Saltar para o conteúdo",
+    "ageNo": "Tem de ter idade legal para beber para entrar.",
+    "pillars": "Quinta"
   }
 }

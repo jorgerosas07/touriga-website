@@ -1,68 +1,32 @@
-'use client'
-
-import { useEffect, useRef } from 'react'
 import Image from 'next/image'
-import gsap from 'gsap'
 
 export default function Hero({ dictionary }: { dictionary: any }) {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const imageRef = useRef<HTMLImageElement>(null)
-  const titleRef = useRef<HTMLHeadingElement>(null)
-  const subRef = useRef<HTMLParagraphElement>(null)
-
-  useEffect(() => {
-    // 1. Slow Pan "Ken Burns" Effect on Image
-    if (imageRef.current) {
-      gsap.fromTo(imageRef.current, 
-        { scale: 1.05 },
-        { scale: 1, duration: 15, ease: "power1.inOut" }
-      )
-    }
-
-    // 2. Decoupled Text Reveal (Triggers immediately after Age Gate)
-    const tl = gsap.timeline({ delay: 0.5 })
-    
-    if (titleRef.current && subRef.current) {
-      tl.fromTo(titleRef.current,
-        { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 1.5, ease: "power2.out" }
-      ).fromTo(subRef.current.children,
-        { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: "power2.out" },
-        "-=0.5"
-      )
-    }
-  }, [])
-
+  const { hero, nav } = dictionary
   return (
-    <section ref={containerRef} className="relative w-screen h-screen overflow-hidden flex items-center justify-center">
-      {/* Background Image strictly routed through Next.js <Image> as requested */}
-      <div className="absolute top-0 left-0 w-screen h-screen z-[-1]">
-        <Image 
-          ref={imageRef}
-          src="/images/hero-bg.jpg" 
-          alt="Vinha da Eira e Vale da Vila"
-          fill
-          priority
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        {/* Cinematic gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/90"></div>
-      </div>
+    <section className="relative flex min-h-[100svh] items-end overflow-hidden bg-[#0e0e10]">
+      <Image
+        src="/images/hero-bg.jpg"
+        alt="Terraced vineyards of the Douro Superior at dusk"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e10]/90 via-[#0e0e10]/25 to-[#0e0e10]/40" />
 
-      {/* Hero Content positioned dynamically */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
-        {/* Main Headline from Excel */}
-        <h1 ref={titleRef} className="text-5xl md:text-7xl font-heading text-[#F9F8F6] tracking-wider mb-6 drop-shadow-lg uppercase">
-          {dictionary.hero.headline}
-        </h1>
-        
-        {/* Sub-points from Excel */}
-        <div ref={subRef} className="flex flex-col gap-4 text-lg md:text-xl font-body text-[#F9F8F6]/90 font-light">
-          <p>{dictionary.hero.subheadline}</p>
-          <p>{dictionary.hero.douro}</p>
-          <p>{dictionary.hero.heritage}</p>
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pb-16 md:px-12 md:pb-24 xl:px-16">
+        <div data-enter className="max-w-3xl">
+          <p className="eyebrow mb-5">{nav.fact}</p>
+          <h1 className="font-heading text-5xl leading-[1.02] text-[var(--ink)] md:text-7xl xl:text-8xl">
+            {hero.headline.charAt(0) + hero.headline.slice(1).toLowerCase()}
+          </h1>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--ink-soft)] md:text-xl">
+            {hero.subheadline} {hero.douro}
+          </p>
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a href="#allocation" className="btn btn-solid">{nav.primary}</a>
+            <a href="#wines" className="btn">{nav.secondary}</a>
+          </div>
         </div>
       </div>
     </section>

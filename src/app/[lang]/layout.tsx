@@ -26,8 +26,14 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
+  metadataBase: new URL('https://touriga-website.vercel.app'),
   title: 'Quinta da Touriga Chã | Douro Superior',
-  description: 'The perfect estate in the oldest appellation in the world.',
+  description: 'Family wine estate in the Douro Superior: five generations of Touriga Nacional, grown on schist. Enquire about limited allocations.',
+  openGraph: {
+    title: 'Quinta da Touriga Chã | Douro Superior',
+    description: 'Five generations of Touriga Nacional on schist. Limited allocations.',
+    images: ['/images/hero-bg.jpg'],
+  },
 }
 
 export default async function RootLayout({
@@ -43,12 +49,13 @@ export default async function RootLayout({
 
   return (
     <html lang={resolvedParams.lang} className={`lenis lenis-smooth ${playfair.variable} ${outfit.variable}`}>
-      <body className="antialiased">
+      <body id="top" className="antialiased">
         <SmoothScrollProvider>
           {/* Inject the strict Age Gate before any other content */}
           <CinematicAgeGate dictionary={dictionary} />
-          <Navigation lang={resolvedParams.lang} />
-          <main className="relative w-full min-h-screen">
+          <a href="#main" className="skip-link">{dictionary.nav.skip}</a>
+          <Navigation lang={resolvedParams.lang} dictionary={dictionary} />
+          <main id="main" className="relative w-full">
             {children}
           </main>
           <Footer dictionary={dictionary} />

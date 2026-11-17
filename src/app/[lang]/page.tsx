@@ -16,7 +16,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
   const dictionary = resolvedParams.lang === 'pt' ? ptDict : enDict
 
   return (
-    <div className="flex flex-col w-screen min-h-screen">
+    <div className="flex w-full flex-col">
       <Hero dictionary={dictionary} />
       <TerroirDeepDive dictionary={dictionary} />
       <Viticulture dictionary={dictionary} />

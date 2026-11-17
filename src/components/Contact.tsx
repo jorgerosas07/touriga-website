@@ -1,11 +1,8 @@
 'use client'
 
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useState } from 'react'
 import Image from 'next/image'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger)
 
 // ---------------------------------------------------------------------------
 // Branded static SVG map of the Douro Superior / Vila Nova de Foz Côa region.
@@ -190,7 +187,7 @@ function FloatingInput({
         style={{
           top: isFloating ? '0px' : '20px',
           fontSize: isFloating ? '11px' : '16px',
-          color: isFloating ? 'var(--color-gold)' : '#6b6b6b',
+          color: isFloating ? 'var(--color-gold)' : '#a8a39a',
           transition: 'top 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94), font-size 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94), color 240ms ease',
           letterSpacing: isFloating ? '0.12em' : '0.02em',
           textTransform: isFloating ? 'uppercase' : 'none',
@@ -246,7 +243,7 @@ function FloatingTextarea({
         style={{
           top: isFloating ? '0px' : '22px',
           fontSize: isFloating ? '11px' : '16px',
-          color: isFloating ? 'var(--color-gold)' : '#6b6b6b',
+          color: isFloating ? 'var(--color-gold)' : '#a8a39a',
           transition: 'top 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94), font-size 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94), color 240ms ease',
           letterSpacing: isFloating ? '0.12em' : '0.02em',
           textTransform: isFloating ? 'uppercase' : 'none',
@@ -268,65 +265,6 @@ export default function Contact({ dictionary }: { dictionary: any }) {
   const mapRef = useRef<HTMLDivElement>(null)
   const [submitState, setSubmitState] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Heading entrance
-      if (headingRef.current) {
-        gsap.fromTo(
-          headingRef.current,
-          { opacity: 0, y: 60 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1.2,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: headingRef.current,
-              start: 'top 80%',
-            },
-          }
-        )
-      }
-
-      // Form slide-in from left
-      if (formRef.current) {
-        gsap.fromTo(
-          formRef.current,
-          { opacity: 0, x: -50 },
-          {
-            opacity: 1,
-            x: 0,
-            duration: 1.1,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: formRef.current,
-              start: 'top 80%',
-            },
-          }
-        )
-      }
-
-      // Map slide-in from right
-      if (mapRef.current) {
-        gsap.fromTo(
-          mapRef.current,
-          { opacity: 0, x: 50 },
-          {
-            opacity: 1,
-            x: 0,
-            duration: 1.1,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: mapRef.current,
-              start: 'top 80%',
-            },
-          }
-        )
-      }
-    }, sectionRef)
-
-    return () => ctx.revert()
-  }, [])
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -339,7 +277,7 @@ export default function Contact({ dictionary }: { dictionary: any }) {
   return (
     <section
       ref={sectionRef}
-      id="contact"
+      id="visit"
       className="relative w-full bg-[#0e0e10] overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
@@ -351,7 +289,7 @@ export default function Contact({ dictionary }: { dictionary: any }) {
           sizes="100vw"
           priority={false}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0e0e10]/95 via-[#0e0e10]/85 to-[#0e0e10]/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0e0e10]/95 via-[#0e0e10]/92 to-[#0e0e10]/95" />
       </div>
 
       {/* Subtle gradient top-edge bleed from Wine Showcase */}
@@ -370,7 +308,7 @@ export default function Contact({ dictionary }: { dictionary: any }) {
           <h2 className="font-heading text-5xl md:text-7xl xl:text-8xl leading-none text-[#F9F8F6]">
             {dictionary.contact.title}
           </h2>
-          <p className="mt-6 font-body text-lg text-[#6b6b6b] max-w-xl leading-relaxed">
+          <p className="mt-6 font-body text-lg text-[#a8a39a] max-w-xl leading-relaxed">
             {dictionary.contact.subtitle}
           </p>
         </div>
@@ -435,7 +373,7 @@ export default function Contact({ dictionary }: { dictionary: any }) {
             {/* Estate coordinates */}
             <div className="mt-16 pt-10 border-t border-[#2a2a2d] flex flex-col gap-2">
               <p className="font-heading text-lg text-[var(--color-gold)]">Quinta da Touriga Chã</p>
-              <p className="font-body text-sm text-[#6b6b6b] leading-relaxed">
+              <p className="font-body text-sm text-[#a8a39a] leading-relaxed">
                 Vila Nova de Foz Côa<br />
                 Douro Superior, Portugal
               </p>

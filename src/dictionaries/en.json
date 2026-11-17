@@ -127,5 +127,20 @@
     "tech_sheets": "Tech Sheets",
     "prizes": "List of Prizes",
     "download_note": "* Available for download"
+  },
+  "nav": {
+    "terroir": "Terroir",
+    "wines": "Wines",
+    "family": "Family",
+    "visit": "Visit",
+    "enquire": "Enquire",
+    "menu": "Menu",
+    "close": "Close",
+    "primary": "Enquire for allocation",
+    "secondary": "Our wines",
+    "fact": "5 generations · Douro Superior",
+    "skip": "Skip to content",
+    "ageNo": "You must be of legal drinking age to enter.",
+    "pillars": "Estate"
   }
 }

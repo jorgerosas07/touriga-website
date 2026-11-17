@@ -10,7 +10,10 @@
     "headline": "UM IDEAL DE PERFEIÇÃO",
     "subheadline": "Musculado e elegante.",
     "douro": "Douro: Região Demarcada mais antiga + Douro Superior.",
-    "heritage": "A herança familiar: 5 gerações a produzir vinho."
+    "heritage": "A herança familiar: 5 gerações a produzir vinho.",
+    "title": "Uma pequena quinta de família no Douro Superior.",
+    "lead": "Touriga Nacional em xisto, perto de Vila Nova de Foz Côa. 8,5 hectares plantados de raiz por José António Rosas e hoje cuidados pelo filho, Jorge.",
+    "fact": "Douro DOC · 8,5 hectares · 5 gerações"
   },
   "wines": {
     "title": "Os Nossos Vinhos",
@@ -136,11 +139,66 @@
     "enquire": "Contactar",
     "menu": "Menu",
     "close": "Fechar",
-    "primary": "Solicitar alocação",
-    "secondary": "Os nossos vinhos",
+    "primary": "Pedir uma alocação",
+    "secondary": "Ver os vinhos",
     "fact": "5 gerações · Douro Superior",
     "skip": "Saltar para o conteúdo",
     "ageNo": "Tem de ter idade legal para beber para entrar.",
-    "pillars": "Quinta"
+    "pillars": "Quinta",
+    "vineyard": "Vinha"
+  },
+  "story": {
+    "label": "A família",
+    "title": "Plantada aos 72 anos, cuidada pelo filho.",
+    "lead": "Já com setenta anos, José António Rosas, a quem o Douro chamou pioneiro, encontrou 20 hectares virgens perto de Vila Nova de Foz Côa e plantou 8,5, mais de 80% Touriga Nacional. Foi o seu último projeto. Jorge, a quinta geração, cuida dela desde 1996 e construiu a adega em 2004."
+  },
+  "chapters": {
+    "label": "Vinha e adega",
+    "title": "Do xisto à garrafa.",
+    "lead": "Cada garrafa começa na mesma encosta e é feita na adega construída dentro dela.",
+    "items": [
+      {
+        "title": "Xisto que obriga as raízes a descer",
+        "text": "Placas verticais de xisto pré-câmbrico levam as raízes ao fundo. A pedra guarda o calor do dia e devolve-o à noite."
+      },
+      {
+        "title": "Touriga Nacional, com 3.000 horas de sol",
+        "text": "Rendimentos baixos e pouca intervenção. Os dias são quentes e as noites até 20°C mais frescas, por isso as uvas guardam a frescura."
+      },
+      {
+        "title": "Lagares pequenos e carvalho francês",
+        "text": "Fermenta em lagares pequenos e inox e estagia em carvalho usado com cuidado, para o vinho saber à vinha e ao ano."
+      },
+      {
+        "title": "Uma adega encaixada na encosta",
+        "text": "Xisto, betão e luz, construída em 2004 dentro da encosta para se manter fresca, com a gravidade a fazer quase todo o trabalho."
+      }
+    ]
+  },
+  "winesSection": {
+    "label": "Os nossos vinhos",
+    "title": "Dois vinhos, ambos desta encosta.",
+    "ask": "Pedir uma alocação"
+  },
+  "visit": {
+    "label": "Visita",
+    "title": "Venha conhecer a quinta.",
+    "place": "Vila Nova de Foz Côa, Douro Superior",
+    "text": "Somos uma família pequena, por isso as visitas são por marcação. Escreva-nos e combinamos um dia para percorrer a vinha e provar na adega.",
+    "cta": "Escrever para marcar uma visita"
+  },
+  "enquiry": {
+    "label": "Alocações",
+    "title": "Peça uma alocação.",
+    "lead": "Fazemos pouco vinho, por isso vendemos por alocação. Diga-nos que vinho e quantas garrafas, e respondemos em 48 horas.",
+    "name": "O seu nome",
+    "email": "Email",
+    "wine": "Vinho",
+    "both": "Ambos",
+    "bottles": "Garrafas",
+    "message": "Mais alguma coisa (opcional)",
+    "submit": "Enviar o pedido por email",
+    "note": "Abre a sua aplicação de email com o pedido escrito, para info@jrosas.pt.",
+    "error": "Preencha o nome e um email válido."
   }
 }

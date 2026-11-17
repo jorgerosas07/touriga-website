@@ -1,6 +1,6 @@
 import '../globals.css'
 import { ReactNode } from 'react'
-import { Playfair_Display, Outfit } from 'next/font/google'
+import { Literata, Figtree } from 'next/font/google'
 import SmoothScrollProvider from '@/components/SmoothScrollProvider'
 import CinematicAgeGate from '@/components/CinematicAgeGate'
 import Navigation from '@/components/Navigation'
@@ -8,15 +8,15 @@ import Footer from '@/components/Footer'
 import enDict from '@/dictionaries/en.json'
 import ptDict from '@/dictionaries/pt.json'
 
-const playfair = Playfair_Display({
+const literata = Literata({
   subsets: ['latin'],
-  variable: '--font-playfair',
+  variable: '--font-literata',
   display: 'swap',
 })
 
-const outfit = Outfit({
+const figtree = Figtree({
   subsets: ['latin'],
-  variable: '--font-outfit',
+  variable: '--font-figtree',
   display: 'swap',
 })
 
@@ -28,7 +28,7 @@ export async function generateStaticParams() {
 export const metadata = {
   metadataBase: new URL('https://touriga-website.vercel.app'),
   title: 'Quinta da Touriga Chã | Douro Superior',
-  description: 'Family wine estate in the Douro Superior: five generations of Touriga Nacional, grown on schist. Enquire about limited allocations.',
+  description: 'A small family wine estate in the Douro Superior: Touriga Nacional grown on schist near Vila Nova de Foz Côa. Ask for an allocation or arrange a visit.',
   openGraph: {
     title: 'Quinta da Touriga Chã | Douro Superior',
     description: 'Five generations of Touriga Nacional on schist. Limited allocations.',
@@ -48,7 +48,7 @@ export default async function RootLayout({
   const dictionary = resolvedParams.lang === 'pt' ? ptDict : enDict
 
   return (
-    <html lang={resolvedParams.lang} className={`lenis lenis-smooth ${playfair.variable} ${outfit.variable}`}>
+    <html lang={resolvedParams.lang} className={`lenis lenis-smooth ${literata.variable} ${figtree.variable}`}>
       <body id="top" className="antialiased">
         <SmoothScrollProvider>
           {/* Inject the strict Age Gate before any other content */}

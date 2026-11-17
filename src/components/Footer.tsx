@@ -1,36 +1,33 @@
 export default function Footer({ dictionary }: { dictionary: any }) {
   const n = dictionary.nav
-  const col = 'font-heading text-xl text-[var(--color-gold)] mb-4'
-  const link = 'link-draw text-sm text-[var(--ink-soft)]'
+  const head = 'mb-4 text-xl'
+  const link = 'relative text-[#f3e6cf] hover:text-white'
   return (
-    <footer className="relative z-10 border-t border-[var(--line)] bg-[#0b0b0d]">
-      <div className="mx-auto grid max-w-[1440px] gap-12 px-6 py-16 md:grid-cols-3 md:px-12 xl:px-16">
-        <div>
-          <h4 className={col}>{dictionary.footer.contact}</h4>
-          <p className="text-sm leading-relaxed text-[var(--ink-soft)]">
-            Quinta da Touriga Chã<br />Vila Nova de Foz Côa<br />Douro Superior, Portugal
-          </p>
-          <a href="mailto:info@jrosas.pt" className={`${link} mt-4`}>info@jrosas.pt</a>
+    <footer className="bg-[var(--brand)] text-[#fbf7f0]">
+      <div className="wrap grid gap-12 py-16 md:grid-cols-12">
+        <div className="md:col-span-5">
+          <p className="font-[family-name:var(--font-display)] text-3xl">Quinta da Touriga Chã</p>
+          <p className="mt-3 max-w-sm text-[#f3e6cf]">Vila Nova de Foz Côa, Douro Superior</p>
         </div>
-        <div>
-          <h4 className={col}>{n.wines}</h4>
-          <ul className="flex flex-col gap-3">
-            <li><a href="#wines" className={link}>{dictionary.wines.title}</a></li>
-            <li><a href="mailto:info@jrosas.pt?subject=Where%20to%20find%20our%20wines" className={link}>{dictionary.footer.where_to_find}</a></li>
-            <li><a href="#allocation" className={link}>{n.primary}</a></li>
+        <div className="md:col-span-3">
+          <h2 className={head}>{dictionary.footer.contact}</h2>
+          <ul className="grid gap-3">
+            <li><a className={link} href="mailto:info@jrosas.pt">info@jrosas.pt</a></li>
+            <li><a className={link} href="mailto:info@jrosas.pt?subject=Where%20to%20find%20your%20wines">{dictionary.footer.where_to_find}</a></li>
           </ul>
         </div>
-        <div>
-          <h4 className={col}>{n.pillars}</h4>
-          <ul className="flex flex-col gap-3">
-            <li><a href="#terroir" className={link}>{n.terroir}</a></li>
-            <li><a href="#family" className={link}>{n.family}</a></li>
-            <li><a href="#visit" className={link}>{n.visit}</a></li>
+        <div className="md:col-span-3 md:col-start-10">
+          <h2 className={head}>{n.pillars}</h2>
+          <ul className="grid gap-3">
+            <li><a className={link} href="#family">{n.family}</a></li>
+            <li><a className={link} href="#vineyard">{n.vineyard}</a></li>
+            <li><a className={link} href="#wines">{n.wines}</a></li>
+            <li><a className={link} href="#visit">{n.visit}</a></li>
           </ul>
         </div>
       </div>
-      <div className="mx-auto max-w-[1440px] border-t border-[var(--line)] px-6 py-6 text-xs text-[var(--ink-mute)] md:px-12 xl:px-16">
-        © {new Date().getFullYear()} Quinta da Touriga Chã. Please enjoy responsibly.
+      <div className="wrap border-t border-white/20 py-6 text-sm text-[#f3e6cf]">
+        © {new Date().getFullYear()} Quinta da Touriga Chã · J. Rosas. Please enjoy responsibly.
       </div>
     </footer>
   )

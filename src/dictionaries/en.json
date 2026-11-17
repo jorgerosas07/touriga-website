@@ -10,7 +10,10 @@
     "headline": "AN IDEAL OF PERFECTION",
     "subheadline": "Muscular and elegant.",
     "douro": "Douro: The oldest Demarcated Region + Douro Superior.",
-    "heritage": "Family heritage: 5 generations producing wine."
+    "heritage": "Family heritage: 5 generations producing wine.",
+    "title": "A small family wine estate in the Douro Superior.",
+    "lead": "Touriga Nacional grown on schist near Vila Nova de Foz Côa. 8.5 hectares planted from scratch by José António Rosas, looked after today by his son Jorge.",
+    "fact": "Douro DOC · 8.5 hectares · 5 generations"
   },
   "wines": {
     "title": "Our Wines",
@@ -136,11 +139,66 @@
     "enquire": "Enquire",
     "menu": "Menu",
     "close": "Close",
-    "primary": "Enquire for allocation",
-    "secondary": "Our wines",
+    "primary": "Ask for an allocation",
+    "secondary": "See the wines",
     "fact": "5 generations · Douro Superior",
     "skip": "Skip to content",
     "ageNo": "You must be of legal drinking age to enter.",
-    "pillars": "Estate"
+    "pillars": "Estate",
+    "vineyard": "Vineyard"
+  },
+  "story": {
+    "label": "The family",
+    "title": "Planted at 72, kept by his son.",
+    "lead": "In his seventies, José António Rosas, the man the Douro called its pioneer, found 20 untouched hectares near Vila Nova de Foz Côa and planted 8.5 of them, more than 80% Touriga Nacional. It was his last project. Jorge, the fifth generation, has run it since 1996 and built the winery in 2004."
+  },
+  "chapters": {
+    "label": "Vineyard and winery",
+    "title": "From schist to bottle.",
+    "lead": "Every bottle starts on the same hillside and is made in the winery built into it.",
+    "items": [
+      {
+        "title": "Schist that sends the roots down",
+        "text": "Vertical plates of pre-Cambrian schist push the roots deep. The stone holds the day’s heat and gives it back at night."
+      },
+      {
+        "title": "Touriga Nacional, in 3,000 hours of sun",
+        "text": "Low yields and little intervention. Days are hot and nights up to 20°C cooler, so the grapes keep their freshness."
+      },
+      {
+        "title": "Small lagares and French oak",
+        "text": "Fermented in small lagares and steel, aged in oak used lightly, so the wine tastes of its vineyard and its year."
+      },
+      {
+        "title": "A winery set into the hill",
+        "text": "Schist, concrete and light, built in 2004 into the slope so it stays cool, with gravity doing most of the work."
+      }
+    ]
+  },
+  "winesSection": {
+    "label": "Our wines",
+    "title": "Two wines, both from this hillside.",
+    "ask": "Ask for an allocation"
+  },
+  "visit": {
+    "label": "Visit",
+    "title": "Come and see the estate.",
+    "place": "Vila Nova de Foz Côa, Douro Superior",
+    "text": "We are a small family, so visits are by arrangement. Write to us and we will find a day to walk the vineyard and taste in the winery.",
+    "cta": "Write to arrange a visit"
+  },
+  "enquiry": {
+    "label": "Allocations",
+    "title": "Ask for an allocation.",
+    "lead": "We make little wine, so we sell it by allocation. Tell us which wine and how many bottles, and we reply within 48 hours.",
+    "name": "Your name",
+    "email": "Email",
+    "wine": "Wine",
+    "both": "Both",
+    "bottles": "Bottles",
+    "message": "Anything else (optional)",
+    "submit": "Send the enquiry by email",
+    "note": "This opens your email app with the enquiry written out, addressed to info@jrosas.pt.",
+    "error": "Please fill in your name and a valid email."
   }
 }

@@ -36,30 +36,30 @@ export default function CinematicAgeGate({ dictionary }: { dictionary: any }) {
         initial={{ opacity: 1 }}
         animate={{ opacity: isDissolving ? 0 : 1 }}
         transition={{ duration: 3, ease: "easeInOut" }}
-        role="dialog" aria-modal="true" className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[var(--color-deep-violet)] text-[var(--color-gold)]"
+        role="dialog" aria-modal="true" className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[var(--bg)] text-[var(--ink)]"
       >
-        <p className="text-4xl md:text-6xl font-heading mb-8 text-center px-6">
+        <p className="text-4xl md:text-6xl font-[family-name:var(--font-display)] mb-8 text-center px-6">
           {dictionary.ageGate.title}
         </p>
-        <p className="text-lg md:text-xl font-body mb-12 text-center px-6">
+        <p className="text-lg md:text-xl mb-12 text-center px-6">
           {dictionary.ageGate.prompt}
         </p>
         
         <div className="flex gap-8">
           <button 
             onClick={handleVerification}
-            className="px-8 py-3 border border-[var(--color-gold)] hover:bg-[var(--color-gold)] hover:text-[var(--color-deep-violet)] transition-colors duration-500 font-body uppercase tracking-widest"
+            className="btn"
           >
             {dictionary.ageGate.yes}
           </button>
           <button 
             onClick={() => setDenied(true)}
-            className="px-8 py-3 border border-transparent hover:border-[var(--color-gold)] transition-colors duration-500 font-body uppercase tracking-widest opacity-70"
+            className="btn btn-quiet"
           >
             {dictionary.ageGate.no}
           </button>
         </div>
-        {denied && <p role="alert" className="mt-8 font-body text-sm text-[var(--ink-soft)]">{dictionary.ageGate.error}</p>}
+        {denied && <p role="alert" className="mt-8 text-sm text-[var(--ink-soft)]">{dictionary.ageGate.error}</p>}
       </motion.div>
     </AnimatePresence>
   )

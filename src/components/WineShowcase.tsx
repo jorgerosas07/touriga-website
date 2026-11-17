@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function WineShowcase({ dictionary }: { dictionary: any }) {
   const w = dictionary.wines
-  const wines = [
-    { ...w.puro, src: '/images/puro_bottle.jpg', w: 500, h: 500, alt: 'Puro bottle', href: '#allocation' },
+  const wines: any[] = [
+    { ...w.puro, src: '/images/puro-shelf.jpg', w: 1000, h: 1250, alt: 'Puro, Quinta da Touriga, Douro, on a wine shelf', href: '#allocation', cover: true },
     { ...w.tinto, src: '/images/tinto_bottle.jpg', w: 170, h: 700, alt: 'Quinta da Touriga Chã Tinto bottle', href: '#allocation' },
   ]
   return (
@@ -14,8 +14,8 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {wines.map((x) => (
             <a key={x.name} href={x.href} className="lift grid grid-cols-[150px_1fr] items-center gap-6 border border-[var(--line)] bg-[var(--surface)] p-6 md:grid-cols-[220px_1fr] md:p-8">
-              <div className="photo-frame flex aspect-[3/4] items-center justify-center bg-white">
-                <Image src={x.src} alt={x.alt} width={x.w} height={x.h} className="h-full w-auto object-contain" />
+              <div className={`photo-frame flex items-center justify-center ${x.cover ? 'aspect-[4/5]' : 'aspect-[3/4] bg-white'}`}>
+                <Image src={x.src} alt={x.alt} width={x.w} height={x.h} className={x.cover ? 'h-full w-full object-cover' : 'h-full w-auto object-contain'} />
               </div>
               <div>
                 <h3 className="font-heading text-3xl text-[var(--ink)] md:text-4xl">{x.name}</h3>

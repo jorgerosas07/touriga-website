@@ -1,6 +1,6 @@
 import '../globals.css'
 import { ReactNode } from 'react'
-import { Literata, Figtree } from 'next/font/google'
+import { Literata, Figtree, Cormorant_SC } from 'next/font/google'
 import SmoothScrollProvider from '@/components/SmoothScrollProvider'
 import CinematicAgeGate from '@/components/CinematicAgeGate'
 import Navigation from '@/components/Navigation'
@@ -11,6 +11,13 @@ import ptDict from '@/dictionaries/pt.json'
 const literata = Literata({
   subsets: ['latin'],
   variable: '--font-literata',
+  display: 'swap',
+})
+
+const brand = Cormorant_SC({
+  subsets: ['latin'],
+  weight: '500',
+  variable: '--font-brand',
   display: 'swap',
 })
 
@@ -48,7 +55,7 @@ export default async function RootLayout({
   const dictionary = resolvedParams.lang === 'pt' ? ptDict : enDict
 
   return (
-    <html lang={resolvedParams.lang} className={`lenis lenis-smooth ${literata.variable} ${figtree.variable}`}>
+    <html lang={resolvedParams.lang} className={`lenis lenis-smooth ${literata.variable} ${figtree.variable} ${brand.variable}`}>
       <body id="top" className="antialiased">
         <SmoothScrollProvider>
           {/* Inject the strict Age Gate before any other content */}

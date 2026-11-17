@@ -33,7 +33,7 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
   return (
     <header className={`fixed top-0 left-0 z-40 w-full transition-colors duration-300 ${light ? 'border-b border-[var(--line)] bg-[var(--bg)]' : 'bg-transparent'} ${tone}`}>
       <div className="wrap flex h-[var(--nav-h)] items-center justify-between">
-        <a href="#top" className="font-[family-name:var(--font-display)] text-xl md:text-2xl">Quinta da Touriga Chã</a>
+        <a href="#top" className="brand-name text-2xl md:text-[28px]">Quinta da Touriga Chã</a>
 
         <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex">
           {links.map((l) => (

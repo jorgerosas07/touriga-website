@@ -27,6 +27,8 @@ body {
 }
 h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.015em; }
 
+.brand-name { font-family: var(--font-brand), Georgia, serif; font-weight: 500; letter-spacing: 0.02em; }
+
 .wrap { width: 100%; max-width: 1360px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
 @media (min-width: 768px) { .wrap { padding-left: 48px; padding-right: 48px; } }
 @media (min-width: 1280px) { .wrap { padding-left: 64px; padding-right: 64px; } }

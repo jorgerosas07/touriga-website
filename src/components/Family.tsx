@@ -3,8 +3,8 @@ import Image from 'next/image'
 export default function Family({ dictionary }: { dictionary: any }) {
   const s = dictionary.familia
   return (
-    <section id="family" className="py-24 md:py-32">
-      <div className="wrap grid min-h-[calc(100svh-16rem)] items-center gap-12 md:grid-cols-12 md:gap-6">
+    <section id="family" className="flex min-h-[100svh] items-center py-20">
+      <div className="wrap grid items-center gap-12 md:grid-cols-12 md:gap-6">
         <div className="photo aspect-[4/5] md:col-span-5">
           <Image src="/images/familia-estate.jpg" alt="The family's vineyard and olive trees above the valley" fill quality={90} sizes="(min-width: 768px) 40vw, 100vw" className="object-cover" />
         </div>

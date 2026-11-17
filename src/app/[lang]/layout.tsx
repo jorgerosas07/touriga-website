@@ -1,7 +1,6 @@
 import '../globals.css'
 import { ReactNode } from 'react'
 import { Literata, Figtree, Cormorant_SC } from 'next/font/google'
-import SmoothScrollProvider from '@/components/SmoothScrollProvider'
 import CinematicAgeGate from '@/components/CinematicAgeGate'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -32,15 +31,24 @@ export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'pt' }]
 }
 
-export const metadata = {
-  metadataBase: new URL('https://touriga-website.vercel.app'),
-  title: 'Quinta da Touriga Chã | Douro Superior',
-  description: 'The perfect estate in the oldest appellation in the world.',
-  openGraph: {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params
+  return {
+    metadataBase: new URL('https://touriga-website.vercel.app'),
     title: 'Quinta da Touriga Chã | Douro Superior',
     description: 'The perfect estate in the oldest appellation in the world.',
-    images: ['/images/hero-bg.jpg'],
-  },
+    alternates: {
+      canonical: `/${lang}`,
+      languages: { en: '/en', pt: '/pt', 'x-default': '/en' },
+    },
+    openGraph: {
+      title: 'Quinta da Touriga Chã | Douro Superior',
+      description: 'The perfect estate in the oldest appellation in the world.',
+      images: ['/images/hero-bg.jpg'],
+      locale: lang === 'pt' ? 'pt_PT' : 'en_GB',
+      type: 'website',
+    },
+  }
 }
 
 export default async function RootLayout({
@@ -55,10 +63,9 @@ export default async function RootLayout({
   const dictionary = resolvedParams.lang === 'pt' ? ptDict : enDict
 
   return (
-    <html lang={resolvedParams.lang} className={`lenis lenis-smooth ${literata.variable} ${figtree.variable} ${brand.variable}`}>
+    <html lang={resolvedParams.lang} className={`${literata.variable} ${figtree.variable} ${brand.variable}`}>
       <body id="top" className="antialiased">
-        <SmoothScrollProvider>
-          {/* Inject the strict Age Gate before any other content */}
+                  {/* Inject the strict Age Gate before any other content */}
           <CinematicAgeGate dictionary={dictionary} />
           <a href="#main" className="skip-link">{dictionary.nav.skip}</a>
           <Navigation lang={resolvedParams.lang} dictionary={dictionary} />
@@ -66,8 +73,7 @@ export default async function RootLayout({
             {children}
           </main>
           <Footer dictionary={dictionary} />
-        </SmoothScrollProvider>
-      </body>
+              </body>
     </html>
   )
 }

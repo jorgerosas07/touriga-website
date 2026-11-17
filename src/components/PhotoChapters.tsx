@@ -69,7 +69,7 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
 
   if (!live) {
     return (
-      <section id="terroir" ref={ref} className="bg-[var(--surface)] py-24">
+      <section id="terroir" ref={ref} className="min-h-[100svh] bg-[var(--surface)] py-24">
         <div className="wrap">
           {head}
           <ol className="mt-12 grid gap-10 md:grid-cols-3">
@@ -93,7 +93,7 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
         <div className="relative min-h-0 overflow-hidden">
           {items.map((it: any, i: number) => (
             <div key={i} ref={(el) => { picRefs.current[i] = el }} className="absolute inset-0 overflow-hidden" style={{ clipPath: i === 0 ? 'none' : 'inset(100% 0 0 0)' }}>
-              <Image src={it.src} alt={it.alt} fill quality={90} sizes="100vw" className="origin-bottom object-cover" />
+              <Image src={it.src} alt={it.alt} fill quality={90} sizes="(max-width: 767px) 260vw, 100vw" className="origin-bottom object-cover" />
             </div>
           ))}
           <div className="absolute bottom-4 left-4 right-4 grid bg-[var(--bg)] p-6 sm:right-auto sm:w-[540px] md:bottom-6 md:left-6 md:p-8">

@@ -5,7 +5,7 @@
   --bg: #f6f1e7;
   --surface: #ebe3d4;
   --ink: #2b241e;
-  --muted: #6b5e52;
+  --muted: #4f443a;
   --line: rgba(43, 36, 30, 0.16);
   --accent: #7a2236;
   --accent-ink: #fbf7f0;
@@ -29,9 +29,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
 
 .brand-name { font-family: var(--font-brand), Georgia, serif; font-weight: 500; letter-spacing: 0.02em; }
 
-.wrap { width: 100%; max-width: 1360px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
-@media (min-width: 768px) { .wrap { padding-left: 48px; padding-right: 48px; } }
-@media (min-width: 1280px) { .wrap { padding-left: 64px; padding-right: 64px; } }
+.wrap { --gutter: 20px; width: min(1232px, calc(100% - 2 * var(--gutter))); margin-left: auto; margin-right: auto; }
+@media (min-width: 768px) { .wrap { --gutter: 48px; } }
+@media (min-width: 1280px) { .wrap { --gutter: 104px; } }
 
 .h2 { font-size: clamp(36px, 4.6vw, 64px); line-height: 1.06; }
 .lead { font-size: clamp(18px, 1.5vw, 21px); line-height: 1.55; }
@@ -88,12 +88,6 @@ a:hover .photo img, .photo:hover img { transform: scale(1.03); }
   background: var(--bg); border: 1px solid var(--line); border-radius: 0;
 }
 .field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--accent); outline-offset: 0; border-color: transparent; }
-
-/* Lenis */
-html.lenis, html.lenis body { height: auto; }
-.lenis.lenis-smooth { scroll-behavior: auto !important; }
-.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
-.lenis.lenis-stopped { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }

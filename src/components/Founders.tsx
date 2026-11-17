@@ -7,7 +7,7 @@ export default function Founders({ dictionary }: { dictionary: any }) {
     { ...f.jorge, src: '/images/founder-jorge.jpg', alt: 'Jorge Rosas among the barrels', pos: 'center 20%', gray: false },
   ]
   return (
-    <section id="founders" className="bg-[var(--surface)] py-24 md:py-32">
+    <section id="founders" className="flex min-h-[100svh] items-center bg-[var(--surface)] py-20">
       <div className="wrap">
         <p className="label mb-5">{f.eyebrow}</p>
         <h2 className="h2">{f.title}</h2>
@@ -18,7 +18,7 @@ export default function Founders({ dictionary }: { dictionary: any }) {
                 <Image src={p.src} alt={p.alt} fill sizes="200px" className={`object-cover ${p.gray ? 'grayscale' : ''}`} style={{ objectPosition: p.pos }} />
               </div>
               <div>
-                <h3 className="text-3xl leading-tight">{p.name}</h3>
+                <h3 className="text-2xl leading-tight md:text-3xl">{p.name}</h3>
                 <p className="label mt-2 mb-4">{p.years}</p>
                 <p className="muted">{p.text}</p>
               </div>

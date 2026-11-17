@@ -87,7 +87,7 @@ const VERSIONS = [
   { id: 'v2', commit: '702a54c', name: 'Dark redesign', d: 11, m: 16,
     when: 'First pass with the skill',
     points: ['Same dark palette, one section per screen', 'Split photo and text sections, clean wine cards', 'Real navigation, no scroll fades', 'The CEO’s text, with a few labels added'] },
-  { id: 'v3', commit: '30d55cf', name: 'Warm, original text', d: 11, m: 16, current: true,
+  { id: 'v3', commit: '30d55cf', name: 'Warm, original text', d: 13, m: 16, current: true,
     when: 'Current version on the branch',
     points: ['Cream ground, brown ink, Puro crimson as the accent', 'Every word restored from the CEO’s original text', 'Terroir as photo chapters, then Viticulture, Winemaking and Winery', 'Family, Founders, Wines, Visit, Allocation enquiry'] },
 ];
@@ -108,7 +108,7 @@ function render() {
   document.getElementById('dev-d').setAttribute('aria-pressed', device === 'd');
   document.getElementById('dev-m').setAttribute('aria-pressed', device === 'm');
   document.getElementById('about').innerHTML =
-    `<div><h2>${v.name}</h2><p class="meta">${v.when} · commit ${v.commit}</p></div>
+    `<div><h2>${v.name}</h2><p class="meta">${v.when}${v.current ? '' : ' · commit ' + v.commit}</p></div>
      <ul>${v.points.map(p => `<li>${p}</li>`).join('')}</ul>`;
   const n = v[device];
   const box = document.getElementById('screens');

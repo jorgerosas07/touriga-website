@@ -90,7 +90,8 @@
       "submit": "Enviar Pedido",
       "sending": "A enviar…",
       "success_title": "Pedido Recebido.",
-      "success_body": "O nosso mestre de adega entrará em contacto em 48 horas. Obrigado pelo seu interesse."
+      "success_body": "O nosso mestre de adega entrará em contacto em 48 horas. Obrigado pelo seu interesse.",
+      "year": "Ano de colheita (opcional)"
     }
   },
   "founders": {
@@ -131,6 +132,9 @@
   "nav": {
     "skip": "Saltar para o conteúdo",
     "menu": "Menu",
-    "close": "Fechar"
+    "close": "Fechar",
+    "prev": "Foto anterior",
+    "next": "Foto seguinte",
+    "open": "Abrir foto"
   }
 }

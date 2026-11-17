@@ -8,12 +8,12 @@ export default function Pillars({ dictionary }: { dictionary: any }) {
     { ...dictionary.adega, id: 'winery', src: '/images/adega.jpg', alt: 'The winery, schist walls set into the slope', pos: 'center 40%' },
   ]
   return (
-    <div id="pillars">
+    <>
       {items.map((it, i) => (
         <section key={it.id} id={it.id} className={i % 2 === 1 ? 'bg-[var(--surface)]' : ''}>
           <div className="wrap grid min-h-[100svh] items-center gap-10 py-20 md:grid-cols-2 md:gap-16">
             <div className={`photo aspect-[4/5] max-h-[78svh] w-full md:aspect-auto md:h-[74svh] ${i % 2 === 0 ? '' : 'md:order-2'}`}>
-              <Image src={it.src} alt={it.alt} fill quality={90} sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" style={{ objectPosition: it.pos }} />
+              <Image src={it.src} alt={it.alt} fill quality={90} sizes="(min-width: 768px) 75vw, 170vw" className="object-cover" style={{ objectPosition: it.pos }} />
             </div>
             <div className="max-w-xl">
               <p className="label mb-5">{it.eyebrow}</p>
@@ -24,6 +24,6 @@ export default function Pillars({ dictionary }: { dictionary: any }) {
           </div>
         </section>
       ))}
-    </div>
+    </>
   )
 }

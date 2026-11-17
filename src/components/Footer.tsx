@@ -1,17 +1,17 @@
 export default function Footer({ dictionary }: { dictionary: any }) {
   const ft = dictionary.footer
-  const head = 'mb-4 text-xl'
+  const head = 'mb-4 font-[family-name:var(--font-display)] text-xl'
   const link = 'text-[#f3e6cf] hover:text-white underline-offset-4 hover:underline'
   return (
-    <footer className="bg-[var(--brand)] text-[#fbf7f0]">
+    <footer className="closing bg-[var(--brand)] text-[#fbf7f0]">
       <div className="wrap grid gap-12 py-16 md:grid-cols-12">
         <div className="md:col-span-5">
-          <h2 className={head}>{ft.contact}</h2>
+          <p className={head}>{ft.contact}</p>
           <p className="text-[#f3e6cf]"><span className="brand-name block text-3xl text-[#fbf7f0]">Quinta da Touriga Chã</span>Vila Nova de Foz Côa<br />Douro Superior, Portugal</p>
           <a className={`${link} mt-3 inline-block`} href="mailto:info@jrosas.pt">info@jrosas.pt</a>
         </div>
-        <div className="md:col-span-4 md:col-start-8">
-          <h2 className={head}>{dictionary.wines.title}</h2>
+        <div className="md:col-span-5 md:col-start-7">
+          <p className={head}>{dictionary.wines.title}</p>
           <a className={link} href="mailto:info@jrosas.pt">{ft.where_to_find}</a>
         </div>
       </div>

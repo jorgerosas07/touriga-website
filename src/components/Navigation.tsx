@@ -31,11 +31,11 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
   const tone = light ? 'text-[var(--ink)]' : 'text-[#fbf7f0]'
 
   return (
-    <header className={`fixed top-0 left-0 z-40 w-full transition-colors duration-300 ${light ? 'border-b border-[var(--line)] bg-[var(--bg)]' : 'bg-transparent'} ${tone}`}>
+    <header className={`nav fixed top-0 left-0 z-40 w-full transition-colors duration-300 ${light ? 'border-b border-[var(--line)] bg-[var(--bg)]' : 'bg-transparent'} ${tone}`}>
       <div className="wrap flex h-[var(--nav-h)] items-center justify-between">
-        <a href="#top" className="brand-name text-2xl md:text-[28px]">Quinta da Touriga Chã</a>
+        <a href="#top" className="brand-name whitespace-nowrap text-xl sm:text-2xl md:text-[28px]">Quinta da Touriga Chã</a>
 
-        <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-7 whitespace-nowrap xl:flex">
           {links.map((l) => (
             <a key={l.href} href={l.href} className="link !font-normal !text-current">{l.label}</a>
           ))}
@@ -48,13 +48,13 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
           <a href="#allocation" className="btn !min-h-[44px]">{dictionary.allocation.cta}</a>
         </nav>
 
-        <button className="min-h-[44px] min-w-[44px] lg:hidden" aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(!open)}>
+        <button className="min-h-[44px] min-w-[44px] xl:hidden" aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(!open)}>
           {open ? n.close : n.menu}
         </button>
       </div>
 
       {open && (
-        <div id="mobile-menu" className="wrap flex h-[calc(100svh-var(--nav-h))] flex-col bg-[var(--bg)] pt-6 lg:hidden">
+        <div id="mobile-menu" className="wrap flex h-[calc(100svh-var(--nav-h))] flex-col bg-[var(--bg)] pt-6 xl:hidden">
           {links.map((l) => (
             <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="border-b border-[var(--line)] py-4 font-[family-name:var(--font-display)] text-3xl">{l.label}</a>
           ))}

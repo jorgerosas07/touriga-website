@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import PhotoStrip from './PhotoStrip'
 
 const STRIP = [
   { src: '/images/adega-side.jpg', alt: 'The winery terrace among wild shrubs' },
@@ -10,7 +10,7 @@ const STRIP = [
 export default function Visit({ dictionary }: { dictionary: any }) {
   const v = dictionary.contact
   return (
-    <section id="visit" className="bg-[var(--surface)] py-24 md:py-32">
+    <section id="visit" className="flex min-h-[100svh] items-center bg-[var(--surface)] pt-[calc(var(--nav-h)+32px)] pb-16">
       <div className="wrap">
         <div className="grid gap-8 md:grid-cols-12 md:gap-6">
           <div className="md:col-span-6">
@@ -22,16 +22,10 @@ export default function Visit({ dictionary }: { dictionary: any }) {
             <a href="mailto:info@jrosas.pt" className="link mt-6">info@jrosas.pt <span className="arrow" aria-hidden>→</span></a>
           </div>
         </div>
-        <p className="type-moment mt-12">
+        <p className="type-moment mt-10">
           <a className="link !font-normal !text-[var(--ink)]" href="https://www.google.com/maps/search/?api=1&query=Vila+Nova+de+Foz+C%C3%B4a" target="_blank" rel="noopener">Vila Nova de Foz Côa, Douro Superior</a>
         </p>
-        <ul className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
-          {STRIP.map((p) => (
-            <li key={p.src} className="photo aspect-square">
-              <Image src={p.src} alt={p.alt} fill sizes="(min-width: 768px) 25vw, 50vw" className="object-cover" />
-            </li>
-          ))}
-        </ul>
+        <PhotoStrip photos={STRIP} labels={{ open: dictionary.nav.open, close: dictionary.nav.close, prev: dictionary.nav.prev, next: dictionary.nav.next }} />
       </div>
     </section>
   )

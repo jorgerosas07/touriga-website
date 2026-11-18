@@ -1,75 +1,96 @@
 @import "tailwindcss";
 
+/* Place palette from the client's own label: paper ground, brown ink, the Puro crimson as the one accent */
 :root {
-  --background: #121212;
-  --foreground: #ededed;
-  
-  /* Brand Luxury Palette */
-  --color-burgundy: #5B1D30;
-  --color-schist-grey: #4A4C4B;
-  --color-copper: #B8860B;
-  --color-gold: #D4AF37;
-  --color-deep-violet: #2D0B16;
-
-  /* Fonts - Mapped to Next.js next/font/google */
-  --font-heading: var(--font-playfair), 'Playfair Display', serif;
-  --font-body: var(--font-outfit), 'Outfit', 'Inter', sans-serif;
+  --bg: #f6f1e7;
+  --surface: #ebe3d4;
+  --ink: #2b241e;
+  --muted: #4f443a;
+  --line: rgba(43, 36, 30, 0.16);
+  --accent: #7a2236;
+  --accent-ink: #fbf7f0;
+  --brand: #5b1a29;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --font-display: var(--font-literata), Georgia, serif;
+  --font-text: var(--font-figtree), system-ui, sans-serif;
+  --nav-h: 72px;
 }
 
+html { scroll-padding-top: var(--nav-h); }
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--bg);
+  font-family: var(--font-text);
+  font-size: 17px;
+  line-height: 1.6;
   overflow-x: hidden;
 }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.015em; }
 
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  pointer-events: none;
-  opacity: 0.028;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 200px 200px;
+.brand-name { font-family: var(--font-brand), Georgia, serif; font-weight: 500; letter-spacing: 0.02em; }
+
+.wrap { --gutter: 20px; width: min(1232px, calc(100% - 2 * var(--gutter))); margin-left: auto; margin-right: auto; }
+@media (min-width: 768px) { .wrap { --gutter: 48px; } }
+@media (min-width: 1280px) { .wrap { --gutter: 104px; } }
+
+.h2 { font-size: clamp(36px, 4.6vw, 64px); line-height: 1.06; }
+.lead { font-size: clamp(18px, 1.5vw, 21px); line-height: 1.55; }
+.label { font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+.muted { color: var(--muted); }
+
+/* One button style (block), one link look */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .6em;
+  min-height: 52px; padding: 0 1.6rem;
+  font-family: var(--font-text); font-size: 16px; font-weight: 500;
+  background: var(--accent); color: var(--accent-ink); border: 1px solid var(--accent);
+  cursor: pointer; transition: background-color .25s var(--ease), transform .15s var(--ease);
 }
+.btn:hover { background: var(--brand); transform: translateY(-1px); }
+.btn:active { transform: translateY(1px) scale(0.98); }
+.btn-quiet { background: transparent; color: inherit; border-color: currentColor; }
+.btn-quiet:hover { background: rgba(255,255,255,.12); }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+.link { position: relative; display: inline-flex; align-items: center; gap: .4em; font-weight: 500; color: var(--accent); }
+.link::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -2px; height: 1px; background: currentColor;
+  transform: scaleX(0); transform-origin: left; transition: transform .35s var(--ease);
 }
+.link:hover::after, .link:focus-visible::after { transform: scaleX(1); }
+.link .arrow { transition: transform .25s var(--ease); }
+.link:hover .arrow { transform: translateX(3px); }
 
-/* Lenis Smooth Scroll Boilerplate */
-html.lenis, html.lenis body {
-  height: auto;
+/* Photographs zoom 1.03 inside their frame; linked cards lift 2px */
+.photo { position: relative; overflow: hidden; background: var(--surface); }
+.photo img { transition: transform .8s var(--ease); }
+a:hover .photo img, .photo:hover img { transform: scale(1.03); }
+.lift { transition: transform .3s var(--ease); }
+.lift:hover { transform: translateY(-2px); }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.skip-link { position: fixed; left: 1rem; top: -4rem; z-index: 100; background: var(--accent); color: var(--accent-ink); padding: .75rem 1.25rem; transition: top .2s; }
+.skip-link:focus { top: 1rem; }
+
+.type-moment { font-family: var(--font-display); font-size: clamp(40px, 6vw, 88px); line-height: 1.02; letter-spacing: -0.03em; }
+
+/* Hero entrance, once on load */
+@keyframes enter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+[data-enter] > * { animation: enter .9s var(--ease) both; }
+[data-enter] > *:nth-child(2) { animation-delay: .12s; }
+[data-enter] > *:nth-child(3) { animation-delay: .24s; }
+[data-enter] > *:nth-child(4) { animation-delay: .36s; }
+
+/* Form fields */
+.field { display: grid; gap: 6px; }
+.field label { font-size: 14px; font-weight: 500; }
+.field input, .field select, .field textarea {
+  width: 100%; min-height: 52px; padding: 12px 14px; font: inherit; color: var(--ink);
+  background: var(--bg); border: 1px solid var(--line); border-radius: 0;
 }
+.field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--accent); outline-offset: 0; border-color: transparent; }
 
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
-}
-
-/* Fallback for motion sensitivity */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-  
-  .lenis.lenis-smooth {
-    scroll-behavior: auto !important;
-  }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  [data-enter] > * { animation: none !important; opacity: 1 !important; }
+  a:hover .photo img, .photo:hover img, .lift:hover { transform: none; }
 }

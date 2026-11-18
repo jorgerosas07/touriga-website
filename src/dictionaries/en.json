@@ -90,7 +90,8 @@
       "submit": "Submit Enquiry",
       "sending": "Submitting…",
       "success_title": "Enquiry Received.",
-      "success_body": "Our cellar master will be in touch within 48 hours. Thank you for your interest."
+      "success_body": "Our cellar master will be in touch within 48 hours. Thank you for your interest.",
+      "year": "Vintage (optional)"
     }
   },
   "founders": {
@@ -127,5 +128,13 @@
     "tech_sheets": "Tech Sheets",
     "prizes": "List of Prizes",
     "download_note": "* Available for download"
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "close": "Close",
+    "prev": "Previous photo",
+    "next": "Next photo",
+    "open": "Open photo"
   }
 }

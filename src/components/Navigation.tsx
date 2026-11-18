@@ -1,76 +1,72 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 import { useRouter, usePathname } from 'next/navigation'
 
-export default function Navigation({ lang }: { lang: string }) {
-  const { scrollY } = useScroll()
-  const [hidden, setHidden] = useState(false)
-  const [isTop, setIsTop] = useState(true)
+export default function Navigation({ lang, dictionary }: { lang: string; dictionary: any }) {
+  const [solid, setSolid] = useState(false)
+  const [open, setOpen] = useState(false)
   const router = useRouter()
   const pathname = usePathname()
+  const n = dictionary.nav
 
-  // Framer Motion hook to detect scroll direction for hide-on-scroll
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious()
-    if (latest === 0) {
-      setIsTop(true)
-      setHidden(false)
-    } else if (latest > 50 && latest > (previous ?? 0)) {
-      setIsTop(false)
-      setHidden(true) // Scrolling down
-    } else {
-      setIsTop(false)
-      setHidden(false) // Scrolling up
-    }
-  })
+  useEffect(() => {
+    const onScroll = () => setSolid(window.scrollY > window.innerHeight * 0.6)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
-  // Soft routing for the Language Switcher (protects WebGL state)
-  const switchLanguage = (newLang: string) => {
-    if (lang === newLang) return
-    // Simple path replacement from /en/foo to /pt/foo
-    const newPath = pathname.replace(`/${lang}`, `/${newLang}`)
-    router.push(newPath, { scroll: false })
+  const switchLanguage = (to: string) => {
+    if (lang !== to) router.push(pathname.replace(`/${lang}`, `/${to}`), { scroll: false })
   }
 
+  const links = [
+    { href: '#family', label: dictionary.familia.title },
+    { href: '#terroir', label: dictionary.terroir.title },
+    { href: '#wines', label: dictionary.wines.title },
+    { href: '#visit', label: dictionary.contact.eyebrow },
+  ]
+  const light = solid || open
+  const tone = light ? 'text-[var(--ink)]' : 'text-[#fbf7f0]'
+
   return (
-    <motion.header
-      variants={{
-        visible: { y: 0 },
-        hidden: { y: "-100%" },
-      }}
-      animate={hidden ? "hidden" : "visible"}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
-      className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 ${
-        isTop ? 'bg-transparent py-8' : 'bg-black/60 backdrop-blur-xl border-b border-white/10 py-4 shadow-2xl'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-        
-        {/* Brand / Logo Area */}
-        <div className="text-[var(--color-gold)] font-heading text-xl md:text-2xl uppercase tracking-widest cursor-pointer">
-          Quinta da Touriga Chã
-        </div>
+    <header className={`nav fixed top-0 left-0 z-40 w-full transition-colors duration-300 ${light ? 'border-b border-[var(--line)] bg-[var(--bg)]' : 'bg-transparent'} ${tone}`}>
+      <div className="wrap flex h-[var(--nav-h)] items-center justify-between">
+        <a href="#top" className="brand-name whitespace-nowrap text-xl sm:text-2xl md:text-[28px]">Quinta da Touriga Chã</a>
 
-        {/* The Inline Typographic Language Switcher */}
-        <div className="flex gap-2 text-sm font-body tracking-[0.2em]">
-          <button 
-            onClick={() => switchLanguage('en')}
-            className={`transition-colors duration-300 ${lang === 'en' ? 'text-[var(--color-gold)]' : 'text-gray-400 hover:text-white'}`}
-          >
-            EN
-          </button>
-          <span className="text-gray-500">—</span>
-          <button 
-            onClick={() => switchLanguage('pt')}
-            className={`transition-colors duration-300 ${lang === 'pt' ? 'text-[var(--color-gold)]' : 'text-gray-400 hover:text-white'}`}
-          >
-            PT
-          </button>
-        </div>
+        <nav aria-label="Primary" className="hidden items-center gap-7 whitespace-nowrap xl:flex">
+          {links.map((l) => (
+            <a key={l.href} href={l.href} className="link !font-normal !text-current">{l.label}</a>
+          ))}
+          <div className="flex items-center gap-1" role="group" aria-label="Language">
+            {['en', 'pt'].map((c) => (
+              <button key={c} onClick={() => switchLanguage(c)} aria-pressed={lang === c} lang={c}
+                className={`min-h-[44px] px-2 text-sm uppercase ${lang === c ? 'underline underline-offset-4' : 'opacity-70 hover:opacity-100'}`}>{c}</button>
+            ))}
+          </div>
+          <a href="#allocation" className="btn !min-h-[44px]">{dictionary.allocation.cta}</a>
+        </nav>
 
+        <button className="min-h-[44px] min-w-[44px] xl:hidden" aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(!open)}>
+          {open ? n.close : n.menu}
+        </button>
       </div>
-    </motion.header>
+
+      {open && (
+        <div id="mobile-menu" className="wrap flex h-[calc(100svh-var(--nav-h))] flex-col bg-[var(--bg)] pt-6 xl:hidden">
+          {links.map((l) => (
+            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="border-b border-[var(--line)] py-4 font-[family-name:var(--font-display)] text-3xl">{l.label}</a>
+          ))}
+          <div className="mt-6 flex gap-4">
+            {['en', 'pt'].map((c) => (
+              <button key={c} onClick={() => switchLanguage(c)} aria-pressed={lang === c}
+                className={`min-h-[44px] px-2 uppercase ${lang === c ? 'underline underline-offset-4' : 'opacity-70'}`}>{c}</button>
+            ))}
+          </div>
+          <a href="#allocation" onClick={() => setOpen(false)} className="btn mt-6">{dictionary.allocation.cta}</a>
+        </div>
+      )}
+    </header>
   )
 }

@@ -6,9 +6,9 @@ import Image from 'next/image'
 // photo-chapters moment (tasteskill): the section holds while each photograph is uncovered from its
 // foot over the one before. At rest (reduced motion, a screen under 600px tall) the chapters stand side by side.
 const PICS = [
-  { src: '/images/vineyard-soil.jpg', alt: 'Young vine leaves over the schist soil' },
-  { src: '/images/winery-summer.jpg', alt: 'A dry stone wall of schist in summer light' },
-  { src: '/images/adega-floor.jpg', alt: 'Raw schist and concrete inside the winery' },
+  { src: '/images/vineyard-terrace.jpg', alt: 'Vine rows over dark schist shards in the soil', pos: 'center 92%' },
+  { src: '/images/winery-summer.jpg', alt: 'A dry stone wall of schist in summer light', pos: 'center' },
+  { src: '/images/adega-floor.jpg', alt: 'Raw schist and concrete inside the winery', pos: 'center' },
 ]
 const clamp = (v: number) => Math.min(1, Math.max(0, v))
 const easeOut = (t: number) => 1 - Math.pow(1 - t, 3)
@@ -75,7 +75,7 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
           <ol className="mt-12 grid gap-10 md:grid-cols-3">
             {items.map((it: any, i: number) => (
               <li key={i}>
-                <div className="photo mb-5 aspect-[4/5]"><Image src={it.src} alt={it.alt} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" /></div>
+                <div className="photo mb-5 aspect-[4/5]"><Image src={it.src} alt={it.alt} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" style={{ objectPosition: it.pos }} /></div>
                 <h3 className="text-2xl leading-tight">{it.title}</h3>
                 <p className="muted mt-2">{it.text}</p>
               </li>
@@ -93,7 +93,7 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
         <div className="relative min-h-0 overflow-hidden">
           {items.map((it: any, i: number) => (
             <div key={i} ref={(el) => { picRefs.current[i] = el }} className="absolute inset-0 overflow-hidden" style={{ clipPath: i === 0 ? 'none' : 'inset(100% 0 0 0)' }}>
-              <Image src={it.src} alt={it.alt} fill quality={90} sizes="(max-width: 767px) 260vw, 100vw" className="origin-bottom object-cover" />
+              <Image src={it.src} alt={it.alt} fill quality={90} sizes="(max-width: 767px) 260vw, 100vw" className="origin-bottom object-cover" style={{ objectPosition: it.pos }} />
             </div>
           ))}
           <div className="absolute bottom-4 left-4 right-4 grid bg-[var(--bg)] p-6 sm:right-auto sm:w-[540px] md:bottom-6 md:left-6 md:p-8">

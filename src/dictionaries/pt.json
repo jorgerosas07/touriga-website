@@ -137,6 +137,23 @@
     "prev": "Foto anterior",
     "next": "Foto seguinte",
     "open": "Abrir foto",
-    "terroir": "Quinta da Touriga"
+    "terroir": "Quinta da Touriga",
+    "where": "Onde nos encontrar"
+  },
+  "where": {
+    "title": "Onde nos encontrar",
+    "regions": {
+      "na": "América do Norte",
+      "ca": "América Central e Caraíbas",
+      "sa": "América do Sul",
+      "eu": "Europa",
+      "af": "África",
+      "as": "Ásia",
+      "oc": "Oceânia"
+    },
+    "form": {
+      "country": "País",
+      "select": "Seleccione"
+    }
   }
 }

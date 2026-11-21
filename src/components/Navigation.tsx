@@ -26,6 +26,7 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
     { href: '#terroir', label: n.terroir },
     { href: '#family', label: dictionary.familia.title },
     { href: '#wines', label: dictionary.wines.title },
+    { href: '#where', label: n.where },
     { href: '#visit', label: dictionary.contact.eyebrow },
   ]
   const light = solid || open
@@ -49,7 +50,6 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
                 className={`min-h-[44px] px-2 text-sm uppercase ${lang === c ? 'underline underline-offset-4' : 'opacity-70 hover:opacity-100'}`}>{c}</button>
             ))}
           </div>
-          <a href="#allocation" className="btn !min-h-[44px]">{dictionary.allocation.cta}</a>
         </nav>
 
         <button className="min-h-[44px] min-w-[44px] xl:hidden" aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(!open)}>
@@ -68,7 +68,6 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
                 className={`min-h-[44px] px-2 uppercase ${lang === c ? 'underline underline-offset-4' : 'opacity-70'}`}>{c}</button>
             ))}
           </div>
-          <a href="#allocation" onClick={() => setOpen(false)} className="btn mt-6">{dictionary.allocation.cta}</a>
         </div>
       )}
     </header>

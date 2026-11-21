@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import BiographyDialog from './BiographyDialog'
 
 export default function Founders({ dictionary }: { dictionary: any }) {
   const f = dictionary.founders
@@ -20,6 +21,7 @@ export default function Founders({ dictionary }: { dictionary: any }) {
                 <h3 className="text-2xl leading-tight md:text-3xl">{p.name}</h3>
                 <p className="label mt-2 mb-4">{p.years}</p>
                 <p className="muted">{p.text}</p>
+                {p.bio && <BiographyDialog bio={p.bio} portrait={p.src} portraitAlt={p.alt} closeLabel={dictionary.nav.close} />}
               </div>
             </article>
           ))}

@@ -100,7 +100,20 @@
     "jarpr": {
       "name": "José António Rosas",
       "years": "1919 – 1996",
-      "text": "Founder of ADVID. Co-creator of modern Douro vineyard systems. Portugal's representative at L'Office International du Vin. Founder of the Confraria do Vinho do Porto. Known internationally as the Pioneer of the Douro. At 72, he planted 8.5 hectares from scratch — his final and greatest project."
+      "text": "Founder of ADVID. Co-creator of modern Douro vineyard systems. Portugal's representative at L'Office International du Vin. Founder of the Confraria do Vinho do Porto. Known internationally as the Pioneer of the Douro. At 72, he planted 8.5 hectares from scratch — his final and greatest project.",
+      "bio": {
+        "link": "Read the full biography",
+        "title": "José António Ramos Pinto Rosas",
+        "years": "1919 – 1996",
+        "paragraphs": [
+          "Dedicated his entire professional career to the Port Wine Industry and to the oldest appellation in the world – the Douro Valley. Different international wine writers have referred to José Antonio as the “Douro Pope” (in Le Porto, by Chantale Lecouty, page 145), or “The Prophet of the Douro”, or “the Pioneer do Douro”, thanks to his great contribution to the development of this Region.",
+          "José António Rosas, undertook the important work that lead to the modern development of this wine district. Always working with the final objective of finding the best solutions to increase both the quality of the wines and the production systems in the Douro Valley.",
+          "His creation of the new plantation method “patamares” permitted more mechanization in the vineyards, but together with his nephew João Nicolau de Almeida, “vertical vineyards” where also implemented in the Douro Valley, not only for more mechanization but also for greater plant density, resulting in higher yields per hectare but lower production per vine and higher quality of fruit. They also undertook research into the area’s grape varietals and root stock selections, the results of which have largely been adopted by the majority of the Douro vine growers.",
+          "José António was also Portugal’s representative at “L’Office International du Vin”, was founder of the Confraria do Vinho do Porto (Port Wine Brotherhood) & Presidente do Conselho da Administração (CEO) of the Port and Douro wine producer A. Ramos Pinto, Vinhos S.A..",
+          "With his strong determination to increase the quality of the wines produced in this Valley, in 1982 he founded the well respected ADVID (Association for the Development of the Douro Valley viticulture), of which he was president until 1996.",
+          "José António Rosas was the co-author of the book “The Port Wine” published by the IVDP (Port Wine Institute)."
+        ]
+      }
     },
     "jorge": {
       "name": "Jorge Rosas",

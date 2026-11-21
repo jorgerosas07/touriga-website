@@ -100,7 +100,20 @@
     "jarpr": {
       "name": "José António Rosas",
       "years": "1919 – 1996",
-      "text": "Fundador da ADVID. Co-criador dos modernos sistemas de vinha do Douro. Representante de Portugal no L'Office International du Vin. Fundador da Confraria do Vinho do Porto. Conhecido internacionalmente como o Pioneiro do Douro. Aos 72 anos, plantou 8,5 hectares do zero — o seu último e maior projecto."
+      "text": "Fundador da ADVID. Co-criador dos modernos sistemas de vinha do Douro. Representante de Portugal no L'Office International du Vin. Fundador da Confraria do Vinho do Porto. Conhecido internacionalmente como o Pioneiro do Douro. Aos 72 anos, plantou 8,5 hectares do zero — o seu último e maior projecto.",
+      "bio": {
+        "link": "Ler a biografia completa",
+        "title": "José António Ramos Pinto Rosas",
+        "years": "1919 – 1996",
+        "paragraphs": [
+          "Dedicou toda a sua carreira profissional à Indústria do Vinho do Porto e à denominação mais antiga do mundo – o Vale do Douro. Vários escritores internacionais de vinhos referiram-se a José António como o “Papa do Douro” (em Le Porto, de Chantale Lecouty, página 145), ou “O Profeta do Douro”, ou “o Pioneiro do Douro”, graças ao seu grande contributo para o desenvolvimento desta Região.",
+          "José António Rosas empreendeu o importante trabalho que conduziu ao desenvolvimento moderno desta região vinhateira. Trabalhou sempre com o objetivo final de encontrar as melhores soluções para aumentar tanto a qualidade dos vinhos como os sistemas de produção no Vale do Douro.",
+          "A sua criação do novo método de plantação em “patamares” permitiu maior mecanização nas vinhas e, juntamente com o seu sobrinho João Nicolau de Almeida, foram também implementadas no Vale do Douro as “vinhas verticais”, não só para maior mecanização mas também para maior densidade de plantação, resultando em maior produção por hectare mas menor produção por videira e maior qualidade do fruto. Realizaram ainda investigação sobre as castas da região e a seleção de porta-enxertos, cujos resultados foram em grande parte adotados pela maioria dos viticultores do Douro.",
+          "José António foi também representante de Portugal no “L’Office International du Vin”, fundador da Confraria do Vinho do Porto e Presidente do Conselho da Administração (CEO) do produtor de vinhos do Porto e do Douro A. Ramos Pinto, Vinhos S.A..",
+          "Com a sua forte determinação em aumentar a qualidade dos vinhos produzidos neste Vale, fundou em 1982 a muito respeitada ADVID (Associação para o Desenvolvimento da Viticultura Duriense), da qual foi presidente até 1996.",
+          "José António Rosas foi coautor do livro “O Vinho do Porto”, publicado pelo IVDP (Instituto do Vinho do Porto)."
+        ]
+      }
     },
     "jorge": {
       "name": "Jorge Rosas",

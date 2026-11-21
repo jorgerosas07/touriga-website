@@ -11,10 +11,6 @@ export default function Hero({ dictionary }: { dictionary: any }) {
           <h1 className="text-[44px] leading-[1.04] md:text-7xl">{hero.headline}</h1>
           <p className="lead mt-6 text-[#f4ece0]">{hero.subheadline}</p>
           <p className="mt-2 text-[#f4ece0]">{hero.douro}<br />{hero.heritage}</p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href="#allocation" className="btn">{dictionary.allocation.cta}</a>
-            <a href="#wines" className="btn btn-quiet">{dictionary.wines.title}</a>
-          </div>
         </div>
       </div>
     </section>

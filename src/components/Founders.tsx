@@ -9,7 +9,6 @@ export default function Founders({ dictionary }: { dictionary: any }) {
   return (
     <section id="founders" className="flex min-h-[100svh] items-center bg-[var(--surface)] py-20">
       <div className="wrap">
-        <p className="label mb-5">{f.eyebrow}</p>
         <h2 className="h2">{f.title}</h2>
         <div className="mt-12 grid gap-12 md:grid-cols-2 md:gap-6">
           {people.map((p) => (

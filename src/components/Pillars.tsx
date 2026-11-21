@@ -16,7 +16,6 @@ export default function Pillars({ dictionary }: { dictionary: any }) {
               <Image src={it.src} alt={it.alt} fill quality={90} sizes="(min-width: 768px) 75vw, 170vw" className="object-cover" style={{ objectPosition: it.pos }} />
             </div>
             <div className="max-w-xl">
-              <p className="label mb-5">{it.eyebrow}</p>
               <h2 className="h2">{it.title}</h2>
               <p className="lead mt-7">{it.subtitle}</p>
               <p className="muted mt-5">{it.text}</p>

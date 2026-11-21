@@ -27,7 +27,7 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
     { href: '#family', label: dictionary.familia.title },
     { href: '#wines', label: dictionary.wines.title },
     { href: '#where', label: n.where },
-    { href: '#visit', label: dictionary.contact.eyebrow },
+    { href: '#contact', label: dictionary.contact.eyebrow },
   ]
   const light = solid || open
   const tone = light ? 'text-[var(--ink)]' : 'text-[#fbf7f0] [text-shadow:0_1px_10px_rgba(20,14,9,.65)]'

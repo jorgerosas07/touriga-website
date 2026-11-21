@@ -10,7 +10,7 @@
     "headline": "AN IDEAL OF PERFECTION",
     "subheadline": "Muscular and elegant.",
     "douro": "A family that for six generations has perpetuated excellence in the creation of great wines.",
-    "heritage": "Family heritage: 5 generations producing wine."
+    "heritage": "Family heritage: 6 generations producing wine."
   },
   "wines": {
     "title": "Our Wines",
@@ -62,8 +62,8 @@
   "familia": {
     "eyebrow": "Pillar V",
     "title": "The Family",
-    "subtitle": "Five generations. One valley. An unbroken thread of dedication to the Douro.",
-    "text": "José António Castro Ramos Pinto Rosas (1919–1996) — founder of ADVID, co-creator of modern vineyard systems, and revered internationally as the Pioneer of the Douro. At 72, he found a virgin 20-hectare property near Vila Nova de Foz Côa and planted 8.5 hectares from scratch, with over 80% Touriga Nacional. Today, his son Jorge Rosas, the fifth generation, continues that legacy from the award-winning 2004 winery."
+    "subtitle": "Six generations. One valley. An unbroken thread of dedication to the Douro.",
+    "text": "José António Castro Ramos Pinto Rosas (1919–1996) — founder of ADVID, co-creator of modern vineyard systems, and revered internationally as the Pioneer of the Douro. At 72, he found a virgin 20-hectare property near Vila Nova de Foz Côa and planted 8.5 hectares from scratch, with over 80% Touriga Nacional. Today, his son Jorge Rosas, the sixth generation, continues that legacy from the award-winning 2004 winery."
   },
   "allocation": {
     "title": "The Cellar Door",
@@ -104,7 +104,7 @@
     },
     "jorge": {
       "name": "Jorge Rosas",
-      "years": "Fifth Generation",
+      "years": "Sixth Generation",
       "text": "Son of José António. Steward of the Quinta da Touriga Chã since his father's passing. Built the award-winning 2004 winery. Continues the legacy with the same uncompromising dedication to the Douro, its vineyards, and its wines."
     }
   },

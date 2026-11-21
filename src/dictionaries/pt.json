@@ -10,7 +10,7 @@
     "headline": "UM IDEAL DE PERFEIÇÃO",
     "subheadline": "Musculado e elegante.",
     "douro": "Uma família que há seis gerações perpetua a excelência na criação de grandes vinhos.",
-    "heritage": "A herança familiar: 5 gerações a produzir vinho."
+    "heritage": "A herança familiar: 6 gerações a produzir vinho."
   },
   "wines": {
     "title": "Os Nossos Vinhos",
@@ -62,8 +62,8 @@
   "familia": {
     "eyebrow": "Pilar V",
     "title": "A Família",
-    "subtitle": "Cinco gerações. Um vale. Um fio ininterrupto de dedicação ao Douro.",
-    "text": "José António Castro Ramos Pinto Rosas (1919–1996) — fundador da ADVID, co-criador dos modernos sistemas de vinha e reconhecido internacionalmente como o Pioneiro do Douro. Aos 72 anos, encontrou uma propriedade virgem de 20 hectares perto de Vila Nova de Foz Côa e plantou 8,5 hectares de vinha do zero, com mais de 80% de Touriga Nacional. Hoje, o seu filho Jorge Rosas, a quinta geração, continua esse legado na premiada adega construída em 2004."
+    "subtitle": "Seis gerações. Um vale. Um fio ininterrupto de dedicação ao Douro.",
+    "text": "José António Castro Ramos Pinto Rosas (1919–1996) — fundador da ADVID, co-criador dos modernos sistemas de vinha e reconhecido internacionalmente como o Pioneiro do Douro. Aos 72 anos, encontrou uma propriedade virgem de 20 hectares perto de Vila Nova de Foz Côa e plantou 8,5 hectares de vinha do zero, com mais de 80% de Touriga Nacional. Hoje, o seu filho Jorge Rosas, a sexta geração, continua esse legado na premiada adega construída em 2004."
   },
   "allocation": {
     "title": "A Porta da Adega",
@@ -104,7 +104,7 @@
     },
     "jorge": {
       "name": "Jorge Rosas",
-      "years": "Quinta Geração",
+      "years": "Sexta Geração",
       "text": "Filho de José António. Guardião da Quinta da Touriga Chã desde o falecimento do pai. Construiu a premiada adega de 2004. Continua o legado com a mesma dedicação intransigente ao Douro, às suas vinhas e aos seus vinhos."
     }
   },

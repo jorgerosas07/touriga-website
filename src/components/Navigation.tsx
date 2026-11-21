@@ -24,7 +24,7 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
 
   const links = [
     { href: '#family', label: dictionary.familia.title },
-    { href: '#terroir', label: dictionary.terroir.title },
+    { href: '#terroir', label: n.terroir },
     { href: '#wines', label: dictionary.wines.title },
     { href: '#visit', label: dictionary.contact.eyebrow },
   ]

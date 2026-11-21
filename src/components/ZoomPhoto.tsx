@@ -4,9 +4,11 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 
 // A small photograph that opens full screen on click (Esc, × or a click outside closes it)
-export default function ZoomPhoto({ src, alt, width, height, labels, className = '' }: {
+export default function ZoomPhoto({ src, alt, width, height, labels, className = '', frameClass, imgClass = 'object-cover', position }: {
   src: string; alt: string; width: number; height: number
   labels: { open: string; close: string }; className?: string
+  /** when set, the thumbnail fills a frame of this class (aspect, background) instead of its natural ratio */
+  frameClass?: string; imgClass?: string; position?: string
 }) {
   const [open, setOpen] = useState(false)
   const closeRef = useRef<HTMLButtonElement>(null)
@@ -26,9 +28,15 @@ export default function ZoomPhoto({ src, alt, width, height, labels, className =
   return (
     <>
       <button ref={trigger} type="button" aria-label={`${labels.open}: ${alt}`} onClick={() => setOpen(true)} className={`lift block cursor-zoom-in ${className}`}>
-        <span className="photo block">
-          <Image src={src} alt={alt} width={width} height={height} quality={90} sizes="(min-width: 768px) 420px, 100vw" className="h-auto w-full" />
-        </span>
+        {frameClass ? (
+          <span className={`photo block ${frameClass}`}>
+            <Image src={src} alt={alt} fill quality={90} sizes="(min-width: 768px) 33vw, 100vw" className={imgClass} style={position ? { objectPosition: position } : undefined} />
+          </span>
+        ) : (
+          <span className="photo block">
+            <Image src={src} alt={alt} width={width} height={height} quality={90} sizes="(min-width: 768px) 420px, 100vw" className="h-auto w-full" />
+          </span>
+        )}
       </button>
       {open && (
         <div role="dialog" aria-modal="true" aria-label={alt} className="fixed inset-0 z-50 flex flex-col bg-[var(--bg)]"

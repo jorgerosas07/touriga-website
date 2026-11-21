@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { REGIONS } from '@/lib/markets'
+import { intlLocale } from '@/lib/i18n'
 
 type Item = { href: string; label: string }
 type Block = { href: string; title: string; items?: Item[] }
@@ -11,8 +12,8 @@ export default function Footer({ dictionary, lang }: { dictionary: any; lang: st
   const f = dictionary.founders
   const head = 'font-[family-name:var(--font-display)] text-xl hover:underline underline-offset-4'
   const link = 'text-[#f3e6cf] hover:text-white underline-offset-4 hover:underline'
-  const names = new Intl.DisplayNames([lang === 'pt' ? 'pt-PT' : 'en'], { type: 'region' })
-  const markets = REGIONS.flatMap((r) => r.codes).map((c) => names.of(c) ?? c).sort((a, b) => a.localeCompare(b, lang))
+  const names = new Intl.DisplayNames([intlLocale(lang)], { type: 'region' })
+  const markets = REGIONS.flatMap((r) => r.codes).map((c) => names.of(c) ?? c).sort((a, b) => a.localeCompare(b, intlLocale(lang)))
 
   const blocks: Block[] = [
     { href: '#terroir', title: dictionary.nav.terroir, items: [

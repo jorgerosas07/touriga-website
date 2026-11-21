@@ -6,12 +6,11 @@ import Pillars from '@/components/Pillars'
 import WineShowcase from '@/components/WineShowcase'
 import WhereToFind from '@/components/WhereToFind'
 import Visit from '@/components/Visit'
-import enDict from '@/dictionaries/en.json'
-import ptDict from '@/dictionaries/pt.json'
+import { getDictionary } from '@/lib/i18n'
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
-  const dictionary = lang === 'pt' ? ptDict : enDict
+  const dictionary = getDictionary(lang)
 
   return (
     <>

@@ -1,4 +1,5 @@
 import { REGIONS } from '@/lib/markets'
+import { intlLocale } from '@/lib/i18n'
 import ContactForm from './ContactForm'
 import ImportersPopover from './ImportersPopover'
 import { IMPORTERS } from '@/lib/importers'
@@ -6,7 +7,7 @@ import { IMPORTERS } from '@/lib/importers'
 // "Where to find us": the markets listed by region, then a contact form.
 export default function WhereToFind({ dictionary, lang }: { dictionary: any; lang: string }) {
   const w = dictionary.where
-  const names = new Intl.DisplayNames([lang === 'pt' ? 'pt-PT' : 'en'], { type: 'region' })
+  const names = new Intl.DisplayNames([intlLocale(lang)], { type: 'region' })
   // every ISO country for the form's dropdown, localised; not-a-country codes are left out
   const skip = new Set(['AC', 'CP', 'DG', 'EA', 'EU', 'EZ', 'IC', 'TA', 'UN', 'XA', 'XB', 'ZZ', 'QO', 'AN', 'XK', 'UK'])
   const countries: { code: string; name: string }[] = []
@@ -17,7 +18,7 @@ export default function WhereToFind({ dictionary, lang }: { dictionary: any; lan
     try { name = names.of(code) } catch { continue }
     if (name && name !== code && name.length > 2) countries.push({ code, name })
   }
-  countries.sort((x, y) => x.name.localeCompare(y.name, lang === 'pt' ? 'pt-PT' : 'en'))
+  countries.sort((x, y) => x.name.localeCompare(y.name, intlLocale(lang)))
   const c = dictionary.contact
   const order = REGIONS
   return (
@@ -35,7 +36,7 @@ export default function WhereToFind({ dictionary, lang }: { dictionary: any; lan
                   <li key={c} className="relative py-0.5">
                     {r.provinces && c === 'CA' ? (
                       <>
-                        {n}: {r.provinces[lang === 'pt' ? 'pt' : 'en'].map((prov, k) => (
+                        {n}: {r.provinces[lang as 'en' | 'pt' | 'fr'].map((prov, k) => (
                           <span key={prov}>{k > 0 && ', '}<ImportersPopover label={prov} importers={IMPORTERS[k === 0 ? 'CA-ON' : 'CA-QC']} title={w.importers.title} example={w.importers.example} /></span>
                         ))}
                       </>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { LOCALES } from '@/lib/i18n'
 import { useRouter, usePathname } from 'next/navigation'
 
 export default function Navigation({ lang, dictionary }: { lang: string; dictionary: any }) {
@@ -45,7 +46,7 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
             <a key={l.href} href={l.href} className="link !font-normal !text-current">{l.label}</a>
           ))}
           <div className="flex items-center gap-1" role="group" aria-label="Language">
-            {['en', 'pt'].map((c) => (
+            {LOCALES.map((c) => (
               <button key={c} onClick={() => switchLanguage(c)} aria-pressed={lang === c} lang={c}
                 className={`min-h-[44px] px-2 text-sm uppercase ${lang === c ? 'underline underline-offset-4' : 'opacity-70 hover:opacity-100'}`}>{c}</button>
             ))}
@@ -63,7 +64,7 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
             <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="border-b border-[var(--line)] py-4 font-[family-name:var(--font-display)] text-3xl">{l.label}</a>
           ))}
           <div className="mt-6 flex gap-4">
-            {['en', 'pt'].map((c) => (
+            {LOCALES.map((c) => (
               <button key={c} onClick={() => switchLanguage(c)} aria-pressed={lang === c}
                 className={`min-h-[44px] px-2 uppercase ${lang === c ? 'underline underline-offset-4' : 'opacity-70'}`}>{c}</button>
             ))}

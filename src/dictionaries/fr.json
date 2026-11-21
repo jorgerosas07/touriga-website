@@ -1,0 +1,174 @@
+{
+  "ageGate": {
+    "title": "Bienvenue à la Quinta da Touriga-Chã",
+    "prompt": "Avez-vous l'âge légal pour consommer de l'alcool dans votre pays ?",
+    "yes": "Oui, j'ai l'âge",
+    "no": "Non",
+    "error": "Vous devez avoir l'âge légal pour consommer de l'alcool pour entrer."
+  },
+  "hero": {
+    "headline": "UN IDÉAL DE PERFECTION",
+    "subheadline": "Musclé et élégant.",
+    "douro": "Une famille qui, depuis six générations, perpétue l'excellence dans la création de grands vins.",
+    "heritage": "Patrimoine familial : 6 générations de production de vin."
+  },
+  "wines": {
+    "title": "Nos Vins",
+    "puro": {
+      "name": "Puro",
+      "concept": "Le concept d'un vin vierge, non fortifié.",
+      "tasting": "Expression brute du sol schisteux. Authentique et profonde."
+    },
+    "tinto": {
+      "name": "Quinta da Touriga-Chã",
+      "concept": "Notre vin rouge phare. Principalement Touriga Nacional.",
+      "tasting": "Concentration profonde, notes de violette et tanins élégants."
+    }
+  },
+  "terroir": {
+    "title": "Quinta da Touriga-Chã",
+    "subtitle": "Schiste, soleil et Douro Supérieur.",
+    "soil": {
+      "title": "Le Sol Schisteux",
+      "text": "Schiste précambrien — plaques verticales fracturées de roche métamorphique qui forcent les racines de la vigne à descendre profondément dans la terre. Cette géologie ancestrale offre un drainage extraordinaire, obligeant les vignes à lutter et à concentrer les saveurs. Le schiste absorbe la chaleur pendant les journées torrides de l'été et la restitue doucement pendant la nuit, prolongeant la période de maturation et construisant la complexité aromatique."
+    },
+    "climate": {
+      "title": "Le Climat",
+      "text": "Le Douro Supérieur bénéficie de plus de 3 000 heures d'ensoleillement par an — parmi les plus élevées d'Europe. Des écarts de température diurnes pouvant atteindre 20 °C préservent l'acidité naturelle tout en permettant une pleine maturité phénolique. Les chaînes montagneuses du Marão et du Montemuro protègent la vallée de l'influence atlantique, créant un microclimat continental d'extrêmes qui forge des vins de puissance et de finesse."
+    },
+    "expression": {
+      "title": "L'Expression",
+      "text": "Schiste et soleil — les deux forces qui définissent nos vins. La roche fracturée confère une signature minérale distinctive : graphite, pierre mouillée et fumée. Le soleil implacable du Douro construit concentration et profondeur. Ensemble, ils produisent des vins d'une structure remarquable, d'une intensité aromatique et d'un sens du lieu singulier qui ne peut être reproduit nulle part ailleurs dans le monde."
+    }
+  },
+  "viticulture": {
+    "eyebrow": "Pilier II",
+    "title": "Viticulture",
+    "subtitle": "Sauvegarder le patrimoine génétique du Douro grâce à une production intégrée et durable. Chaque vigne plantée avec intention. Chaque système racinaire, un lien direct avec le schiste fracturé en dessous.",
+    "text": "Le vignoble est planté majoritairement en Touriga Nacional — le cépage que José António fut le premier à défendre comme le meilleur du Portugal. De faibles rendements, une forte densité et une philosophie d'intervention minimale permettent à la personnalité de chaque parcelle de s'exprimer sans interférence. Le résultat est un fruit d'une concentration extraordinaire et d'une précision aromatique."
+  },
+  "vinificacao": {
+    "eyebrow": "Pilier III",
+    "title": "Vinification",
+    "subtitle": "La transformation du raisin en vin est un acte de garde, non de création. Le fruit arrive à la cave et est traité avec la révérence qu'il commande.",
+    "text": "Fermentation en petits lagares et en acier inoxydable à température contrôlée. Élevage en barriques de chêne français, utilisé avec subtilité pour affiner les tanins sans masquer le fruit. L'objectif est la transparence — un vin qui a le goût de sa vigne, de son millésime, et de rien d'autre."
+  },
+  "adega": {
+    "eyebrow": "Pilier IV",
+    "title": "La Cave",
+    "subtitle": "Construite en 2004, l'adega est une déclaration d'intention architecturale. Conçue avec de fausses symétries voulues, elle allie fonctionnalité brute et intégration esthétique primée dans la vallée du Douro.",
+    "text": "Béton, schiste et lumière. Le bâtiment épouse le relief du terrain, s'enfonçant dans la colline pour maintenir une température constante. La conception par gravité réduit le pompage au minimum. Chaque décision — de l'orientation de la salle de fermentation à la profondeur de la cave à barriques — sert le vin."
+  },
+  "familia": {
+    "eyebrow": "Pilier V",
+    "title": "La Famille",
+    "subtitle": "Six générations. Une vallée. Un fil ininterrompu de dévouement au Douro.",
+    "text": "José António Castro Ramos Pinto Rosas (1919–1996) — fondateur de l'ADVID, co-créateur des systèmes viticoles modernes et reconnu internationalement comme le Pionnier du Douro. À 72 ans, il trouva une propriété vierge de 20 hectares près de Vila Nova de Foz Côa et planta 8,5 hectares à partir de zéro, avec plus de 80 % de Touriga Nacional. Aujourd'hui, son fils Jorge Rosas, la cinquième génération, poursuit cet héritage depuis la cave primée de 2004."
+  },
+  "allocation": {
+    "title": "La Porte de la Cave",
+    "subtitle": "Allocations limitées. Acquisition discrète.",
+    "puro": {
+      "name": "Puro",
+      "vintage": "2021",
+      "description": "Notre expression vierge, non fortifiée. Une traduction pure du schiste et de la Touriga Nacional.",
+      "price": "Prix sur demande"
+    },
+    "tinto": {
+      "name": "Quinta da Touriga-Chã",
+      "vintage": "2019",
+      "description": "Le vin phare. Principalement Touriga Nacional de nos meilleures parcelles.",
+      "price": "Prix sur demande"
+    },
+    "cta": "Demander une Allocation",
+    "form": {
+      "title": "Demande d'Allocation",
+      "subtitle": "Notre maître de chai répondra dans un délai de 48 heures.",
+      "name": "Votre Nom",
+      "email": "Adresse e-mail",
+      "message": "Votre Demande",
+      "submit": "Envoyer la Demande",
+      "sending": "Envoi…",
+      "success_title": "Demande Reçue.",
+      "success_body": "Notre maître de chai vous contactera dans un délai de 48 heures. Merci de votre intérêt.",
+      "year": "Millésime (facultatif)"
+    }
+  },
+  "founders": {
+    "eyebrow": "Pilier VI",
+    "title": "La Famille",
+    "jarpr": {
+      "name": "José António Rosas",
+      "years": "1919 – 1996",
+      "text": "Fondateur de l'ADVID. Co-créateur des systèmes viticoles modernes du Douro. Représentant du Portugal à L'Office International du Vin. Fondateur de la Confraria do Vinho do Porto. Connu internationalement comme le Pionnier du Douro. À 72 ans, il planta 8,5 hectares à partir de zéro — son dernier et plus grand projet.",
+      "bio": {
+        "link": "Lire la biographie complète",
+        "title": "José António Ramos Pinto Rosas",
+        "years": "1919 – 1996",
+        "paragraphs": [
+          "Il a consacré toute sa carrière professionnelle à l'industrie du vin de Porto et à la plus ancienne appellation du monde – la vallée du Douro. Différents auteurs internationaux spécialisés dans le vin ont désigné José António comme le « Pape du Douro » (dans Le Porto, de Chantale Lecouty, page 145), ou « Le Prophète du Douro », ou « le Pionnier du Douro », grâce à sa grande contribution au développement de cette Région.",
+          "José António Rosas a entrepris le travail important qui a conduit au développement moderne de ce district viticole. Il a toujours travaillé dans le but ultime de trouver les meilleures solutions pour accroître à la fois la qualité des vins et les systèmes de production dans la vallée du Douro.",
+          "Sa création de la nouvelle méthode de plantation en « patamares » a permis une plus grande mécanisation dans les vignobles et, avec son neveu João Nicolau de Almeida, des « vignes verticales » ont également été mises en place dans la vallée du Douro, non seulement pour une plus grande mécanisation, mais aussi pour une plus grande densité de plantation, ce qui a donné de meilleurs rendements à l'hectare mais une production plus faible par pied et une meilleure qualité du fruit. Ils ont aussi mené des recherches sur les cépages et la sélection des porte-greffes de la région, dont les résultats ont été largement adoptés par la majorité des viticulteurs du Douro.",
+          "José António était aussi le représentant du Portugal à « L'Office International du Vin », fondateur de la Confraria do Vinho do Porto (Confrérie du Vin de Porto) et Presidente do Conselho da Administração (PDG) du producteur de vins de Porto et du Douro A. Ramos Pinto, Vinhos S.A..",
+          "Avec sa forte détermination à accroître la qualité des vins produits dans cette vallée, il a fondé en 1982 la très respectée ADVID (Association pour le Développement de la Viticulture du Douro), dont il fut président jusqu'en 1996.",
+          "José António Rosas fut le coauteur du livre « Le Vin de Porto », publié par l'IVDP (Institut du Vin de Porto)."
+        ]
+      }
+    },
+    "jorge": {
+      "name": "Jorge Rosas",
+      "years": "Cinquième Génération",
+      "text": "Fils de José António. Gardien de la Quinta da Touriga-Chã depuis le décès de son père. A construit la cave primée de 2004. Poursuit l'héritage avec le même dévouement sans compromis envers le Douro, ses vignobles et ses vins."
+    },
+    "groupTitle": "La famille aujourd'hui"
+  },
+  "contact": {
+    "eyebrow": "Nous contacter",
+    "title": "Quinta da Touriga-Chã",
+    "subtitle": "Nous accueillons les visiteurs pour découvrir la cave, les vignobles et le terroir singulier du Douro Supérieur. Contactez-nous pour organiser une visite.",
+    "name": "Votre Nom",
+    "email": "Adresse e-mail",
+    "message": "Votre Message",
+    "send": "Envoyer le Message",
+    "sending": "Envoi…",
+    "success_title": "Message reçu.",
+    "success_body": "Nous vous contacterons très prochainement. Merci de votre intérêt pour la Quinta da Touriga-Chã."
+  },
+  "footer": {
+    "contact": "Coordonnées de l'Entreprise",
+    "where_to_find": "Où trouver nos vins ?",
+    "photolibrary": "Photothèque",
+    "press": "Articles de Presse",
+    "tech_sheets": "Fiches Techniques",
+    "prizes": "Liste des Prix",
+    "download_note": "* Disponible en téléchargement"
+  },
+  "nav": {
+    "skip": "Aller au contenu",
+    "menu": "Menu",
+    "close": "Fermer",
+    "prev": "Photo précédente",
+    "next": "Photo suivante",
+    "open": "Ouvrir la photo",
+    "terroir": "Quinta da Touriga",
+    "where": "Où nous trouver",
+    "sitemap": "Plan du site"
+  },
+  "where": {
+    "title": "Où nous trouver",
+    "regions": {
+      "na": "Amérique du Nord",
+      "sa": "Amérique du Sud",
+      "eu": "Europe",
+      "as": "Asie"
+    },
+    "form": {
+      "country": "Pays",
+      "select": "Sélectionnez"
+    },
+    "importers": {
+      "title": "Importateurs",
+      "example": "Exemple"
+    }
+  }
+}

@@ -4,8 +4,7 @@ import { Literata, Figtree, Cormorant_SC } from 'next/font/google'
 import CinematicAgeGate from '@/components/CinematicAgeGate'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
-import enDict from '@/dictionaries/en.json'
-import ptDict from '@/dictionaries/pt.json'
+import { getDictionary, LOCALES, ogLocale } from '@/lib/i18n'
 
 const literata = Literata({
   subsets: ['latin'],
@@ -28,7 +27,7 @@ const figtree = Figtree({
 
 // Next.js static routing for i18n
 export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'pt' }]
+  return LOCALES.map((lang) => ({ lang }))
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
@@ -39,13 +38,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     description: 'The perfect estate in the oldest appellation in the world.',
     alternates: {
       canonical: `/${lang}`,
-      languages: { en: '/en', pt: '/pt', 'x-default': '/en' },
+      languages: { en: '/en', pt: '/pt', fr: '/fr', 'x-default': '/en' },
     },
     openGraph: {
       title: 'Quinta da Touriga-Chã | Douro Superior',
       description: 'The perfect estate in the oldest appellation in the world.',
       images: ['/images/hero-bg.jpg'],
-      locale: lang === 'pt' ? 'pt_PT' : 'en_GB',
+      locale: ogLocale(lang),
       type: 'website',
     },
   }
@@ -60,7 +59,7 @@ export default async function RootLayout({
 }) {
   const resolvedParams = await params
   // Use the exact dictionaries Tiago created
-  const dictionary = resolvedParams.lang === 'pt' ? ptDict : enDict
+  const dictionary = getDictionary(resolvedParams.lang)
 
   return (
     <html lang={resolvedParams.lang} className={`${literata.variable} ${figtree.variable} ${brand.variable}`}>

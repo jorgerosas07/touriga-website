@@ -19,7 +19,7 @@ export default function Visit({ dictionary }: { dictionary: any }) {
           </div>
           <div className="md:col-span-5 md:col-start-8 md:self-end">
             <p className="lead">{v.subtitle}</p>
-            <a href="mailto:info@jrosas.pt" className="link mt-6">info@jrosas.pt <span className="arrow" aria-hidden>→</span></a>
+            <a href="mailto:tourigaporto@gmail.com" className="link mt-6">tourigaporto@gmail.com <span className="arrow" aria-hidden>→</span></a>
           </div>
         </div>
         <p className="type-moment mt-10">

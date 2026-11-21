@@ -10,7 +10,7 @@ export default function Enquiry({ dictionary }: { dictionary: any }) {
     ev.preventDefault()
     const d = new FormData(ev.currentTarget)
     const body = `${f.name}: ${d.get('name')}\n${f.email}: ${d.get('email')}\n${d.getAll('wine').join(', ')}\n${f.year}: ${d.get('year') || ''}\n\n${d.get('message') || ''}`
-    window.location.href = `mailto:info@jrosas.pt?subject=${encodeURIComponent(f.title)}&body=${encodeURIComponent(body)}`
+    window.location.href = `mailto:tourigaporto@gmail.com?subject=${encodeURIComponent(f.title)}&body=${encodeURIComponent(body)}`
   }
 
   return (

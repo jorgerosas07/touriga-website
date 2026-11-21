@@ -14,7 +14,7 @@
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
   --font-display: var(--font-literata), Georgia, serif;
   --font-text: var(--font-figtree), system-ui, sans-serif;
-  --nav-h: 72px;
+  --nav-h: 84px;
 }
 
 html { scroll-padding-top: var(--nav-h); }

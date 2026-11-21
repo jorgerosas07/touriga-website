@@ -1,10 +1,9 @@
 import ZoomPhoto from './ZoomPhoto'
 
-// The goods composition of the kit: a head row (h2 left, the one link right), then equal columns on the
+// The goods composition of the kit: the h2, then equal columns on the
 // 12-column grid: the capsule as a tall detail, and one hairline card per wine (photograph, name, two lines).
 export default function WineShowcase({ dictionary }: { dictionary: any }) {
   const w = dictionary.wines
-  const a = dictionary.allocation
   const labels = { open: dictionary.nav.open, close: dictionary.nav.close }
   const wines = [
     { ...w.tinto, key: 'tinto', src: '/images/quinta-rotulos.jpg', w: 2000, h: 1333, pos: '53% center', fit: 'object-cover', frame: 'aspect-[4/3] md:aspect-square',
@@ -15,10 +14,7 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
   return (
     <section id="wines" className="flex min-h-[100svh] items-center pt-[calc(var(--nav-h)+32px)] pb-16">
       <div className="wrap">
-        <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-3">
-          <h2 className="h2">{w.title}</h2>
-          <a href="#allocation" className="link">{a.cta} <span className="arrow" aria-hidden>→</span></a>
-        </div>
+        <h2 className="h2">{w.title}</h2>
 
         <div className="mt-10 grid gap-6 md:mt-14 md:grid-cols-12">
           <ZoomPhoto src="/images/capsula.jpg" alt="The gold JR seal on the burgundy capsule of a bottle" width={876} height={1315} labels={labels}

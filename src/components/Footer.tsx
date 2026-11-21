@@ -8,16 +8,16 @@ export default function Footer({ dictionary }: { dictionary: any }) {
     <footer className="closing bg-[var(--brand)] text-[#fbf7f0]">
       <div className="wrap grid gap-12 py-16 md:grid-cols-12">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start md:col-span-6">
-          <Image src="/images/logo-cream.png" alt="J. Rosas, Fine Wines · Grands Vins" width={1000} height={846} className="h-32 w-auto shrink-0 self-start sm:h-36" />
+          <Image src="/images/logo-cream.png" alt="J. Rosas, Fine Wines · Grands Vins" width={1000} height={846} className="h-[154px] w-auto shrink-0 self-start sm:h-[173px]" />
           <div>
             <p className={head}>{ft.contact}</p>
-            <p className="text-[#f3e6cf]"><span className="brand-name block text-3xl text-[#fbf7f0]">Quinta da Touriga-Chã</span>Vila Nova de Foz Côa<br />Douro Superior, Portugal</p>
-            <a className={`${link} mt-3 inline-block`} href="mailto:info@jrosas.pt">info@jrosas.pt</a>
+            <p className="text-[#f3e6cf]"><span className="brand-name block text-xl text-[#fbf7f0]">Jorge Rosas, Vinhos - Unipessoal Lda</span>Apartado 17<br />Quinta da Touriga, Chã<br />5150-909 Vila Nova De Foz Coa<br />Portugal</p>
+            <a className={`${link} mt-3 inline-block`} href="mailto:tourigaporto@gmail.com">tourigaporto@gmail.com</a>
           </div>
         </div>
         <div className="md:col-span-5 md:col-start-7">
           <p className={head}>{dictionary.wines.title}</p>
-          <a className={link} href="mailto:info@jrosas.pt">{ft.where_to_find}</a>
+          <a className={link} href="mailto:tourigaporto@gmail.com">{ft.where_to_find}</a>
         </div>
       </div>
       <div className="wrap">

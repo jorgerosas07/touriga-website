@@ -8,20 +8,24 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
   return (
     <section id="wines" className="flex min-h-[100svh] items-center pt-[calc(var(--nav-h)+32px)] pb-12">
       {/* tall-small: the tall photograph on the left line, the text and a square detail on the right */}
-      <div className="wrap grid items-center gap-10 md:grid-cols-12 md:gap-6">
-        <a href="#allocation" aria-label={`${w.tinto.name}: ${a.cta}`} className="lift block md:col-span-6">
+      <div className="wrap grid gap-10 md:grid-cols-12 md:items-start md:gap-6">
+        <a href="#allocation" aria-label={a.cta} className="lift block md:col-span-6">
           <div className="photo aspect-[4/5] md:aspect-auto md:h-[calc(100svh-var(--nav-h)-112px)] md:max-h-[820px]">
-            <Image src="/images/quinta-rotulos.jpg" alt="Three bottles of Quinta da Touriga-Chã lying on their sides, labels facing up" fill quality={90} sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" style={{ objectPosition: '53% center' }} />
+            <Image src="/images/capsula.jpg" alt="The gold JR seal on the burgundy capsule of a bottle" fill quality={90} sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" style={{ objectPosition: 'center 30%' }} />
           </div>
         </a>
         <div className="flex flex-col md:col-span-5 md:col-start-8">
           <h2 className="h2">{w.title}</h2>
           <div className="mt-8 grid gap-7">
-            {wines.map((x: any) => (
+            {wines.map((x: any, i: number) => (
               <div key={x.name} className="border-t border-[var(--line)] pt-5">
                 <h3 className="text-2xl md:text-3xl">{x.name}</h3>
                 <p className="mt-2">{x.concept}</p>
                 <p className="muted mt-1">{x.tasting}</p>
+                {i === 0 && (
+                  <ZoomPhoto src="/images/quinta-rotulos.jpg" alt="Three bottles of Quinta da Touriga-Chã lying on their sides, labels facing up" width={2000} height={1333}
+                    labels={{ open: dictionary.nav.open, close: dictionary.nav.close }} className="mt-5 w-full max-w-[420px]" />
+                )}
               </div>
             ))}
           </div>

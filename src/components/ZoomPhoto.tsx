@@ -27,7 +27,7 @@ export default function ZoomPhoto({ src, alt, width, height, labels, className =
     <>
       <button ref={trigger} type="button" aria-label={`${labels.open}: ${alt}`} onClick={() => setOpen(true)} className={`lift block cursor-zoom-in ${className}`}>
         <span className="photo block">
-          <Image src={src} alt={alt} width={width} height={height} quality={90} sizes="240px" className="h-auto w-full" />
+          <Image src={src} alt={alt} width={width} height={height} quality={90} sizes="(min-width: 768px) 420px, 100vw" className="h-auto w-full" />
         </span>
       </button>
       {open && (

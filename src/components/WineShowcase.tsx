@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function WineShowcase({ dictionary }: { dictionary: any }) {
   const w = dictionary.wines
   const a = dictionary.allocation
-  const wines = [w.puro, w.tinto]
+  const wines = [w.tinto, w.puro]
   return (
     <section id="wines" className="flex min-h-[100svh] items-center pt-[calc(var(--nav-h)+32px)] pb-12">
       {/* tall-small: the tall photograph on the left line, the text and a square detail on the right */}
@@ -27,7 +27,7 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
           <a href="#allocation" className="link mt-7">{a.cta} <span className="arrow" aria-hidden>→</span></a>
           <a href="#allocation" aria-label={`${w.tinto.name}: ${a.cta}`} className="lift hidden pt-4 md:block">
             <div className="photo flex aspect-square w-40 items-center justify-center bg-white">
-              <Image src="/images/tinto_bottle.jpg" alt="A bottle of Quinta da Touriga Chã red" width={170} height={700} className="h-[88%] w-auto object-contain" />
+              <Image src="/images/tinto_bottle.jpg" alt="A bottle of Quinta da Touriga-Chã red" width={170} height={700} className="h-[88%] w-auto object-contain" />
             </div>
           </a>
         </div>

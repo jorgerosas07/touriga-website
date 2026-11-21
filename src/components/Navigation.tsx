@@ -34,7 +34,7 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
   return (
     <header className={`nav fixed top-0 left-0 z-40 w-full transition-colors duration-300 ${light ? 'border-b border-[var(--line)] bg-[var(--bg)]' : 'bg-transparent'} ${tone}`}>
       <div className={`wrap flex items-center justify-between transition-[height] duration-300 ${light ? 'h-[var(--nav-h)]' : 'h-[var(--nav-h)] md:h-[112px]'}`}>
-        <a href="#top" aria-label="Quinta da Touriga Chã, J. Rosas" className="flex items-center">
+        <a href="#top" aria-label="Quinta da Touriga-Chã, J. Rosas" className="flex items-center">
           <Image src={light ? '/images/logo-bordeaux.png' : '/images/logo-cream.png'} alt="J. Rosas, Fine Wines · Grands Vins" width={1000} height={846} priority
             className={`w-auto transition-[height] duration-300 ${light ? 'h-[60px]' : 'h-[60px] md:h-[92px]'}`} />
         </a>

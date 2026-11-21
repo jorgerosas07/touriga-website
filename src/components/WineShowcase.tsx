@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import ZoomPhoto from './ZoomPhoto'
 
 export default function WineShowcase({ dictionary }: { dictionary: any }) {
   const w = dictionary.wines
@@ -25,11 +26,8 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
             ))}
           </div>
           <a href="#allocation" className="link mt-7">{a.cta} <span className="arrow" aria-hidden>→</span></a>
-          <a href="#allocation" aria-label={`${w.tinto.name}: ${a.cta}`} className="lift hidden pt-4 md:block">
-            <div className="photo flex aspect-square w-40 items-center justify-center bg-white">
-              <Image src="/images/tinto_bottle.jpg" alt="A bottle of Quinta da Touriga-Chã red" width={170} height={700} className="h-[88%] w-auto object-contain" />
-            </div>
-          </a>
+          <ZoomPhoto src="/images/puro-caixa.jpg" alt="Puro, Quinta da Touriga: the bottle and its six-bottle case" width={2400} height={2117}
+            labels={{ open: dictionary.nav.open, close: dictionary.nav.close }} className="mt-8 w-56" />
         </div>
       </div>
     </section>

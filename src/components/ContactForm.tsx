@@ -12,9 +12,9 @@ export default function ContactForm({ labels, countries, to }: { labels: Labels;
   }
 
   return (
-    <div id="contact" className="mx-auto mt-16 max-w-3xl scroll-mt-10 md:mt-24">
-    <h3 className="mb-8 text-3xl leading-tight md:text-4xl">{labels.title}</h3>
-    <form onSubmit={submit} className="grid gap-6">
+    <div id="contact" className="mt-16 scroll-mt-[max(1.5rem,calc((100svh-var(--nav-h)-700px)/2))] md:mt-24">
+    <h3 className="h2 mb-8 md:mb-10">{labels.title}</h3>
+    <form onSubmit={submit} className="grid max-w-3xl gap-6">
       <div className="field"><label htmlFor="w-name">{labels.name} <span aria-hidden>*</span></label><input id="w-name" name="name" autoComplete="name" required /></div>
       <div className="field"><label htmlFor="w-email">{labels.email} <span aria-hidden>*</span></label><input id="w-email" name="email" type="email" autoComplete="email" required /></div>
       <div className="field"><label htmlFor="w-country">{labels.country} <span aria-hidden>*</span></label>
@@ -23,7 +23,7 @@ export default function ContactForm({ labels, countries, to }: { labels: Labels;
           {countries.map((c) => <option key={c.code} value={c.name}>{c.name}</option>)}
         </select>
       </div>
-      <div className="field"><label htmlFor="w-message">{labels.message}</label><textarea id="w-message" name="message" rows={6} /></div>
+      <div className="field"><label htmlFor="w-message">{labels.message}</label><textarea id="w-message" name="message" rows={4} /></div>
       <div><button type="submit" className="btn">{labels.send}</button></div>
     </form>
     </div>

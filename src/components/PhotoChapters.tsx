@@ -87,7 +87,7 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
   }
 
   return (
-    <section id="terroir" ref={ref} className="relative bg-[var(--surface)]" style={{ height: `${(hold + 1) * 100}svh` }}>
+    <section id="terroir" ref={ref} className="relative scroll-mt-[calc(var(--nav-h)*-1)] bg-[var(--surface)]" style={{ height: `${(hold + 1) * 100}svh` }}>
       {/* held section: on a phone the photograph sits above its text; from 768px the text column is left and one tall photograph right */}
       <div className="wrap sticky top-0 grid h-[100svh] grid-rows-[auto_minmax(0,1fr)_auto] gap-3 pt-[calc(var(--nav-h)+12px)] pb-4 md:grid-cols-12 md:grid-rows-[auto_minmax(0,1fr)] md:gap-x-12 md:gap-y-6 md:pt-[calc(var(--nav-h)+40px)] md:pb-10">
         <div className="md:col-span-5 md:row-start-1">{head}</div>

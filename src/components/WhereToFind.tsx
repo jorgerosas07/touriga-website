@@ -21,7 +21,7 @@ export default function WhereToFind({ dictionary, lang }: { dictionary: any; lan
   const c = dictionary.contact
   const order = REGIONS
   return (
-    <section id="where" className="py-24 md:py-28">
+    <section id="where" className="pt-10 pb-24 md:pt-12 md:pb-28">
       <div className="wrap">
         <h2 className="h2">{w.title}</h2>
 

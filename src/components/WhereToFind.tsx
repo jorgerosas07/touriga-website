@@ -50,7 +50,7 @@ export default function WhereToFind({ dictionary, lang }: { dictionary: any; lan
         </div>
 
         <ContactForm to="tourigaporto@gmail.com" countries={countries}
-          labels={{ name: c.name, email: c.email, country: w.form.country, select: w.form.select, message: c.message, send: c.send, subject: w.title }} />
+          labels={{ title: c.eyebrow, name: c.name, email: c.email, country: w.form.country, select: w.form.select, message: c.message, send: c.send, subject: w.title }} />
       </div>
     </section>
   )

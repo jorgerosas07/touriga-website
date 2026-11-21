@@ -1,6 +1,6 @@
 'use client'
 
-type Labels = { name: string; email: string; country: string; select: string; message: string; send: string; subject: string }
+type Labels = { title: string; name: string; email: string; country: string; select: string; message: string; send: string; subject: string }
 
 // Sends through the visitor's email app: nothing is confirmed unless the visitor really sends it
 export default function ContactForm({ labels, countries, to }: { labels: Labels; countries: { code: string; name: string }[]; to: string }) {
@@ -12,7 +12,9 @@ export default function ContactForm({ labels, countries, to }: { labels: Labels;
   }
 
   return (
-    <form id="contact" onSubmit={submit} className="mx-auto mt-16 grid max-w-3xl gap-6 md:mt-24">
+    <div id="contact" className="mx-auto mt-16 max-w-3xl scroll-mt-10 md:mt-24">
+    <h3 className="mb-8 text-3xl leading-tight md:text-4xl">{labels.title}</h3>
+    <form onSubmit={submit} className="grid gap-6">
       <div className="field"><label htmlFor="w-name">{labels.name} <span aria-hidden>*</span></label><input id="w-name" name="name" autoComplete="name" required /></div>
       <div className="field"><label htmlFor="w-email">{labels.email} <span aria-hidden>*</span></label><input id="w-email" name="email" type="email" autoComplete="email" required /></div>
       <div className="field"><label htmlFor="w-country">{labels.country} <span aria-hidden>*</span></label>
@@ -24,5 +26,6 @@ export default function ContactForm({ labels, countries, to }: { labels: Labels;
       <div className="field"><label htmlFor="w-message">{labels.message}</label><textarea id="w-message" name="message" rows={6} /></div>
       <div><button type="submit" className="btn">{labels.send}</button></div>
     </form>
+    </div>
   )
 }

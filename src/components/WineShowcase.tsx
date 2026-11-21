@@ -10,7 +10,7 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
       {/* tall-small: the tall photograph on the left line, the text and a square detail on the right */}
       <div className="wrap grid gap-10 md:grid-cols-12 md:items-start md:gap-6">
         <a href="#allocation" aria-label={a.cta} className="lift block md:col-span-6">
-          <div className="photo aspect-[4/5] md:aspect-auto md:h-[calc(100svh-var(--nav-h)-112px)] md:max-h-[820px]">
+          <div className="photo aspect-[4/5] w-[70%] md:aspect-auto md:h-[calc((100svh-var(--nav-h)-112px)*0.7)] md:max-h-[574px]">
             <Image src="/images/capsula.jpg" alt="The gold JR seal on the burgundy capsule of a bottle" fill quality={90} sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" style={{ objectPosition: 'center 30%' }} />
           </div>
         </a>

@@ -34,6 +34,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
 @media (min-width: 1280px) { .wrap { --gutter: 104px; } }
 
 .h2 { font-size: clamp(36px, 4.6vw, 64px); line-height: 1.06; }
+@media (max-width: 767px) { .chapters-h2 { font-size: 28px; line-height: 1.1; } }
 .lead { font-size: clamp(18px, 1.5vw, 21px); line-height: 1.55; }
 .label { font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
 .muted { color: var(--muted); }

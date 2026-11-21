@@ -61,7 +61,7 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
   }, [live, n])
 
   const head = (
-    <div className="max-w-2xl">
+    <div>
       <p className="label mb-2 md:mb-4">{t.title}</p>
       <h2 className="h2 chapters-h2">{t.subtitle}</h2>
     </div>
@@ -88,27 +88,33 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
 
   return (
     <section id="terroir" ref={ref} className="relative bg-[var(--surface)]" style={{ height: `${(hold + 1) * 100}svh` }}>
-      <div className="wrap sticky top-0 grid h-[100svh] grid-rows-[auto_minmax(0,1fr)] gap-6 pt-[calc(var(--nav-h)+12px)] pb-4 md:pt-[calc(var(--nav-h)+24px)] md:pb-6">
-        {head}
-        <div className="grid min-h-0 grid-rows-[minmax(0,1fr)_auto] gap-3 md:relative md:block md:overflow-hidden">
-          <div className="relative min-h-0 overflow-hidden md:absolute md:inset-0">
+      {/* held section: on a phone the photograph sits above its text; from 768px the text column is left and one tall photograph right */}
+      <div className="wrap sticky top-0 grid h-[100svh] grid-rows-[auto_minmax(0,1fr)_auto] gap-3 pt-[calc(var(--nav-h)+12px)] pb-4 md:grid-cols-12 md:grid-rows-[auto_minmax(0,1fr)] md:gap-x-12 md:gap-y-6 md:pt-[calc(var(--nav-h)+40px)] md:pb-10">
+        <div className="md:col-span-5 md:row-start-1">{head}</div>
+
+        <div className="relative min-h-0 overflow-hidden md:col-span-7 md:col-start-6 md:row-span-2 md:row-start-1">
           {items.map((it: any, i: number) => (
             <div key={i} ref={(el) => { picRefs.current[i] = el }} className="absolute inset-0 overflow-hidden" style={{ clipPath: i === 0 ? 'none' : 'inset(100% 0 0 0)' }}>
-              <Image src={it.src} alt={it.alt} fill quality={90} sizes="(max-width: 767px) 260vw, 100vw" className="origin-bottom object-cover" style={{ objectPosition: it.pos }} />
+              <Image src={it.src} alt={it.alt} fill quality={90} sizes="(max-width: 767px) 260vw, 60vw" className="origin-bottom object-cover" style={{ objectPosition: it.pos }} />
             </div>
           ))}
+        </div>
+
+        <div className="md:col-span-5 md:row-start-2 md:self-start">
+          <div className="mb-3 flex items-center gap-2 md:mb-6" aria-hidden>
+            {items.map((_: any, i: number) => (
+              <span key={i} className="h-[2px] flex-1 transition-colors duration-500 md:max-w-16" style={{ background: i <= on ? 'var(--accent)' : 'var(--line)' }} />
+            ))}
+            <span className="muted ml-2 text-sm tabular-nums">{String(on + 1).padStart(2, '0')} / {String(n).padStart(2, '0')}</span>
           </div>
-          <div className="grid bg-[var(--bg)] p-4 md:absolute md:bottom-6 md:left-6 md:w-[540px] md:p-8">
-            <p aria-hidden className="muted mb-2 text-sm tabular-nums md:mb-3">{String(on + 1).padStart(2, '0')} / {String(n).padStart(2, '0')}</p>
-            <ol className="grid">
-              {items.map((it: any, i: number) => (
-                <li key={i} className="[grid-area:1/1] transition-all duration-500" style={{ opacity: i === on ? 1 : 0, transform: i === on ? 'none' : 'translateY(8px)' }}>
-                  <h3 className="text-xl leading-tight md:text-[28px]">{it.title}</h3>
-                  <p className="muted mt-1.5 text-[14px] leading-snug md:mt-2 md:text-base md:leading-relaxed">{it.text}</p>
-                </li>
-              ))}
-            </ol>
-          </div>
+          <ol className="grid">
+            {items.map((it: any, i: number) => (
+              <li key={i} className="[grid-area:1/1] transition-all duration-500" style={{ opacity: i === on ? 1 : 0, transform: i === on ? 'none' : 'translateY(10px)' }}>
+                <h3 className="text-2xl leading-tight md:text-4xl">{it.title}</h3>
+                <p className="mt-2 text-[14px] leading-snug text-[var(--muted)] md:mt-4 md:text-[17px] md:leading-relaxed">{it.text}</p>
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
     </section>

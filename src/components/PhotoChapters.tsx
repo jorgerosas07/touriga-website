@@ -62,8 +62,8 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
 
   const head = (
     <div className="max-w-2xl">
-      <p className="label mb-4">{t.title}</p>
-      <h2 className="h2">{t.subtitle}</h2>
+      <p className="label mb-2 md:mb-4">{t.title}</p>
+      <h2 className="h2 chapters-h2">{t.subtitle}</h2>
     </div>
   )
 
@@ -88,21 +88,23 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
 
   return (
     <section id="terroir" ref={ref} className="relative bg-[var(--surface)]" style={{ height: `${(hold + 1) * 100}svh` }}>
-      <div className="wrap sticky top-0 grid h-[100svh] grid-rows-[auto_minmax(0,1fr)] gap-6 pt-[calc(var(--nav-h)+24px)] pb-6">
+      <div className="wrap sticky top-0 grid h-[100svh] grid-rows-[auto_minmax(0,1fr)] gap-6 pt-[calc(var(--nav-h)+12px)] pb-4 md:pt-[calc(var(--nav-h)+24px)] md:pb-6">
         {head}
-        <div className="relative min-h-0 overflow-hidden">
+        <div className="grid min-h-0 grid-rows-[minmax(0,1fr)_auto] gap-3 md:relative md:block md:overflow-hidden">
+          <div className="relative min-h-0 overflow-hidden md:absolute md:inset-0">
           {items.map((it: any, i: number) => (
             <div key={i} ref={(el) => { picRefs.current[i] = el }} className="absolute inset-0 overflow-hidden" style={{ clipPath: i === 0 ? 'none' : 'inset(100% 0 0 0)' }}>
               <Image src={it.src} alt={it.alt} fill quality={90} sizes="(max-width: 767px) 260vw, 100vw" className="origin-bottom object-cover" style={{ objectPosition: it.pos }} />
             </div>
           ))}
-          <div className="absolute bottom-4 left-4 right-4 grid bg-[var(--bg)] p-6 sm:right-auto sm:w-[540px] md:bottom-6 md:left-6 md:p-8">
-            <p aria-hidden className="muted mb-3 text-sm tabular-nums">{String(on + 1).padStart(2, '0')} / {String(n).padStart(2, '0')}</p>
+          </div>
+          <div className="grid bg-[var(--bg)] p-4 md:absolute md:bottom-6 md:left-6 md:w-[540px] md:p-8">
+            <p aria-hidden className="muted mb-2 text-sm tabular-nums md:mb-3">{String(on + 1).padStart(2, '0')} / {String(n).padStart(2, '0')}</p>
             <ol className="grid">
               {items.map((it: any, i: number) => (
                 <li key={i} className="[grid-area:1/1] transition-all duration-500" style={{ opacity: i === on ? 1 : 0, transform: i === on ? 'none' : 'translateY(8px)' }}>
-                  <h3 className="text-2xl leading-tight md:text-[28px]">{it.title}</h3>
-                  <p className="muted mt-2 text-[15px] md:text-base">{it.text}</p>
+                  <h3 className="text-xl leading-tight md:text-[28px]">{it.title}</h3>
+                  <p className="muted mt-1.5 text-[14px] leading-snug md:mt-2 md:text-base md:leading-relaxed">{it.text}</p>
                 </li>
               ))}
             </ol>

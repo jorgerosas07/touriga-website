@@ -1,43 +1,62 @@
 import Image from 'next/image'
+import { REGIONS } from '@/lib/markets'
 
-export default function Footer({ dictionary }: { dictionary: any }) {
+type Item = { href: string; label: string }
+type Block = { href: string; title: string; items?: Item[] }
+
+// The site map: every section of the page as a heading, with the layers inside it listed below, each one a link.
+export default function Footer({ dictionary, lang }: { dictionary: any; lang: string }) {
   const ft = dictionary.footer
-  const head = 'mb-4 font-[family-name:var(--font-display)] text-xl'
+  const t = dictionary.terroir
+  const f = dictionary.founders
+  const head = 'font-[family-name:var(--font-display)] text-xl hover:underline underline-offset-4'
   const link = 'text-[#f3e6cf] hover:text-white underline-offset-4 hover:underline'
-  // one card per section of the page, in scroll order: a photograph and the section's own title
-  const sections = [
-    { href: '#terroir', label: dictionary.nav.terroir, src: '/images/vineyard-terrace.jpg', pos: 'center 80%' },
-    { href: '#viticulture', label: dictionary.viticulture.title, src: '/images/vineyard-soil.jpg', pos: '58% center' },
-    { href: '#winemaking', label: dictionary.vinificacao.title, src: '/images/winery-interior.jpg', pos: 'center' },
-    { href: '#winery', label: dictionary.adega.title, src: '/images/adega.jpg', pos: 'center 40%' },
-    { href: '#family', label: dictionary.familia.title, src: '/images/familia-estate.jpg', pos: 'center 40%' },
-    { href: '#wines', label: dictionary.wines.title, src: '/images/capsula.jpg', pos: 'center 30%' },
-    { href: '#where', label: dictionary.where.title, src: '/images/estate-sun.jpg', pos: 'center' },
-    { href: '#contact', label: dictionary.contact.eyebrow, src: '/images/adega-side.jpg', pos: 'center' },
+  const names = new Intl.DisplayNames([lang === 'pt' ? 'pt-PT' : 'en'], { type: 'region' })
+  const markets = REGIONS.flatMap((r) => r.codes).map((c) => names.of(c) ?? c).sort((a, b) => a.localeCompare(b, lang))
+
+  const blocks: Block[] = [
+    { href: '#terroir', title: dictionary.nav.terroir, items: [
+      { href: '#terroir-1', label: t.soil.title }, { href: '#terroir-2', label: t.climate.title }, { href: '#terroir-3', label: t.expression.title },
+    ] },
+    { href: '#viticulture', title: dictionary.viticulture.title },
+    { href: '#winemaking', title: dictionary.vinificacao.title },
+    { href: '#winery', title: dictionary.adega.title },
+    { href: '#family', title: dictionary.familia.title, items: [
+      { href: '#jose-antonio', label: f.jarpr.name }, { href: '#jorge-rosas', label: f.jorge.name }, { href: '#family-today', label: f.groupTitle },
+    ] },
+    { href: '#wines', title: dictionary.wines.title, items: [
+      { href: '#wine-tinto', label: dictionary.wines.tinto.name }, { href: '#wine-puro', label: dictionary.wines.puro.name },
+    ] },
+    { href: '#where', title: dictionary.where.title, items: markets.map((m) => ({ href: '#where', label: m })) },
+    { href: '#contact', title: dictionary.contact.eyebrow, items: [{ href: '#contact', label: dictionary.contact.send }] },
   ]
+  // the three single sections (Viticulture, Winemaking, The Winery) share one column
+  const single = blocks.filter((b) => !b.items && b.href !== '#terroir')
+  const multi = blocks.filter((b) => b.items)
+
   return (
     <footer className="closing bg-[var(--brand)] text-[#fbf7f0]">
-      <nav aria-label={dictionary.nav.sitemap} className="wrap pt-16">
-        <p className={head}>{dictionary.nav.sitemap}</p>
-        <ul className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
-          {sections.map((s) => (
-            <li key={s.href} className="flex">
-              <a href={s.href} className="lift block w-full border border-white/20 p-3">
-                <span className="photo block aspect-[4/3]">
-                  <Image src={s.src} alt="" fill quality={80} sizes="(min-width: 768px) 25vw, 50vw" className="object-cover" style={{ objectPosition: s.pos }} />
-                </span>
-                <span className="mt-3 block font-[family-name:var(--font-display)] text-lg leading-tight md:text-xl">{s.label}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
+      <nav aria-label={dictionary.nav.sitemap} className="wrap grid grid-cols-2 gap-x-6 gap-y-10 pt-16 sm:grid-cols-3 lg:grid-cols-6">
+        <div>
+          <a href={multi[0].href} className={head}>{multi[0].title}</a>
+          <ul className="mt-4 grid gap-2">{multi[0].items!.map((i) => <li key={i.href}><a className={link} href={i.href}>{i.label}</a></li>)}</ul>
+        </div>
+        <div className="grid content-start gap-4">
+          {single.map((b) => <a key={b.href} href={b.href} className={head}>{b.title}</a>)}
+        </div>
+        {multi.slice(1).map((b) => (
+          <div key={b.href}>
+            <a href={b.href} className={head}>{b.title}</a>
+            <ul className="mt-4 grid gap-2">{b.items!.map((i, k) => <li key={`${i.href}-${k}`}><a className={link} href={i.href}>{i.label}</a></li>)}</ul>
+          </div>
+        ))}
       </nav>
 
-      <div className="wrap mt-14 grid gap-12 border-t border-white/20 py-14 md:grid-cols-12">
-        <div className="flex flex-col gap-8 sm:flex-row sm:items-start md:col-span-12">
+      <div className="wrap mt-14 border-t border-white/20 py-14">
+        <div className="flex flex-col gap-8 sm:flex-row sm:items-start">
           <Image src="/images/logo-cream.png" alt="J. Rosas, Fine Wines · Grands Vins" width={1000} height={846} className="h-[154px] w-auto shrink-0 self-start sm:h-[173px]" />
           <div>
-            <p className={head}>{ft.contact}</p>
+            <p className="mb-4 font-[family-name:var(--font-display)] text-xl">{ft.contact}</p>
             <p className="text-[#f3e6cf]"><span className="brand-name block text-xl text-[#fbf7f0]">Jorge Rosas, Vinhos - Unipessoal Lda</span>Apartado 17<br />Quinta da Touriga, Chã<br />5150-909 Vila Nova De Foz Coa<br />Portugal</p>
             <a className={`${link} mt-3 inline-block`} href="mailto:tourigaporto@gmail.com">tourigaporto@gmail.com</a>
           </div>

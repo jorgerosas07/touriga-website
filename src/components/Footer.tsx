@@ -1,25 +1,68 @@
 import Image from 'next/image'
+import { REGIONS } from '@/lib/markets'
 
-export default function Footer({ dictionary }: { dictionary: any }) {
+type Item = { href: string; label: string }
+type Block = { href: string; title: string; items?: Item[] }
+
+// The site map: every section of the page as a heading, with the layers inside it listed below, each one a link.
+export default function Footer({ dictionary, lang }: { dictionary: any; lang: string }) {
   const ft = dictionary.footer
-  const head = 'mb-4 font-[family-name:var(--font-display)] text-xl'
+  const t = dictionary.terroir
+  const f = dictionary.founders
+  const head = 'font-[family-name:var(--font-display)] text-xl hover:underline underline-offset-4'
   const link = 'text-[#f3e6cf] hover:text-white underline-offset-4 hover:underline'
+  const names = new Intl.DisplayNames([lang === 'pt' ? 'pt-PT' : 'en'], { type: 'region' })
+  const markets = REGIONS.flatMap((r) => r.codes).map((c) => names.of(c) ?? c).sort((a, b) => a.localeCompare(b, lang))
+
+  const blocks: Block[] = [
+    { href: '#terroir', title: dictionary.nav.terroir, items: [
+      { href: '#terroir-1', label: t.soil.title }, { href: '#terroir-2', label: t.climate.title }, { href: '#terroir-3', label: t.expression.title },
+    ] },
+    { href: '#viticulture', title: dictionary.viticulture.title },
+    { href: '#winemaking', title: dictionary.vinificacao.title },
+    { href: '#winery', title: dictionary.adega.title },
+    { href: '#family', title: dictionary.familia.title, items: [
+      { href: '#jose-antonio', label: f.jarpr.name }, { href: '#jorge-rosas', label: f.jorge.name }, { href: '#family-today', label: f.groupTitle },
+    ] },
+    { href: '#wines', title: dictionary.wines.title, items: [
+      { href: '#wine-tinto', label: dictionary.wines.tinto.name }, { href: '#wine-puro', label: dictionary.wines.puro.name },
+    ] },
+    { href: '#where', title: dictionary.where.title, items: markets.map((m) => ({ href: '#where', label: m })) },
+    { href: '#contact', title: dictionary.contact.eyebrow, items: [{ href: '#contact', label: dictionary.contact.send }] },
+  ]
+  // the three single sections (Viticulture, Winemaking, The Winery) share one column
+  const single = blocks.filter((b) => !b.items && b.href !== '#terroir')
+  const multi = blocks.filter((b) => b.items)
+
   return (
     <footer className="closing bg-[var(--brand)] text-[#fbf7f0]">
-      <div className="wrap grid gap-12 py-16 md:grid-cols-12">
-        <div className="flex flex-col gap-8 sm:flex-row sm:items-start md:col-span-6">
+      <nav aria-label={dictionary.nav.sitemap} className="wrap grid grid-cols-2 gap-x-6 gap-y-10 pt-16 sm:grid-cols-3 lg:grid-cols-6">
+        <div>
+          <a href={multi[0].href} className={head}>{multi[0].title}</a>
+          <ul className="mt-4 grid gap-2">{multi[0].items!.map((i) => <li key={i.href}><a className={link} href={i.href}>{i.label}</a></li>)}</ul>
+        </div>
+        <div className="grid content-start gap-4">
+          {single.map((b) => <a key={b.href} href={b.href} className={head}>{b.title}</a>)}
+        </div>
+        {multi.slice(1).map((b) => (
+          <div key={b.href}>
+            <a href={b.href} className={head}>{b.title}</a>
+            <ul className="mt-4 grid gap-2">{b.items!.map((i, k) => <li key={`${i.href}-${k}`}><a className={link} href={i.href}>{i.label}</a></li>)}</ul>
+          </div>
+        ))}
+      </nav>
+
+      <div className="wrap mt-14 border-t border-white/20 py-14">
+        <div className="flex flex-col gap-8 sm:flex-row sm:items-start">
           <Image src="/images/logo-cream.png" alt="J. Rosas, Fine Wines · Grands Vins" width={1000} height={846} className="h-[154px] w-auto shrink-0 self-start sm:h-[173px]" />
           <div>
-            <p className={head}>{ft.contact}</p>
+            <p className="mb-4 font-[family-name:var(--font-display)] text-xl">{ft.contact}</p>
             <p className="text-[#f3e6cf]"><span className="brand-name block text-xl text-[#fbf7f0]">Jorge Rosas, Vinhos - Unipessoal Lda</span>Apartado 17<br />Quinta da Touriga, Chã<br />5150-909 Vila Nova De Foz Coa<br />Portugal</p>
             <a className={`${link} mt-3 inline-block`} href="mailto:tourigaporto@gmail.com">tourigaporto@gmail.com</a>
           </div>
         </div>
-        <div className="md:col-span-5 md:col-start-7">
-          <p className={head}>{dictionary.wines.title}</p>
-          <a className={link} href="#where">{ft.where_to_find}</a>
-        </div>
       </div>
+
       <div className="wrap">
         <p className="border-t border-white/20 py-6 text-sm text-[#f3e6cf]">© {new Date().getFullYear()} Quinta da Touriga-Chã. All rights reserved.</p>
       </div>

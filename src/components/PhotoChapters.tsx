@@ -60,6 +60,21 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
     return () => { removeEventListener('scroll', onScroll); cancelAnimationFrame(raf) }
   }, [live, n])
 
+  // #terroir-1 .. #terroir-3 (footer links) land on that chapter of the held scroll
+  useEffect(() => {
+    const go = () => {
+      const m = location.hash.match(/^#terroir-(\d)$/)
+      const el = ref.current
+      if (!m || !el) return
+      const i = Math.min(n, Math.max(1, +m[1])) - 1
+      const p = !live ? 0 : i === 0 ? 0.02 : Math.min(0.98, (i + 0.1) / n)
+      scrollTo({ top: el.getBoundingClientRect().top + scrollY + p * (el.offsetHeight - (live ? innerHeight : 0)) })
+    }
+    go()
+    addEventListener('hashchange', go)
+    return () => removeEventListener('hashchange', go)
+  }, [live, n])
+
   const head = (
     <div>
       <p className="label mb-2 md:mb-4">{t.title}</p>

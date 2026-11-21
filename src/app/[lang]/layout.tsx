@@ -72,7 +72,7 @@ export default async function RootLayout({
           <main id="main" className="relative w-full">
             {children}
           </main>
-          <Footer dictionary={dictionary} />
+          <Footer dictionary={dictionary} lang={resolvedParams.lang} />
               </body>
     </html>
   )

@@ -21,7 +21,7 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
             className="md:col-span-4 md:h-full" frameClass="aspect-[4/3] md:aspect-auto md:h-full" position="center 32%" />
 
           {wines.map((x) => (
-            <article key={x.key} className="flex flex-col border border-[var(--line)] p-5 md:col-span-4">
+            <article key={x.key} id={`wine-${x.key}`} className="flex flex-col border border-[var(--line)] p-5 md:col-span-4">
               <ZoomPhoto src={x.src} alt={x.alt} width={x.w} height={x.h} labels={labels} className="w-full"
                 frameClass={x.frame} imgClass={x.fit} position={x.pos} />
               <div className="mt-6">

@@ -35,14 +35,14 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang } = await params
   return {
     metadataBase: new URL('https://touriga-website.vercel.app'),
-    title: 'Quinta da Touriga Chã | Douro Superior',
+    title: 'Quinta da Touriga-Chã | Douro Superior',
     description: 'The perfect estate in the oldest appellation in the world.',
     alternates: {
       canonical: `/${lang}`,
       languages: { en: '/en', pt: '/pt', 'x-default': '/en' },
     },
     openGraph: {
-      title: 'Quinta da Touriga Chã | Douro Superior',
+      title: 'Quinta da Touriga-Chã | Douro Superior',
       description: 'The perfect estate in the oldest appellation in the world.',
       images: ['/images/hero-bg.jpg'],
       locale: lang === 'pt' ? 'pt_PT' : 'en_GB',

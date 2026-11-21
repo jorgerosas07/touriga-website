@@ -11,7 +11,7 @@ export default function Footer({ dictionary }: { dictionary: any }) {
           <Image src="/images/logo-cream.png" alt="J. Rosas, Fine Wines · Grands Vins" width={1000} height={846} className="h-32 w-auto shrink-0 self-start sm:h-36" />
           <div>
             <p className={head}>{ft.contact}</p>
-            <p className="text-[#f3e6cf]"><span className="brand-name block text-3xl text-[#fbf7f0]">Quinta da Touriga Chã</span>Vila Nova de Foz Côa<br />Douro Superior, Portugal</p>
+            <p className="text-[#f3e6cf]"><span className="brand-name block text-3xl text-[#fbf7f0]">Quinta da Touriga-Chã</span>Vila Nova de Foz Côa<br />Douro Superior, Portugal</p>
             <a className={`${link} mt-3 inline-block`} href="mailto:info@jrosas.pt">info@jrosas.pt</a>
           </div>
         </div>
@@ -21,7 +21,7 @@ export default function Footer({ dictionary }: { dictionary: any }) {
         </div>
       </div>
       <div className="wrap">
-        <p className="border-t border-white/20 py-6 text-sm text-[#f3e6cf]">© {new Date().getFullYear()} Quinta da Touriga Chã. All rights reserved.</p>
+        <p className="border-t border-white/20 py-6 text-sm text-[#f3e6cf]">© {new Date().getFullYear()} Quinta da Touriga-Chã. All rights reserved.</p>
       </div>
     </footer>
   )

@@ -1,6 +1,6 @@
 {
   "ageGate": {
-    "title": "Bem-vindo à Quinta da Touriga Chã",
+    "title": "Bem-vindo à Quinta da Touriga-Chã",
     "prompt": "Tem idade legal para consumir álcool no seu país?",
     "yes": "Sim",
     "no": "Não",
@@ -20,7 +20,7 @@
       "tasting": "Expressão crua do solo xistoso. Autêntico e profundo."
     },
     "tinto": {
-      "name": "Quinta da Touriga Chã",
+      "name": "Quinta da Touriga-Chã",
       "concept": "O nosso Tinto de excelência. Maioritariamente Touriga Nacional.",
       "tasting": "Concentração profunda, notas de violeta e taninos elegantes."
     }
@@ -75,7 +75,7 @@
       "price": "Preço sob consulta"
     },
     "tinto": {
-      "name": "Quinta da Touriga Chã",
+      "name": "Quinta da Touriga-Chã",
       "vintage": "2019",
       "description": "O vinho de excelência. Predominantemente Touriga Nacional das nossas melhores parcelas.",
       "price": "Preço sob consulta"
@@ -105,7 +105,7 @@
     "jorge": {
       "name": "Jorge Rosas",
       "years": "Sexta Geração",
-      "text": "Filho de José António. Guardião da Quinta da Touriga Chã desde o falecimento do pai. Construiu a premiada adega de 2004. Continua o legado com a mesma dedicação intransigente ao Douro, às suas vinhas e aos seus vinhos."
+      "text": "Filho de José António. Guardião da Quinta da Touriga-Chã desde o falecimento do pai. Construiu a premiada adega de 2004. Continua o legado com a mesma dedicação intransigente ao Douro, às suas vinhas e aos seus vinhos."
     }
   },
   "contact": {
@@ -118,7 +118,7 @@
     "send": "Enviar Mensagem",
     "sending": "A enviar…",
     "success_title": "Mensagem recebida.",
-    "success_body": "Entraremos em contacto brevemente. Obrigado pelo seu interesse na Quinta da Touriga Chã."
+    "success_body": "Entraremos em contacto brevemente. Obrigado pelo seu interesse na Quinta da Touriga-Chã."
   },
   "footer": {
     "contact": "Coordenadas da Empresa",

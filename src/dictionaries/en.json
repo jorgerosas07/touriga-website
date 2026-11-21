@@ -1,6 +1,6 @@
 {
   "ageGate": {
-    "title": "Welcome to Quinta da Touriga Chã",
+    "title": "Welcome to Quinta da Touriga-Chã",
     "prompt": "Are you of legal drinking age in your country?",
     "yes": "Yes, I am",
     "no": "No",
@@ -20,7 +20,7 @@
       "tasting": "Raw expression of the schistous soil. Authentic and profound."
     },
     "tinto": {
-      "name": "Quinta da Touriga Chã",
+      "name": "Quinta da Touriga-Chã",
       "concept": "Our flagship Tinto. Predominantly Touriga Nacional.",
       "tasting": "Deep concentration, violet notes, and elegant tannins."
     }
@@ -75,7 +75,7 @@
       "price": "Price on enquiry"
     },
     "tinto": {
-      "name": "Quinta da Touriga Chã",
+      "name": "Quinta da Touriga-Chã",
       "vintage": "2019",
       "description": "The flagship. Predominantly Touriga Nacional from our finest parcels.",
       "price": "Price on enquiry"
@@ -105,7 +105,7 @@
     "jorge": {
       "name": "Jorge Rosas",
       "years": "Sixth Generation",
-      "text": "Son of José António. Steward of the Quinta da Touriga Chã since his father's passing. Built the award-winning 2004 winery. Continues the legacy with the same uncompromising dedication to the Douro, its vineyards, and its wines."
+      "text": "Son of José António. Steward of the Quinta da Touriga-Chã since his father's passing. Built the award-winning 2004 winery. Continues the legacy with the same uncompromising dedication to the Douro, its vineyards, and its wines."
     }
   },
   "contact": {
@@ -118,7 +118,7 @@
     "send": "Send Message",
     "sending": "Sending…",
     "success_title": "Message received.",
-    "success_body": "We will be in touch shortly. Thank you for your interest in Quinta da Touriga Chã."
+    "success_body": "We will be in touch shortly. Thank you for your interest in Quinta da Touriga-Chã."
   },
   "footer": {
     "contact": "Company Coordinates",

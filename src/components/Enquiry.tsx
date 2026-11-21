@@ -3,7 +3,7 @@
 export default function Enquiry({ dictionary }: { dictionary: any }) {
   const a = dictionary.allocation
   const f = a.form
-  const wines = [a.puro, a.tinto]
+  const wines = [a.tinto, a.puro]
 
   // Sends through the visitor's email app: no fake confirmation without a real send
   function submit(ev: React.FormEvent<HTMLFormElement>) {

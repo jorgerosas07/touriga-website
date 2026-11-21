@@ -7,9 +7,10 @@
   --ink: #2b241e;
   --muted: #4f443a;
   --line: rgba(43, 36, 30, 0.16);
-  --accent: #7a2236;
+  --accent: #542743; /* the J. Rosas logo colour */
   --accent-ink: #fbf7f0;
-  --brand: #5b1a29;
+  --brand: #542743;
+  --accent-dark: #3e1c31;
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
   --font-display: var(--font-literata), Georgia, serif;
   --font-text: var(--font-figtree), system-ui, sans-serif;
@@ -47,7 +48,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   background: var(--accent); color: var(--accent-ink); border: 1px solid var(--accent);
   cursor: pointer; transition: background-color .25s var(--ease), transform .15s var(--ease);
 }
-.btn:hover { background: var(--brand); transform: translateY(-1px); }
+.btn:hover { background: var(--accent-dark); transform: translateY(-1px); }
 .btn:active { transform: translateY(1px) scale(0.98); }
 .btn-quiet { background: transparent; color: inherit; border-color: currentColor; }
 .btn-quiet:hover { background: rgba(255,255,255,.12); }

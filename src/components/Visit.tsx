@@ -2,7 +2,6 @@ import PhotoStrip from './PhotoStrip'
 
 const STRIP = [
   { src: '/images/adega-side.jpg', alt: 'The winery terrace among wild shrubs' },
-  { src: '/images/vineyard-soil.jpg', alt: 'Young vine leaves in the sun' },
   { src: '/images/estate-dusk.jpg', alt: 'The estate at dusk' },
   { src: '/images/estate-sun.jpg', alt: 'The estate in the sun' },
 ]

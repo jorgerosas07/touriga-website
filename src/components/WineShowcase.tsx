@@ -9,9 +9,9 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
     <section id="wines" className="flex min-h-[100svh] items-center pt-[calc(var(--nav-h)+32px)] pb-12">
       {/* tall-small: the tall photograph on the left line, the text and a square detail on the right */}
       <div className="wrap grid items-center gap-10 md:grid-cols-12 md:gap-6">
-        <a href="#allocation" aria-label={`${w.puro.name}: ${a.cta}`} className="lift block md:col-span-6">
+        <a href="#allocation" aria-label={`${w.tinto.name}: ${a.cta}`} className="lift block md:col-span-6">
           <div className="photo aspect-[4/5] md:aspect-auto md:h-[calc(100svh-var(--nav-h)-112px)] md:max-h-[820px]">
-            <Image src="/images/puro-shelf.jpg" alt="A bottle of Puro, Quinta da Touriga, on a wine shop shelf" fill sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
+            <Image src="/images/quinta-rotulos.jpg" alt="Three bottles of Quinta da Touriga-Chã lying on their sides, labels facing up" fill quality={90} sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" style={{ objectPosition: '53% center' }} />
           </div>
         </a>
         <div className="flex flex-col md:col-span-5 md:col-start-8">

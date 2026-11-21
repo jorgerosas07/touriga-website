@@ -17,7 +17,7 @@ export default function Footer({ dictionary }: { dictionary: any }) {
         </div>
         <div className="md:col-span-5 md:col-start-7">
           <p className={head}>{dictionary.wines.title}</p>
-          <a className={link} href="mailto:tourigaporto@gmail.com">{ft.where_to_find}</a>
+          <a className={link} href="#where">{ft.where_to_find}</a>
         </div>
       </div>
       <div className="wrap">

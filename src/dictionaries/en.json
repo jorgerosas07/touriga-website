@@ -137,6 +137,20 @@
     "prev": "Previous photo",
     "next": "Next photo",
     "open": "Open photo",
-    "terroir": "Quinta da Touriga"
+    "terroir": "Quinta da Touriga",
+    "where": "Where to find us"
+  },
+  "where": {
+    "title": "Where to find us",
+    "regions": {
+      "na": "North America",
+      "sa": "South America",
+      "eu": "Europe",
+      "as": "Asia"
+    },
+    "form": {
+      "country": "Country",
+      "select": "Select"
+    }
   }
 }

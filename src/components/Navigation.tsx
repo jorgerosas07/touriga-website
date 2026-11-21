@@ -36,7 +36,7 @@ export default function Navigation({ lang, dictionary }: { lang: string; diction
       <div className={`wrap flex items-center justify-between transition-[height] duration-300 ${light ? 'h-[var(--nav-h)]' : 'h-[100px] md:h-[148px]'}`}>
         <a href="#top" aria-label="Quinta da Touriga-Chã, J. Rosas" className="flex items-center">
           <Image src={light ? '/images/logo-bordeaux.png' : '/images/logo-cream.png'} alt="J. Rosas, Fine Wines · Grands Vins" width={1000} height={846} priority
-            className={`w-auto transition-[height,transform] duration-300 ${light ? '' : '[filter:drop-shadow(0_1px_8px_rgba(20,14,9,.6))]'} ${light ? 'h-[72px]' : 'h-[76px] translate-y-[38px] md:h-[116px]'}`} />
+            className={`w-auto transition-[height,transform] duration-300 ${light ? '' : '[filter:drop-shadow(0_1px_8px_rgba(20,14,9,.6))]'} ${light ? 'h-[72px]' : 'h-[76px] translate-y-[19px] md:h-[116px]'}`} />
         </a>
 
         <nav aria-label="Primary" className="hidden items-center gap-7 whitespace-nowrap xl:flex">

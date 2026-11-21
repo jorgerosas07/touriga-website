@@ -25,8 +25,8 @@ export default function Founders({ dictionary }: { dictionary: any }) {
           ))}
         </div>
         <h3 className="mt-14 text-3xl leading-tight md:text-4xl">{f.groupTitle}</h3>
-        <div className="photo mt-6 aspect-[1066/493] sm:aspect-[5/2]">
-          <Image src="/images/familia-grupo.jpg" alt="The Rosas family with their dogs on a terrace above the Douro" fill quality={90} sizes="(min-width: 1280px) 1232px, 100vw" className="object-cover" style={{ objectPosition: 'center 30%' }} />
+        <div className="photo mt-6 aspect-[1066/493] md:w-1/2">
+          <Image src="/images/familia-grupo.jpg" alt="The Rosas family with their dogs on a terrace above the Douro" fill quality={90} sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" style={{ objectPosition: 'center 30%' }} />
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ export default function Hero({ dictionary }: { dictionary: any }) {
         <div data-enter className="max-w-3xl">
           <h1 className="text-[44px] leading-[1.04] md:text-7xl">{hero.headline}</h1>
           <p className="lead mt-6 text-[#f4ece0]">{hero.subheadline}</p>
-          <p className="mt-2 text-[#f4ece0]">{hero.douro}<br />{hero.heritage}</p>
+          <p className="mt-2 text-[#f4ece0]">{hero.douro}</p>
         </div>
       </div>
     </section>

@@ -144,12 +144,9 @@
     "title": "Where to find us",
     "regions": {
       "na": "North America",
-      "ca": "Central America and Caribbean",
       "sa": "South America",
       "eu": "Europe",
-      "af": "Africa",
-      "as": "Asia",
-      "oc": "Oceania"
+      "as": "Asia"
     },
     "form": {
       "country": "Country",

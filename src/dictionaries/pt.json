@@ -144,12 +144,9 @@
     "title": "Onde nos encontrar",
     "regions": {
       "na": "América do Norte",
-      "ca": "América Central e Caraíbas",
       "sa": "América do Sul",
       "eu": "Europa",
-      "af": "África",
-      "as": "Ásia",
-      "oc": "Oceânia"
+      "as": "Ásia"
     },
     "form": {
       "country": "País",

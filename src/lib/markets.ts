@@ -1,10 +1,14 @@
-// The markets listed by the client, by region (ISO 3166-1 alpha-2). Names are localised with Intl.DisplayNames.
-export const REGIONS: { key: 'na' | 'ca' | 'sa' | 'eu' | 'af' | 'as' | 'oc'; codes: string[] }[] = [
-  { key: 'na', codes: ['CA', 'US', 'BM'] },
-  { key: 'ca', codes: ['BS', 'BB', 'CR', 'DO', 'GP', 'BL', 'MF', 'TC', 'TT', 'VC'] },
-  { key: 'sa', codes: ['AR', 'BR', 'CL', 'UY'] },
-  { key: 'eu', codes: ['AL', 'AD', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FR', 'DE', 'GR', 'IS', 'IE', 'IT', 'JE', 'LV', 'LT', 'LU', 'MT', 'ME', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'SI', 'ES', 'SE', 'CH', 'UA', 'GB'] },
-  { key: 'af', codes: ['AO', 'CV', 'MZ', 'MU', 'NG', 'RE', 'SC', 'ZA'] },
-  { key: 'as', codes: ['AM', 'BH', 'KH', 'KZ', 'CN', 'HK', 'IN', 'ID', 'IL', 'JP', 'JO', 'LB', 'MO', 'MV', 'OM', 'SG', 'KR', 'TW', 'AE', 'VN'] },
-  { key: 'oc', codes: ['AU', 'NC', 'NZ', 'PF'] },
+// The markets listed by the client, by region (ISO 3166-1 alpha-2; Canada is listed by province).
+// Names are localised with Intl.DisplayNames; `shapes` / `points` name what is drawn on the map.
+export type Region = { key: 'na' | 'sa' | 'eu' | 'as'; codes: string[]; provinces?: Record<string, string[]> }
+
+export const REGIONS: Region[] = [
+  { key: 'na', codes: ['CA'], provinces: { en: ['Ontario', 'Quebec'], pt: ['Ontário', 'Quebeque'] } },
+  { key: 'sa', codes: ['BR'] },
+  { key: 'eu', codes: ['PT', 'SE', 'LU', 'GB'] },
+  { key: 'as', codes: ['MO'] },
 ]
+
+/** map keys to tint: whole countries, and the two Canadian provinces */
+export const MAP_SHAPES = ['BR', 'PT', 'SE', 'GB', 'LU', 'CA-ON', 'CA-QC']
+export const MAP_POINTS = ['PT', 'LU', 'MO']

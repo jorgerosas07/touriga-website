@@ -6,7 +6,6 @@ import Pillars from '@/components/Pillars'
 import WineShowcase from '@/components/WineShowcase'
 import WhereToFind from '@/components/WhereToFind'
 import Visit from '@/components/Visit'
-import Enquiry from '@/components/Enquiry'
 import enDict from '@/dictionaries/en.json'
 import ptDict from '@/dictionaries/pt.json'
 
@@ -24,7 +23,6 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
       <WineShowcase dictionary={dictionary} />
       <WhereToFind dictionary={dictionary} lang={lang} />
       <Visit dictionary={dictionary} />
-      <Enquiry dictionary={dictionary} />
     </>
   )
 }

@@ -1,5 +1,7 @@
 import { REGIONS } from '@/lib/markets'
 import ContactForm from './ContactForm'
+import ImportersPopover from './ImportersPopover'
+import { IMPORTERS } from '@/lib/importers'
 
 // "Where to find us": the markets listed by region, then a contact form.
 export default function WhereToFind({ dictionary, lang }: { dictionary: any; lang: string }) {
@@ -30,7 +32,17 @@ export default function WhereToFind({ dictionary, lang }: { dictionary: any; lan
               <h3 className="border-b border-[var(--line)] pb-3 text-2xl">{w.regions[r.key]}</h3>
               <ul className="mt-4 text-[16px] leading-6">
                 {r.codes.map((c) => ({ c, n: names.of(c) ?? c })).sort((a, b) => a.n.localeCompare(b.n, lang)).map(({ c, n }) => (
-                  <li key={c} className="py-0.5">{n}{r.provinces && c === 'CA' ? `: ${r.provinces[lang === 'pt' ? 'pt' : 'en'].join(', ')}` : ''}</li>
+                  <li key={c} className="relative py-0.5">
+                    {r.provinces && c === 'CA' ? (
+                      <>
+                        {n}: {r.provinces[lang === 'pt' ? 'pt' : 'en'].map((prov, k) => (
+                          <span key={prov}>{k > 0 && ', '}<ImportersPopover label={prov} importers={IMPORTERS[k === 0 ? 'CA-ON' : 'CA-QC']} title={w.importers.title} example={w.importers.example} /></span>
+                        ))}
+                      </>
+                    ) : (
+                      <ImportersPopover label={n} importers={IMPORTERS[c] ?? []} title={w.importers.title} example={w.importers.example} />
+                    )}
+                  </li>
                 ))}
               </ul>
             </div>

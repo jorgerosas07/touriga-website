@@ -151,6 +151,10 @@
     "form": {
       "country": "País",
       "select": "Seleccione"
+    },
+    "importers": {
+      "title": "Importadores",
+      "example": "Exemplo"
     }
   }
 }

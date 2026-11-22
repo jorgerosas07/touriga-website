@@ -1,0 +1,1106 @@
+{
+ "highlights": [
+  {
+   "big": [
+    "95",
+    "95",
+    "95"
+   ],
+   "line": [
+    "RobertParker.com",
+    "RobertParker.com",
+    "RobertParker.com"
+   ],
+   "sub": [
+    "2011 vintage · also 94+ (2013) and 93 (2012)",
+    "Colheita 2011 · também 94+ (2013) e 93 (2012)",
+    "Millésime 2011 · aussi 94+ (2013) et 93 (2012)"
+   ],
+   "schema": "95 points, RobertParker.com (2011 vintage)"
+  },
+  {
+   "big": [
+    "Gold",
+    "Ouro",
+    "Or"
+   ],
+   "line": [
+    "Decanter World Wine Awards",
+    "Decanter World Wine Awards",
+    "Decanter World Wine Awards"
+   ],
+   "sub": [
+    "2012 vintage",
+    "Colheita 2012",
+    "Millésime 2012"
+   ],
+   "schema": "Gold Medal, Decanter World Wine Awards (2012 vintage)"
+  },
+  {
+   "big": [
+    "19/20",
+    "19/20",
+    "19/20"
+   ],
+   "line": [
+    "Revista de Vinhos / Essência do Vinho",
+    "Revista de Vinhos / Essência do Vinho",
+    "Revista de Vinhos / Essência do Vinho"
+   ],
+   "sub": [
+    "2019 vintage · best rating",
+    "Colheita 2019 · melhor pontuação",
+    "Millésime 2019 · meilleure note"
+   ],
+   "schema": "19/20, Revista de Vinhos / Essência do Vinho (2019 vintage)"
+  },
+  {
+   "big": [
+    "6×",
+    "6×",
+    "6×"
+   ],
+   "line": [
+    "Top 10 Portuguese wines",
+    "Top 10 vinhos portugueses",
+    "Top 10 vins portugais"
+   ],
+   "sub": [
+    "Blind tastings · vintages 2005, 2007, 2011, 2013, 2014 and 2016",
+    "Provas cegas · colheitas 2005, 2007, 2011, 2013, 2014 e 2016",
+    "Dégustations à l'aveugle · millésimes 2005, 2007, 2011, 2013, 2014 et 2016"
+   ],
+   "schema": "Top 10 Portuguese wines, six vintages in blind tastings"
+  },
+  {
+   "big": [
+    "4",
+    "4",
+    "4"
+   ],
+   "line": [
+    "Gold Medals",
+    "Medalhas de Ouro",
+    "Médailles d'or"
+   ],
+   "sub": [
+    "Concurso de Vinhos do Douro Superior · vintages 2009, 2011, 2012 and 2014",
+    "Concurso de Vinhos do Douro Superior · colheitas 2009, 2011, 2012 e 2014",
+    "Concurso de Vinhos do Douro Superior · millésimes 2009, 2011, 2012 et 2014"
+   ],
+   "schema": "Four Gold Medals, Concurso de Vinhos do Douro Superior"
+  },
+  {
+   "big": [
+    "18",
+    "18",
+    "18"
+   ],
+   "line": [
+    "Score of 18/20 or more",
+    "Pontuação de 18/20 ou mais",
+    "Note de 18/20 ou plus"
+   ],
+   "sub": [
+    "Revista de Vinhos, Wine and Essência do Vinho · ten vintages",
+    "Revista de Vinhos, Wine e Essência do Vinho · dez colheitas",
+    "Revista de Vinhos, Wine et Essência do Vinho · dix millésimes"
+   ],
+   "schema": null
+  }
+ ],
+ "vintages": [
+  {
+   "year": 2019,
+   "items": [
+    {
+     "source": "Revista de Vinhos / Essência do Vinho",
+     "kind": [
+      "Portuguese magazine",
+      "Revista portuguesa",
+      "Magazine portugais"
+     ],
+     "result": [
+      "19/20 · best rating",
+      "19/20 · melhor pontuação",
+      "19/20 · meilleure note"
+     ],
+     "date": null,
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2016,
+   "items": [
+    {
+     "source": "Revista de Vinhos / Essência do Vinho",
+     "kind": [
+      "Blind tasting",
+      "Prova cega",
+      "Dégustation à l'aveugle"
+     ],
+     "result": [
+      "Top 10 / 1st place – Portuguese wines",
+      "Top 10 / 1.º lugar – Vinhos portugueses",
+      "Top 10 / 1re place – Vins portugais"
+     ],
+     "date": null,
+     "top10": true
+    },
+    {
+     "source": "Revista Vinho Grandes Escolhas",
+     "kind": [
+      "Portuguese magazine",
+      "Revista portuguesa",
+      "Magazine portugais"
+     ],
+     "result": [
+      "18.5/20 · 2nd place / best rating",
+      "18,5/20 · 2.º lugar / melhor pontuação",
+      "18,5/20 · 2e place / meilleure note"
+     ],
+     "date": null,
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2014,
+   "items": [
+    {
+     "source": "Wine",
+     "kind": [
+      "Blind tasting",
+      "Prova cega",
+      "Dégustation à l'aveugle"
+     ],
+     "result": [
+      "Top 10 – Portuguese wines (2nd best Douro wine, 3rd Portuguese red)",
+      "Top 10 – Vinhos portugueses (2.º melhor vinho do Douro, 3.º tinto português)",
+      "Top 10 – Vins portugais (2e meilleur vin du Douro, 3e rouge portugais)"
+     ],
+     "date": [
+      "February 2017",
+      "fevereiro de 2017",
+      "février 2017"
+     ],
+     "top10": true
+    },
+    {
+     "source": "Concurso de Vinhos do Douro Superior",
+     "kind": [
+      "Portuguese wine competition",
+      "Concurso de vinhos português",
+      "Concours de vins portugais"
+     ],
+     "result": [
+      "Best Red Wine – Gold Medal",
+      "Melhor Vinho Tinto – Medalha de Ouro",
+      "Meilleur vin rouge – Médaille d'or"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Concurso dos Vinhos de Portugal",
+     "kind": [
+      "Portuguese wine competition",
+      "Concurso de vinhos português",
+      "Concours de vins portugais"
+     ],
+     "result": [
+      "Silver Medal",
+      "Medalha de Prata",
+      "Médaille d'argent"
+     ],
+     "date": null,
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2013,
+   "items": [
+    {
+     "source": "RobertParker.com",
+     "kind": [
+      "U.S. magazine",
+      "Revista norte-americana",
+      "Magazine américain"
+     ],
+     "result": [
+      "94+",
+      "94+",
+      "94+"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Wine",
+     "kind": [
+      "Blind tasting",
+      "Prova cega",
+      "Dégustation à l'aveugle"
+     ],
+     "result": [
+      "Top 10 – Portuguese wines (best Douro wine, 2nd Portuguese red)",
+      "Top 10 – Vinhos portugueses (melhor vinho do Douro, 2.º tinto português)",
+      "Top 10 – Vins portugais (meilleur vin du Douro, 2e rouge portugais)"
+     ],
+     "date": [
+      "February 2016",
+      "fevereiro de 2016",
+      "février 2016"
+     ],
+     "top10": true
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese magazine",
+      "Revista portuguesa",
+      "Magazine portugais"
+     ],
+     "result": [
+      "17.5/20 · 2nd best rating",
+      "17,5/20 · 2.ª melhor pontuação",
+      "17,5/20 · 2e meilleure note"
+     ],
+     "date": null,
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2012,
+   "items": [
+    {
+     "source": "Decanter World Wine Awards",
+     "kind": [
+      "Decanter wine magazine",
+      "Revista Decanter",
+      "Magazine Decanter"
+     ],
+     "result": [
+      "Gold Medal",
+      "Medalha de Ouro",
+      "Médaille d'or"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Concurso de Vinhos do Douro Superior",
+     "kind": [
+      "Portuguese wine competition",
+      "Concurso de vinhos português",
+      "Concours de vins portugais"
+     ],
+     "result": [
+      "Gold Medal",
+      "Medalha de Ouro",
+      "Médaille d'or"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese magazine",
+      "Revista portuguesa",
+      "Magazine portugais"
+     ],
+     "result": [
+      "18.5/20 · 1st place / best rating",
+      "18,5/20 · 1.º lugar / melhor pontuação",
+      "18,5/20 · 1re place / meilleure note"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese magazine",
+      "Revista portuguesa",
+      "Magazine portugais"
+     ],
+     "result": [
+      "“Among the best wines produced in Portugal” award",
+      "Distinção «Entre os melhores vinhos produzidos em Portugal»",
+      "Distinction « Parmi les meilleurs vins produits au Portugal »"
+     ],
+     "date": [
+      "February 2015",
+      "fevereiro de 2015",
+      "février 2015"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Wine – Essência do Vinho",
+     "kind": [
+      "Portuguese magazine",
+      "Revista portuguesa",
+      "Magazine portugais"
+     ],
+     "result": [
+      "18.5/20 · best rating for DOC Douro",
+      "18,5/20 · melhor pontuação para DOC Douro",
+      "18,5/20 · meilleure note pour l'AOC Douro"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Wine – Essência do Vinho",
+     "kind": [
+      "Portuguese magazine",
+      "Revista portuguesa",
+      "Magazine portugais"
+     ],
+     "result": [
+      "“Best of the year” award",
+      "Distinção «Melhor do ano»",
+      "Distinction « Meilleur de l'année »"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "RobertParker.com",
+     "kind": [
+      "U.S. magazine",
+      "Revista norte-americana",
+      "Magazine américain"
+     ],
+     "result": [
+      "93",
+      "93",
+      "93"
+     ],
+     "date": null,
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2011,
+   "items": [
+    {
+     "source": "RobertParker.com",
+     "kind": [
+      "U.S. magazine",
+      "Revista norte-americana",
+      "Magazine américain"
+     ],
+     "result": [
+      "95",
+      "95",
+      "95"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese magazine",
+      "Revista portuguesa",
+      "Magazine portugais"
+     ],
+     "result": [
+      "18/20 · best rating",
+      "18/20 · melhor pontuação",
+      "18/20 · meilleure note"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese magazine",
+      "Revista portuguesa",
+      "Magazine portugais"
+     ],
+     "result": [
+      "“Among the best wines produced in Portugal” award",
+      "Distinção «Entre os melhores vinhos produzidos em Portugal»",
+      "Distinction « Parmi les meilleurs vins produits au Portugal »"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Wine",
+     "kind": [
+      "Blind tasting",
+      "Prova cega",
+      "Dégustation à l'aveugle"
+     ],
+     "result": [
+      "Top 10 – Portuguese wines",
+      "Top 10 – Vinhos portugueses",
+      "Top 10 – Vins portugais"
+     ],
+     "date": [
+      "February 2014",
+      "fevereiro de 2014",
+      "février 2014"
+     ],
+     "top10": true
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese magazine – Touriga Nacional blind tasting",
+      "Revista portuguesa – prova cega de Touriga Nacional",
+      "Magazine portugais – dégustation à l'aveugle de Touriga Nacional"
+     ],
+     "result": [
+      "2nd place",
+      "2.º lugar",
+      "2e place"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Concurso de Vinhos do Douro Superior",
+     "kind": [
+      "Portuguese wine competition",
+      "Concurso de vinhos português",
+      "Concours de vins portugais"
+     ],
+     "result": [
+      "Best Red Wine – Gold Medal",
+      "Melhor Vinho Tinto – Medalha de Ouro",
+      "Meilleur vin rouge – Médaille d'or"
+     ],
+     "date": null,
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2010,
+   "items": [
+    {
+     "source": "Wine",
+     "kind": [
+      "Portuguese magazine – blind tasting",
+      "Revista portuguesa – prova cega",
+      "Magazine portugais – dégustation à l'aveugle"
+     ],
+     "result": [
+      "18.5/20 · best rating",
+      "18,5/20 · melhor pontuação",
+      "18,5/20 · meilleure note"
+     ],
+     "date": [
+      "January–February 2013",
+      "janeiro–fevereiro de 2013",
+      "janvier–février 2013"
+     ],
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2009,
+   "items": [
+    {
+     "source": "Concurso de Vinhos do Douro Superior",
+     "kind": [
+      "Portuguese wine competition",
+      "Concurso de vinhos português",
+      "Concours de vins portugais"
+     ],
+     "result": [
+      "Gold Medal",
+      "Medalha de Ouro",
+      "Médaille d'or"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "18/20 · best rating",
+      "18/20 · melhor pontuação",
+      "18/20 · meilleure note"
+     ],
+     "date": [
+      "November 2012",
+      "novembro de 2012",
+      "novembre 2012"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "“Award of Excellence”",
+      "Distinção «Excelência»",
+      "Distinction « Excellence »"
+     ],
+     "date": null,
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2008,
+   "items": [
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "18/20 · best rating",
+      "18/20 · melhor pontuação",
+      "18/20 · meilleure note"
+     ],
+     "date": [
+      "November 2011",
+      "novembro de 2011",
+      "novembre 2011"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Wine Passion",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "17.5/20 · best rating for DOC Douro",
+      "17,5/20 · melhor pontuação para DOC Douro",
+      "17,5/20 · meilleure note pour l'AOC Douro"
+     ],
+     "date": [
+      "2011 / 2012",
+      "2011 / 2012",
+      "2011 / 2012"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "“Award of Excellence”",
+      "Distinção «Excelência»",
+      "Distinction « Excellence »"
+     ],
+     "date": null,
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2007,
+   "items": [
+    {
+     "source": "Wine",
+     "kind": [
+      "Blind tasting",
+      "Prova cega",
+      "Dégustation à l'aveugle"
+     ],
+     "result": [
+      "Top 10 – Portuguese wines",
+      "Top 10 – Vinhos portugueses",
+      "Top 10 – Vins portugais"
+     ],
+     "date": [
+      "March 2010",
+      "março de 2010",
+      "mars 2010"
+     ],
+     "top10": true
+    },
+    {
+     "source": "Portuguese Reds",
+     "kind": [
+      "Blind tasting (with the Macau and Hong Kong wine societies)",
+      "Prova cega (com as sociedades de vinho de Macau e Hong Kong)",
+      "Dégustation à l'aveugle (avec les sociétés du vin de Macao et de Hong Kong)"
+     ],
+     "result": [
+      "1st place",
+      "1.º lugar",
+      "1re place"
+     ],
+     "date": [
+      "November 2009",
+      "novembro de 2009",
+      "novembre 2009"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "18.5/20 · 2nd best rating",
+      "18,5/20 · 2.ª melhor pontuação",
+      "18,5/20 · 2e meilleure note"
+     ],
+     "date": [
+      "December 2010",
+      "dezembro de 2010",
+      "décembre 2010"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Wine",
+     "kind": [
+      "Portuguese magazine – blind tasting",
+      "Revista portuguesa – prova cega",
+      "Magazine portugais – dégustation à l'aveugle"
+     ],
+     "result": [
+      "Highly recommended / Top 100 – Portuguese wines",
+      "Altamente recomendado / Top 100 – Vinhos portugueses",
+      "Hautement recommandé / Top 100 – Vins portugais"
+     ],
+     "date": [
+      "December 2009",
+      "dezembro de 2009",
+      "décembre 2009"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Notícias de Sábado",
+     "kind": [
+      "Portuguese magazine",
+      "Revista portuguesa",
+      "Magazine portugais"
+     ],
+     "result": [
+      "Nominee for best Portuguese wine",
+      "Nomeado para melhor vinho português",
+      "Nommé meilleur vin portugais"
+     ],
+     "date": [
+      "December 2009",
+      "dezembro de 2009",
+      "décembre 2009"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "Included in the section “Best of the year – Douro”",
+      "Incluído na secção «Melhor do ano – Douro»",
+      "Inclus dans la rubrique « Meilleur de l'année – Douro »"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Vinhos de Portugal 2007 – João Paulo Martins",
+     "kind": [
+      "Wine guide – Portugal",
+      "Guia de vinhos – Portugal",
+      "Guide des vins – Portugal"
+     ],
+     "result": [
+      "“Excellent wine, of great refinement” · 17.5/20",
+      "«Vinho excelente, de grande requinte» · 17,5/20",
+      "«Vin excellent, d'une grande finesse» · 17,5/20"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Fugas",
+     "kind": [
+      "Portuguese magazine",
+      "Revista portuguesa",
+      "Magazine portugais"
+     ],
+     "result": [
+      "8.5/10",
+      "8,5/10",
+      "8,5/10"
+     ],
+     "date": [
+      "18/12/2010",
+      "18/12/2010",
+      "18/12/2010"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "“Award of Excellence”",
+      "Distinção «Excelência»",
+      "Distinction « Excellence »"
+     ],
+     "date": null,
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2005,
+   "items": [
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "18.5/20 · best rating",
+      "18,5/20 · melhor pontuação",
+      "18,5/20 · meilleure note"
+     ],
+     "date": [
+      "February 2015",
+      "fevereiro de 2015",
+      "février 2015"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Blue Wine",
+     "kind": [
+      "Blind tasting (wine writers from 12 countries)",
+      "Prova cega (escritores de vinho de 12 países)",
+      "Dégustation à l'aveugle (journalistes du vin de 12 pays)"
+     ],
+     "result": [
+      "Top 10 – Portuguese wines (3rd best Douro wine)",
+      "Top 10 – Vinhos portugueses (3.º melhor vinho do Douro)",
+      "Top 10 – Vins portugais (3e meilleur vin du Douro)"
+     ],
+     "date": [
+      "March 2008",
+      "março de 2008",
+      "mars 2008"
+     ],
+     "top10": true
+    },
+    {
+     "source": "240 Best Wines for 2008",
+     "kind": [
+      "Wine guide – Portugal",
+      "Guia de vinhos – Portugal",
+      "Guide des vins – Portugal"
+     ],
+     "result": [
+      "“Top 24 best wines”",
+      "«Top 24 melhores vinhos»",
+      "« Top 24 des meilleurs vins »"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "240 Best Wines for 2008",
+     "kind": [
+      "Wine guide – Portugal",
+      "Guia de vinhos – Portugal",
+      "Guide des vins – Portugal"
+     ],
+     "result": [
+      "95/100",
+      "95/100",
+      "95/100"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "Included in the section “Best of the year – Douro” (only 20 wines selected)",
+      "Incluído na secção «Melhor do ano – Douro» (apenas 20 vinhos selecionados)",
+      "Inclus dans la rubrique « Meilleur de l'année – Douro » (20 vins seulement sélectionnés)"
+     ],
+     "date": [
+      "February 2008",
+      "fevereiro de 2008",
+      "février 2008"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "17.5/20 · 3rd best rating",
+      "17,5/20 · 3.ª melhor pontuação",
+      "17,5/20 · 3e meilleure note"
+     ],
+     "date": [
+      "November 2007",
+      "novembro de 2007",
+      "novembre 2007"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Vinhos de Portugal 2007 – João Paulo Martins",
+     "kind": [
+      "Wine guide – Portugal",
+      "Guia de vinhos – Portugal",
+      "Guide des vins – Portugal"
+     ],
+     "result": [
+      "“Excellent wine, of great refinement” · 17.5/20",
+      "«Vinho excelente, de grande requinte» · 17,5/20",
+      "«Vin excellent, d'une grande finesse» · 17,5/20"
+     ],
+     "date": null,
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2004,
+   "items": [
+    {
+     "source": "Blue Wine",
+     "kind": [
+      "Wine magazine – Portugal",
+      "Revista de vinhos – Portugal",
+      "Magazine du vin – Portugal"
+     ],
+     "result": [
+      "17.5/20",
+      "17,5/20",
+      "17,5/20"
+     ],
+     "date": [
+      "October 2006",
+      "outubro de 2006",
+      "octobre 2006"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "17.5/20 · 3rd best rating",
+      "17,5/20 · 3.ª melhor pontuação",
+      "17,5/20 · 3e meilleure note"
+     ],
+     "date": [
+      "November 2006",
+      "novembro de 2006",
+      "novembre 2006"
+     ],
+     "top10": false
+    },
+    {
+     "source": "Vinhos de Portugal 2007 – João Paulo Martins",
+     "kind": [
+      "Wine guide – Portugal",
+      "Guia de vinhos – Portugal",
+      "Guide des vins – Portugal"
+     ],
+     "result": [
+      "“Good, of strong personality” · 17/20",
+      "«Bom, de forte personalidade» · 17/20",
+      "«Bon, de forte personnalité» · 17/20"
+     ],
+     "date": null,
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2003,
+   "items": [
+    {
+     "source": "Vinhos de Portugal 2007 – João Paulo Martins",
+     "kind": [
+      "Wine guide – Portugal",
+      "Guia de vinhos – Portugal",
+      "Guide des vins – Portugal"
+     ],
+     "result": [
+      "“Good, of strong personality” · 16.5/20",
+      "«Bom, de forte personalidade» · 16,5/20",
+      "«Bon, de forte personnalité» · 16,5/20"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "17/20 · section: selection of the month",
+      "17/20 · secção «seleção do mês»",
+      "17/20 · rubrique « sélection du mois »"
+     ],
+     "date": [
+      "July 2006",
+      "julho de 2006",
+      "juillet 2006"
+     ],
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2002,
+   "items": [
+    {
+     "source": "Vinhos de Portugal 2006 – João Paulo Martins",
+     "kind": [
+      "Wine guide – Portugal",
+      "Guia de vinhos – Portugal",
+      "Guide des vins – Portugal"
+     ],
+     "result": [
+      "Very Good+ · 7/8",
+      "Muito Bom+ · 7/8",
+      "Très bon+ · 7/8"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "17.5/20",
+      "17,5/20",
+      "17,5/20"
+     ],
+     "date": [
+      "April 2005",
+      "abril de 2005",
+      "avril 2005"
+     ],
+     "top10": false
+    }
+   ]
+  },
+  {
+   "year": 2001,
+   "items": [
+    {
+     "source": "Vinhos de Portugal 2005 – João Paulo Martins",
+     "kind": [
+      "Best-selling wine guide in Portugal",
+      "Guia de vinhos mais vendido em Portugal",
+      "Guide des vins le plus vendu au Portugal"
+     ],
+     "result": [
+      "Best of the year – production under 6,000 bottles (only 8 wines elected)",
+      "Melhor do ano – produção inferior a 6 000 garrafas (apenas 8 vinhos eleitos)",
+      "Meilleur de l'année – production inférieure à 6 000 bouteilles (8 vins seulement élus)"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Vinhos de Portugal 2005 – João Paulo Martins",
+     "kind": [
+      "Best-selling wine guide in Portugal",
+      "Guia de vinhos mais vendido em Portugal",
+      "Guide des vins le plus vendu au Portugal"
+     ],
+     "result": [
+      "Very Good+ · 7/8",
+      "Muito Bom+ · 7/8",
+      "Très bon+ · 7/8"
+     ],
+     "date": null,
+     "top10": false
+    },
+    {
+     "source": "Revista de Vinhos",
+     "kind": [
+      "Portuguese wine magazine",
+      "Revista portuguesa de vinhos",
+      "Magazine portugais du vin"
+     ],
+     "result": [
+      "18/20",
+      "18/20",
+      "18/20"
+     ],
+     "date": [
+      "April 2004",
+      "abril de 2004",
+      "avril 2004"
+     ],
+     "top10": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,4 +1,5 @@
 import WineShowcase from '@/components/WineShowcase'
+import Awards from '@/components/Awards'
 import JsonLd from '@/components/JsonLd'
 import { winesSchema } from '@/lib/schema'
 import { getDictionary } from '@/lib/i18n'
@@ -20,6 +21,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
         { name: dictionary.wines.puro.name, description: `${dictionary.wines.puro.concept} ${dictionary.wines.puro.tasting}`, image: '/images/puro-caixa.jpg' },
       ])} />
       <WineShowcase dictionary={dictionary} />
+      <Awards dictionary={dictionary} lang={lang} />
     </div>
   )
 }

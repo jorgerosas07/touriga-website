@@ -25,7 +25,7 @@ export default function Footer({ dictionary, lang }: { dictionary: any; lang: st
       { href: `${b}/family#jose-antonio`, label: f.jarpr.name }, { href: `${b}/family#jorge-rosas`, label: f.jorge.name }, { href: `${b}/family#sixth-generation`, label: f.sixth.title },
     ] },
     { href: `${b}/wines`, title: dictionary.wines.title, items: [
-      { href: `${b}/wines#wine-tinto`, label: dictionary.wines.tinto.name }, { href: `${b}/wines#wine-puro`, label: dictionary.wines.puro.name },
+      { href: `${b}/wines#wine-tinto`, label: dictionary.wines.tinto.name }, { href: `${b}/wines#wine-puro`, label: dictionary.wines.puro.name }, { href: `${b}/wines#awards`, label: dictionary.awards.title },
     ] },
     { href: `${b}/where`, title: dictionary.where.title, items: markets.map((m) => ({ href: `${b}/where`, label: m })) },
     { href: `${b}/contact`, title: dictionary.contact.eyebrow, items: [{ href: `${b}/contact`, label: dictionary.contact.send }] },

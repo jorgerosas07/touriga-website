@@ -1,4 +1,3 @@
-import Family from '@/components/Family'
 import Founders from '@/components/Founders'
 import { getDictionary, alternates } from '@/lib/i18n'
 
@@ -13,7 +12,6 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
 
   return (
     <div className="pt-[var(--nav-h)]">
-      <Family dictionary={dictionary} />
       <Founders dictionary={dictionary} />
     </div>
   )

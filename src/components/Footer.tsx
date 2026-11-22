@@ -19,12 +19,10 @@ export default function Footer({ dictionary, lang }: { dictionary: any; lang: st
   const blocks: Block[] = [
     { href: `${b}#quinta`, title: dictionary.nav.terroir, items: [
       { href: `${b}#terroir-1`, label: t.soil.title }, { href: `${b}#terroir-2`, label: t.climate.title }, { href: `${b}#terroir-3`, label: t.expression.title },
+      { href: `${b}#viticulture`, label: dictionary.viticulture.title }, { href: `${b}#winemaking`, label: dictionary.vinificacao.title }, { href: `${b}#winery`, label: dictionary.adega.title },
     ] },
-    { href: `${b}#viticulture`, title: dictionary.viticulture.title },
-    { href: `${b}#winemaking`, title: dictionary.vinificacao.title },
-    { href: `${b}#winery`, title: dictionary.adega.title },
     { href: `${b}/family`, title: dictionary.familia.title, items: [
-      { href: `${b}/family#jose-antonio`, label: f.jarpr.name }, { href: `${b}/family#jorge-rosas`, label: f.jorge.name }, { href: `${b}/family#family-today`, label: f.groupTitle }, { href: `${b}/family#sixth-generation`, label: f.sixth.title },
+      { href: `${b}/family#jose-antonio`, label: f.jarpr.name }, { href: `${b}/family#jorge-rosas`, label: f.jorge.name }, { href: `${b}/family#sixth-generation`, label: f.sixth.title },
     ] },
     { href: `${b}/wines`, title: dictionary.wines.title, items: [
       { href: `${b}/wines#wine-tinto`, label: dictionary.wines.tinto.name }, { href: `${b}/wines#wine-puro`, label: dictionary.wines.puro.name },
@@ -32,19 +30,14 @@ export default function Footer({ dictionary, lang }: { dictionary: any; lang: st
     { href: `${b}/where`, title: dictionary.where.title, items: markets.map((m) => ({ href: `${b}/where`, label: m })) },
     { href: `${b}/contact`, title: dictionary.contact.eyebrow, items: [{ href: `${b}/contact`, label: dictionary.contact.send }] },
   ]
-  // the three single sections (Viticulture, Winemaking, The Winery) share one column
-  const single = blocks.filter((b) => !b.items && b.href !== '#terroir')
   const multi = blocks.filter((b) => b.items)
 
   return (
     <footer className="closing bg-[var(--brand)] text-[#fbf7f0]">
-      <nav aria-label={dictionary.nav.sitemap} className="wrap grid grid-cols-2 gap-x-6 gap-y-10 pt-16 sm:grid-cols-3 lg:grid-cols-6">
+      <nav aria-label={dictionary.nav.sitemap} className="wrap grid grid-cols-2 gap-x-6 gap-y-10 pt-16 sm:grid-cols-3 lg:grid-cols-5">
         <div>
           <a href={multi[0].href} className={head}>{multi[0].title}</a>
           <ul className="mt-4 grid gap-2">{multi[0].items!.map((i) => <li key={i.href}><a className={link} href={i.href}>{i.label}</a></li>)}</ul>
-        </div>
-        <div className="grid content-start gap-4">
-          {single.map((b) => <a key={b.href} href={b.href} className={head}>{b.title}</a>)}
         </div>
         {multi.slice(1).map((b) => (
           <div key={b.href}>

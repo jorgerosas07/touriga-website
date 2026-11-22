@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Pillars({ dictionary }: { dictionary: any }) {
   const items = [
     { ...dictionary.viticulture, id: 'viticulture', src: '/images/vineyard-soil.jpg', alt: 'Young vine leaves and tendrils in the sun', pos: '58% center' },
-    { ...dictionary.vinificacao, id: 'winemaking', src: '/images/winery-interior.jpg', alt: 'Stainless steel tanks in the fermentation hall', pos: 'center' },
+    { ...dictionary.vinificacao, id: 'winemaking', src: '/images/vinificacao-vinho.jpg', alt: 'Red wine splashing in the light during fermentation', pos: 'center' },
     { ...dictionary.adega, id: 'winery', src: '/images/adega.jpg', alt: 'The winery, schist walls set into the slope', pos: 'center 40%' },
   ]
   return (

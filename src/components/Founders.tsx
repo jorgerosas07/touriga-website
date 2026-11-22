@@ -30,6 +30,19 @@ export default function Founders({ dictionary }: { dictionary: any }) {
         <div className="photo mx-auto mt-6 aspect-[1066/493] md:w-1/2">
           <Image src="/images/familia-grupo.jpg" alt="The Rosas family with their dogs on a terrace above the Douro" fill quality={90} sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" style={{ objectPosition: 'center 30%' }} />
         </div>
+
+        <div id="sixth-generation" className="mt-20 border-t border-[var(--line)] pt-14">
+          <h3 className="text-3xl leading-tight md:text-4xl">{f.sixth.title}</h3>
+          <div className="mt-8 grid gap-10 md:grid-cols-3 md:gap-8">
+            {f.sixth.people.map((p: { name: string; text: string }) => (
+              <article key={p.name}>
+                <h4 className="text-2xl leading-tight">{p.name}</h4>
+                <p className="muted mt-3 text-[15px] leading-relaxed">{p.text}</p>
+              </article>
+            ))}
+          </div>
+          <p className="mt-10 max-w-3xl text-lg leading-relaxed">{f.sixth.closing}</p>
+        </div>
       </div>
     </section>
   )

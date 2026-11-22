@@ -38,7 +38,7 @@ export default function PhotoStrip({ photos, labels }: { photos: Photo[]; labels
 
   return (
     <>
-      <ul className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6">
+      <ul className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6">
         {photos.map((p, i) => (
           <li key={p.src}>
             <button

@@ -1,28 +1,24 @@
 import Hero from '@/components/Hero'
-import Family from '@/components/Family'
-import Founders from '@/components/Founders'
+import Quinta from '@/components/Quinta'
 import PhotoChapters from '@/components/PhotoChapters'
 import Pillars from '@/components/Pillars'
-import WineShowcase from '@/components/WineShowcase'
-import WhereToFind from '@/components/WhereToFind'
-import Visit from '@/components/Visit'
-import enDict from '@/dictionaries/en.json'
-import ptDict from '@/dictionaries/pt.json'
+import { getDictionary, alternates } from '@/lib/i18n'
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params
+  return { alternates: alternates(lang, '') }
+}
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
-  const dictionary = lang === 'pt' ? ptDict : enDict
+  const dictionary = getDictionary(lang)
 
   return (
     <>
       <Hero dictionary={dictionary} />
+      <Quinta dictionary={dictionary} />
       <PhotoChapters dictionary={dictionary} />
       <Pillars dictionary={dictionary} />
-      <Family dictionary={dictionary} />
-      <Founders dictionary={dictionary} />
-      <WineShowcase dictionary={dictionary} />
-      <WhereToFind dictionary={dictionary} lang={lang} />
-      <Visit dictionary={dictionary} />
     </>
   )
 }

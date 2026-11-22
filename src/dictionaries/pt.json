@@ -45,7 +45,33 @@
     "eyebrow": "Pilar II",
     "title": "Viticultura",
     "subtitle": "Salvaguardando o património genético do Douro através de uma produção integrada e sustentável. Cada videira plantada com intenção. Cada sistema radicular uma ligação directa ao xisto fracturado abaixo.",
-    "text": "A vinha é plantada predominantemente com Touriga Nacional — a casta que José António foi o primeiro a defender como a melhor de Portugal. Rendimentos baixos, densidade elevada e uma filosofia de intervenção mínima permitem que a personalidade de cada parcela se exprima sem interferência. O resultado é fruto de concentração extraordinária e precisão aromática."
+    "text": "A vinha é plantada predominantemente com Touriga Nacional — a casta que José António foi o primeiro a defender como a melhor de Portugal. Rendimentos baixos, densidade elevada e uma filosofia de intervenção mínima permitem que a personalidade de cada parcela se exprima sem interferência. O resultado é fruto de concentração extraordinária e precisão aromática.",
+    "facts": [
+      {
+        "label": "Exposição solar",
+        "value": "Planalto ligeiramente inclinado a sul."
+      },
+      {
+        "label": "Altitude média",
+        "value": "350 metros – Efeito 2 em 1"
+      },
+      {
+        "label": "Solo",
+        "value": "Xisto, muito pouco fértil."
+      },
+      {
+        "label": "Área total",
+        "value": "11 hectares"
+      },
+      {
+        "label": "Castas",
+        "value": "80 % Touriga Nacional · 20 % Tinta Roriz / Touriga Francesa"
+      },
+      {
+        "label": "Património genético",
+        "value": "100 % seleção massal (20 anos de investigação)"
+      }
+    ]
   },
   "vinificacao": {
     "eyebrow": "Pilar III",
@@ -106,12 +132,12 @@
         "title": "José António Ramos Pinto Rosas",
         "years": "1919 – 1996",
         "paragraphs": [
-          "Dedicou toda a sua carreira profissional à Indústria do Vinho do Porto e à denominação mais antiga do mundo – o Vale do Douro. Vários escritores internacionais de vinhos referiram-se a José António como o “Papa do Douro” (em Le Porto, de Chantale Lecouty, página 145), ou “O Profeta do Douro”, ou “o Pioneiro do Douro”, graças ao seu grande contributo para o desenvolvimento desta Região.",
-          "José António Rosas empreendeu o importante trabalho que conduziu ao desenvolvimento moderno desta região vinhateira. Trabalhou sempre com o objetivo final de encontrar as melhores soluções para aumentar tanto a qualidade dos vinhos como os sistemas de produção no Vale do Douro.",
-          "A sua criação do novo método de plantação em “patamares” permitiu maior mecanização nas vinhas e, juntamente com o seu sobrinho João Nicolau de Almeida, foram também implementadas no Vale do Douro as “vinhas verticais”, não só para maior mecanização mas também para maior densidade de plantação, resultando em maior produção por hectare mas menor produção por videira e maior qualidade do fruto. Realizaram ainda investigação sobre as castas da região e a seleção de porta-enxertos, cujos resultados foram em grande parte adotados pela maioria dos viticultores do Douro.",
-          "José António foi também representante de Portugal no “L’Office International du Vin”, fundador da Confraria do Vinho do Porto e Presidente do Conselho da Administração (CEO) do produtor de vinhos do Porto e do Douro A. Ramos Pinto, Vinhos S.A..",
-          "Com a sua forte determinação em aumentar a qualidade dos vinhos produzidos neste Vale, fundou em 1982 a muito respeitada ADVID (Associação para o Desenvolvimento da Viticultura Duriense), da qual foi presidente até 1996.",
-          "José António Rosas foi coautor do livro “O Vinho do Porto”, publicado pelo IVDP (Instituto do Vinho do Porto)."
+          "José António Rosas dedicou toda a sua carreira profissional à indústria do Vinho do Porto e do Douro e à região demarcada e regulamentada de vinho mais antiga do mundo, o Vale do Douro. O seu notável contributo para o desenvolvimento e a modernização da região valeu-lhe o reconhecimento dos principais escritores internacionais de vinhos, que o designaram como o “Papa do Douro” (segundo Chantal Lecouty, em Le Porto, página 145), o “Profeta do Douro” e o “Pioneiro do Douro”.",
+          "Ao longo da sua carreira, José António Rosas desempenhou um papel decisivo na construção da região vitivinícola moderna do Douro. O seu trabalho foi sempre guiado por um único objetivo: melhorar tanto a qualidade dos vinhos do Porto e do Douro como a eficiência e a sustentabilidade dos sistemas de produção da vinha.",
+          "Entre as suas realizações mais significativas esteve o desenvolvimento do sistema de plantação de vinha em patamares, que facilitou a mecanização da vinha adaptando-se às encostas íngremes da região. Em conjunto com o seu sobrinho, João, foi também pioneiro na introdução das vinhas plantadas na vertical (vinha ao alto), uma abordagem revolucionária que permitiu maior mecanização, maiores densidades de plantação e uma melhor qualidade das uvas, graças a menores produções por videira. Esta vasta investigação sobre castas e seleção de porta-enxertos lançou as bases de muitas das práticas vitícolas hoje amplamente adotadas em todo o Vale do Douro.",
+          "José António Rosas representou também Portugal no Office International de la Vigne et du Vin (OIV), foi membro fundador da Confraria do Vinho do Porto e exerceu as funções de Presidente do Conselho de Administração e Chief Executive Officer da Ramos Pinto, um dos produtores de vinho do Porto e do Douro mais prestigiados de Portugal.",
+          "Movido pelo seu inabalável empenho em elevar os padrões de qualidade dos vinhos do Douro, fundou a ADVID (Associação para o Desenvolvimento da Viticultura Duriense) em 1982. Sob a sua liderança, como Presidente até 1996, a ADVID tornou-se uma das instituições de investigação vitícola mais respeitadas de Portugal.",
+          "José António Rosas foi também coautor de O Vinho do Porto, uma obra de referência publicada pelo Instituto dos Vinhos do Douro e do Porto (IVDP), consolidando ainda mais o seu legado como uma das figuras mais influentes da história do Douro e da indústria do Vinho do Porto."
         ]
       }
     },
@@ -120,7 +146,25 @@
       "years": "Quinta Geração",
       "text": "Filho de José António. Guardião da Quinta da Touriga-Chã desde o falecimento do pai. Construiu a premiada adega de 2004. Continua o legado com a mesma dedicação intransigente ao Douro, às suas vinhas e aos seus vinhos."
     },
-    "groupTitle": "A família hoje"
+    "groupTitle": "A família hoje",
+    "sixth": {
+      "title": "A Sexta Geração",
+      "people": [
+        {
+          "name": "João Rosas",
+          "text": "João iniciou a sua carreira numa consultora de gestão global, aconselhando multinacionais e empresas participadas por private equity em iniciativas de melhoria operacional e criação de valor. É Mestre em Administração de Empresas (MBA) pela Saïd Business School, da Universidade de Oxford, onde integrou o Dean’s List, e licenciado em Economia Industrial pela Universidade de Nottingham. Atualmente é Associate na Headway Capital Partners, uma sociedade de investimento de private equity sediada em Londres. João fala fluentemente inglês, francês, espanhol e português."
+        },
+        {
+          "name": "José Maria Rosas",
+          "text": "José Maria é Mestre em Finanças pela ESCP Business School, classificado pelo Financial Times como o n.º 1 mundial em Mestrados em Finanças, e licenciado em Gestão Internacional com Finanças pela Universidade de Warwick. Adquiriu experiência em crédito privado e financiamento de aquisições antes de ingressar na LGT Capital Partners, em Londres. Fluente em inglês, francês, espanhol e português, fundou a Warwick Wine Society e é detentor da certificação WSET Nível 2."
+        },
+        {
+          "name": "Jorge Rosas",
+          "text": "Jorge frequenta atualmente a licenciatura em Gestão na Nova School of Business and Economics, uma das principais escolas de negócios da Europa. Concluiu o Lycée Français International de Porto com distinção máxima, ficando entre os 10% melhores alunos a nível mundial no Baccalauréat francês. Fluente em português, inglês, francês e espanhol. Apoia o pai em vários aspetos da operação da quinta."
+        }
+      ],
+      "closing": "Em conjunto, João, José Maria e Jorge representam a sexta geração da família Rosas, combinando uma herança profundamente enraizada no Vale do Douro com a experiência e a formação adquiridas em algumas das principais universidades e instituições financeiras da Europa."
+    }
   },
   "contact": {
     "eyebrow": "Contacte-nos",
@@ -170,5 +214,16 @@
       "title": "Importadores",
       "example": "Exemplo"
     }
+  },
+  "quinta": {
+    "title": "A Quinta da Touriga",
+    "paragraphs": [
+      "Depois de dedicar mais de cinquenta anos da sua vida à viticultura no Vale do Douro, e apenas alguns anos antes do seu falecimento, José António Castro Ramos Pinto Rosas decidiu cumprir um sonho de toda a vida: criar a “quinta de sonho” para produzir vinhos do Porto e do Douro excecionais.",
+      "Após um estudo extenso e pormenorizado da região, apoiado em mapas topográficos e em décadas de experiência, José António Rosas identificou uma propriedade de 20 hectares no Douro Superior, perto de Vila Nova de Foz Côa, com todas as características necessárias para produzir vinhos de topo, incluindo altitude, exposição e solos ideais.",
+      "No início da década de 1990, com 72 anos, adquiriu a propriedade e começou a aplicar todo o conhecimento acumulado ao longo da sua carreira. Partindo do zero, plantou 8,5 hectares de vinha, selecionando cuidadosamente as castas mais adequadas ao clima local e aos exigentes solos xistosos da região. Nunca antes tinha sido plantada vinha na propriedade.",
+      "A sua decisão pioneira de plantar uma vinha com mais de 80% de Touriga Nacional levou-o a dar à quinta o nome de Quinta da Touriga.",
+      "Apesar das suas produções naturalmente baixas, José António foi um dos primeiros visionários a reconhecer a Touriga Nacional como uma das melhores castas tintas de Portugal e o seu enorme potencial para produzir vinhos de classe mundial.",
+      "Hoje, a Quinta da Touriga abrange cerca de 40 hectares e é gerida pelo filho de José António, Jorge Rosas, a quinta geração de uma família dedicada à produção de vinho. Em 2004, Jorge construiu uma adega de última geração, elevando ainda mais as ambições da quinta. Desde então, os vinhos produzidos na Quinta da Touriga têm sido amplamente reconhecidos por críticos e escritores de vinhos portugueses e internacionais como alguns dos melhores vinhos produzidos em Portugal."
+    ]
   }
 }

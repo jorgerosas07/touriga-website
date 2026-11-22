@@ -3,7 +3,7 @@
 export type Region = { key: 'na' | 'sa' | 'eu' | 'as'; codes: string[]; provinces?: Record<string, string[]> }
 
 export const REGIONS: Region[] = [
-  { key: 'na', codes: ['CA'], provinces: { en: ['Ontario', 'Quebec'], pt: ['Ontário', 'Quebeque'] } },
+  { key: 'na', codes: ['CA'], provinces: { en: ['Ontario', 'Quebec'], pt: ['Ontário', 'Quebeque'], fr: ['Ontario', 'Québec'] } },
   { key: 'sa', codes: ['BR'] },
   { key: 'eu', codes: ['PT', 'SE', 'LU', 'GB'] },
   { key: 'as', codes: ['MO'] },

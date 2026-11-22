@@ -20,3 +20,6 @@ O endereço do site está assumido como `https://touriga-website.vercel.app` em 
 - **Página `/compare`** (capturas das versões do site): apagar `public/compare/` e a entrada `compare` do `matcher` em `src/middleware.ts`.
 - Fotos pedidas em melhor resolução: cápsula (876 px), foto da família (1066 px), vinho a salpicar (1167 px), garrafa Quinta da Touriga-Chã.
 
+# 🔁 Refazer o SEO quando o site estiver acabado
+O pacote de SEO (títulos e descrições em `src/dictionaries/*.json` → `seo`, `src/lib/seo.ts`, `src/lib/schema.ts`, `sitemap.ts`, `robots.ts`, `public/llms.txt`, `public/og.jpg`, textos `alts`) foi feito a meio da construção do site. **O Jorge pediu para o refazer quando o site estiver terminado**, para refletir o conteúdo final: secções e páginas finais, prémios e imprensa confirmados (com fonte), fichas técnicas, importadores reais e nomes definitivos. Lembrar o Jorge disto quando disser que o site está pronto. Avaliação online feita em 22/11/2026 (provisória, sem páginas abertas): Vivino 4,2 (≈8 370 avaliações; Chã 4,4, Puro 4,1), 95 pontos Parker/Squires para o 2013 por confirmar, Jancis Robinson com notas por ver, ouro no Concurso de Vinhos do Douro Superior (2011) e prémio de arquitetura do Douro por confirmar (ano?), nome legal a confirmar (INPI mostra "Casa Rosas - Vinhos, Unipessoal, Lda").
+

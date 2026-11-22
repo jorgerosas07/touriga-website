@@ -7,7 +7,7 @@ import Image from 'next/image'
 // foot over the one before. At rest (reduced motion, a screen under 600px tall) the chapters stand side by side.
 const PICS = [
   { src: '/images/vineyard-terrace.jpg', alt: 'soil', pos: 'center 92%' },
-  { src: '/images/winery-summer.jpg', alt: 'wall', pos: 'center' },
+  { src: '/images/clima-por-do-sol.jpg', alt: 'sunset', pos: '62% center' },
   { src: '/images/adega-floor.jpg', alt: 'floor', pos: 'center' },
 ]
 const clamp = (v: number) => Math.min(1, Math.max(0, v))

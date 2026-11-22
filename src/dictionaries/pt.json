@@ -248,7 +248,6 @@
     "quinta": "A vinha e as oliveiras da quinta sobre o vale",
     "aerial": "A adega entre as árvores e as vinhas, vista de cima",
     "soil": "Fileiras de vinha sobre fragmentos escuros de xisto no solo",
-    "wall": "Um muro de xisto em pedra seca à luz do verão",
     "floor": "Xisto e betão em bruto no interior da adega",
     "viticulture": "Folhas jovens e gavinhas da videira ao sol",
     "winemaking": "Vinho tinto a salpicar à luz durante a fermentação",
@@ -261,7 +260,8 @@
     "puro": "Puro, Quinta da Touriga: a garrafa e a sua caixa de seis garrafas",
     "terrace": "O terraço da adega entre arbustos selvagens",
     "dusk": "A quinta ao fim do dia",
-    "sun": "A quinta ao sol"
+    "sun": "A quinta ao sol",
+    "sunset": "Vinhas ao fim do dia, com as montanhas do Douro sob um céu de pôr do sol"
   },
   "seo": {
     "home": {

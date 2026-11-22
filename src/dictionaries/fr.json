@@ -248,7 +248,6 @@
     "quinta": "La vigne et les oliviers du domaine au-dessus de la vallée",
     "aerial": "La cave au milieu des arbres et des vignes, vue du ciel",
     "soil": "Rangs de vigne sur des fragments de schiste sombre dans le sol",
-    "wall": "Un mur en pierre sèche de schiste dans la lumière d'été",
     "floor": "Schiste et béton bruts à l'intérieur de la cave",
     "viticulture": "Jeunes feuilles et vrilles de vigne au soleil",
     "winemaking": "Vin rouge éclaboussant dans la lumière pendant la fermentation",
@@ -261,7 +260,8 @@
     "puro": "Puro, Quinta da Touriga : la bouteille et son carton de six bouteilles",
     "terrace": "La terrasse de la cave au milieu d'arbustes sauvages",
     "dusk": "Le domaine au crépuscule",
-    "sun": "Le domaine au soleil"
+    "sun": "Le domaine au soleil",
+    "sunset": "Vignes dans la lumière du soir, avec les montagnes du Douro sous un ciel de coucher de soleil"
   },
   "seo": {
     "home": {

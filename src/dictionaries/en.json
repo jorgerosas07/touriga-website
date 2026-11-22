@@ -248,7 +248,6 @@
     "quinta": "The estate's vineyard and olive trees above the valley",
     "aerial": "The winery set among the trees and vineyards, seen from above",
     "soil": "Vine rows over dark schist shards in the soil",
-    "wall": "A dry stone wall of schist in summer light",
     "floor": "Raw schist and concrete inside the winery",
     "viticulture": "Young vine leaves and tendrils in the sun",
     "winemaking": "Red wine splashing in the light during fermentation",
@@ -261,7 +260,8 @@
     "puro": "Puro, Quinta da Touriga: the bottle and its six-bottle case",
     "terrace": "The winery terrace among wild shrubs",
     "dusk": "The estate at dusk",
-    "sun": "The estate in the sun"
+    "sun": "The estate in the sun",
+    "sunset": "Vines in the evening light, with the Douro mountains under a sunset sky"
   },
   "seo": {
     "home": {

@@ -56,24 +56,6 @@
   },
   {
    "big": [
-    "6×",
-    "6×",
-    "6×"
-   ],
-   "line": [
-    "Top 10 Portuguese wines",
-    "Top 10 vinhos portugueses",
-    "Top 10 vins portugais"
-   ],
-   "sub": [
-    "Blind tastings · vintages 2005, 2007, 2011, 2013, 2014 and 2016",
-    "Provas cegas · colheitas 2005, 2007, 2011, 2013, 2014 e 2016",
-    "Dégustations à l'aveugle · millésimes 2005, 2007, 2011, 2013, 2014 et 2016"
-   ],
-   "schema": "Top 10 Portuguese wines, six vintages in blind tastings"
-  },
-  {
-   "big": [
     "4",
     "4",
     "4"
@@ -1102,5 +1084,13 @@
     }
    ]
   }
- ]
+ ],
+ "record": {
+  "text": [
+   "Quinta da Touriga-Chã holds the record for the most appearances in the Top 10 Wines of Portugal ranking published by Revista de Vinhos / Essência do Vinho.",
+   "A Quinta da Touriga-Chã detém o recorde de presenças no ranking Top 10 Vinhos de Portugal publicado pela Revista de Vinhos / Essência do Vinho.",
+   "La Quinta da Touriga-Chã détient le record de présences dans le classement Top 10 des vins du Portugal publié par la Revista de Vinhos / Essência do Vinho."
+  ],
+  "schema": "Record for the most appearances in the Top 10 Wines of Portugal ranking published by Revista de Vinhos / Essência do Vinho"
+ }
 }

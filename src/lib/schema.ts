@@ -26,7 +26,7 @@ export function organizationSchema(lang: string, description: string) {
         addressRegion: 'Douro Superior',
         addressCountry: 'PT',
       },
-      award: awards.highlights.map((h) => h.schema).filter(Boolean),
+      award: [awards.record.schema, ...awards.highlights.map((h) => h.schema)].filter(Boolean),
       founder: { '@type': 'Person', name: 'José António Castro Ramos Pinto Rosas', birthDate: '1919', deathDate: '1996' },
     },
     {

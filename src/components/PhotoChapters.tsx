@@ -92,7 +92,7 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
               <li key={i}>
                 <div className="photo mb-5 aspect-[4/5]"><Image src={it.src} alt={it.alt} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" style={{ objectPosition: it.pos }} /></div>
                 <h3 className="text-2xl leading-tight">{it.title}</h3>
-                <p className="muted mt-2">{it.text}</p>
+                <p className="muted mt-2 whitespace-pre-line">{it.text}</p>
               </li>
             ))}
           </ol>
@@ -125,8 +125,8 @@ export default function PhotoChapters({ dictionary }: { dictionary: any }) {
           <ol className="grid">
             {items.map((it: any, i: number) => (
               <li key={i} className="[grid-area:1/1] transition-all duration-500" style={{ opacity: i === on ? 1 : 0, transform: i === on ? 'none' : 'translateY(10px)' }}>
-                <h3 className="text-2xl leading-tight md:text-4xl">{it.title}</h3>
-                <p className="mt-2 text-[14px] leading-snug text-[var(--muted)] md:mt-4 md:text-[17px] md:leading-relaxed">{it.text}</p>
+                <h3 className="chapter-h3 text-2xl leading-tight md:text-4xl">{it.title}</h3>
+                <p className="chapter-text mt-2 text-[14px] leading-snug text-[var(--muted)] md:mt-4 md:text-[17px] md:leading-relaxed whitespace-pre-line">{it.text}</p>
               </li>
             ))}
           </ol>

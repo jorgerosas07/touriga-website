@@ -50,7 +50,6 @@ export default function Awards({ dictionary, lang }: { dictionary: any; lang: st
             </details>
           ))}
         </div>
-        <p className="muted mt-6 text-sm">{a.note}</p>
       </div>
     </section>
   )

@@ -1,6 +1,5 @@
 import Hero from '@/components/Hero'
 import Quinta from '@/components/Quinta'
-import Different from '@/components/Different'
 import PhotoChapters from '@/components/PhotoChapters'
 import Pillars from '@/components/Pillars'
 import { getDictionary, alternates } from '@/lib/i18n'
@@ -18,7 +17,6 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
     <>
       <Hero dictionary={dictionary} />
       <Quinta dictionary={dictionary} />
-      <Different dictionary={dictionary} />
       <PhotoChapters dictionary={dictionary} />
       <Pillars dictionary={dictionary} />
     </>

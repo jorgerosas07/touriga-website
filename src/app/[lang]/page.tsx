@@ -3,11 +3,12 @@ import Quinta from '@/components/Quinta'
 import AerialBand from '@/components/AerialBand'
 import PhotoChapters from '@/components/PhotoChapters'
 import Pillars from '@/components/Pillars'
-import { getDictionary, alternates } from '@/lib/i18n'
+import { getDictionary } from '@/lib/i18n'
+import { pageMetadata } from '@/lib/seo'
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
-  return { alternates: alternates(lang, '') }
+  return pageMetadata(lang, 'home')
 }
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
@@ -18,7 +19,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
     <>
       <Hero dictionary={dictionary} />
       <Quinta dictionary={dictionary} />
-      <AerialBand />
+      <AerialBand dictionary={dictionary} />
       <PhotoChapters dictionary={dictionary} />
       <Pillars dictionary={dictionary} />
     </>

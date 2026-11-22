@@ -242,5 +242,48 @@
         "text": "Muscled and elegant"
       }
     ]
+  },
+  "alts": {
+    "hero": "The estate's terraced vineyards above the Douro Superior",
+    "quinta": "The estate's vineyard and olive trees above the valley",
+    "aerial": "The winery set among the trees and vineyards, seen from above",
+    "soil": "Vine rows over dark schist shards in the soil",
+    "wall": "A dry stone wall of schist in summer light",
+    "floor": "Raw schist and concrete inside the winery",
+    "viticulture": "Young vine leaves and tendrils in the sun",
+    "winemaking": "Red wine splashing in the light during fermentation",
+    "winery": "The winery, schist walls set into the slope",
+    "jose": "José António Rosas in his winery",
+    "jorge": "Jorge Rosas among the barrels",
+    "family": "The Rosas family with their dogs on a terrace above the Douro",
+    "capsule": "The gold JR seal on the burgundy capsule of a bottle",
+    "tinto": "Three bottles of Quinta da Touriga-Chã lying on their sides, labels facing up",
+    "puro": "Puro, Quinta da Touriga: the bottle and its six-bottle case",
+    "terrace": "The winery terrace among wild shrubs",
+    "dusk": "The estate at dusk",
+    "sun": "The estate in the sun"
+  },
+  "seo": {
+    "home": {
+      "title": "Quinta da Touriga-Chã | Wine estate in the Douro Superior",
+      "description": "Family wine estate in the Douro Superior, near Vila Nova de Foz Côa: Touriga Nacional grown on schist, six generations of the Rosas family and a winery built in 2004."
+    },
+    "family": {
+      "title": "The Family | Quinta da Touriga-Chã",
+      "description": "José António Rosas, the Pioneer of the Douro, his son Jorge Rosas, the fifth generation, and the sixth generation of the Rosas family."
+    },
+    "wines": {
+      "title": "Our Wines | Quinta da Touriga-Chã",
+      "description": "Quinta da Touriga-Chã, our flagship Tinto, predominantly Touriga Nacional, and Puro, a virgin, unfortified wine. Douro Superior, Portugal."
+    },
+    "where": {
+      "title": "Where to find us | Quinta da Touriga-Chã",
+      "description": "Where to find the wines: Portugal, Canada (Ontario and Quebec), Brazil, Sweden, Luxembourg, the United Kingdom and Macao."
+    },
+    "contact": {
+      "title": "Contact Us | Quinta da Touriga-Chã",
+      "description": "Contact Quinta da Touriga-Chã: Jorge Rosas, Vinhos - Unipessoal Lda, Apartado 17, 5150-909 Vila Nova de Foz Côa, Portugal."
+    },
+    "siteName": "Quinta da Touriga-Chã"
   }
 }

@@ -13,7 +13,7 @@ export default function ContactForm({ labels, countries, to }: { labels: Labels;
 
   return (
     <div id="contact">
-    <h3 className="h2 mb-8 md:mb-10">{labels.title}</h3>
+    <h1 className="h2 mb-8 md:mb-10">{labels.title}</h1>
     <form onSubmit={submit} className="grid max-w-3xl gap-6">
       <div className="field"><label htmlFor="w-name">{labels.name} <span aria-hidden>*</span></label><input id="w-name" name="name" autoComplete="name" required /></div>
       <div className="field"><label htmlFor="w-email">{labels.email} <span aria-hidden>*</span></label><input id="w-email" name="email" type="email" autoComplete="email" required /></div>

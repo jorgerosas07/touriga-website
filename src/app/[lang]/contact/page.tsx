@@ -1,11 +1,12 @@
 import ContactForm from '@/components/ContactForm'
 import Visit from '@/components/Visit'
 import { getCountries } from '@/lib/countries'
-import { getDictionary, alternates } from '@/lib/i18n'
+import { getDictionary } from '@/lib/i18n'
+import { pageMetadata } from '@/lib/seo'
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
-  return { alternates: alternates(lang, '/contact') }
+  return pageMetadata(lang, 'contact')
 }
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {

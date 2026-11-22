@@ -242,5 +242,48 @@
         "text": "Musclé et élégant"
       }
     ]
+  },
+  "alts": {
+    "hero": "Les vignobles en terrasses du domaine, au-dessus du Douro Supérieur",
+    "quinta": "La vigne et les oliviers du domaine au-dessus de la vallée",
+    "aerial": "La cave au milieu des arbres et des vignes, vue du ciel",
+    "soil": "Rangs de vigne sur des fragments de schiste sombre dans le sol",
+    "wall": "Un mur en pierre sèche de schiste dans la lumière d'été",
+    "floor": "Schiste et béton bruts à l'intérieur de la cave",
+    "viticulture": "Jeunes feuilles et vrilles de vigne au soleil",
+    "winemaking": "Vin rouge éclaboussant dans la lumière pendant la fermentation",
+    "winery": "La cave, aux murs de schiste enchâssés dans la pente",
+    "jose": "José António Rosas dans sa cave",
+    "jorge": "Jorge Rosas parmi les barriques",
+    "family": "La famille Rosas avec ses chiens sur une terrasse au-dessus du Douro",
+    "capsule": "Le sceau doré JR sur la capsule bordeaux d'une bouteille",
+    "tinto": "Trois bouteilles de Quinta da Touriga-Chã couchées, étiquettes vers le haut",
+    "puro": "Puro, Quinta da Touriga : la bouteille et son carton de six bouteilles",
+    "terrace": "La terrasse de la cave au milieu d'arbustes sauvages",
+    "dusk": "Le domaine au crépuscule",
+    "sun": "Le domaine au soleil"
+  },
+  "seo": {
+    "home": {
+      "title": "Quinta da Touriga-Chã | Domaine viticole du Douro Supérieur",
+      "description": "Domaine viticole familial dans le Douro Supérieur, près de Vila Nova de Foz Côa : Touriga Nacional sur schiste, six générations de la famille Rosas et une cave construite en 2004."
+    },
+    "family": {
+      "title": "La Famille | Quinta da Touriga-Chã",
+      "description": "José António Rosas, le Pionnier du Douro, son fils Jorge Rosas, la cinquième génération, et la sixième génération de la famille Rosas."
+    },
+    "wines": {
+      "title": "Nos Vins | Quinta da Touriga-Chã",
+      "description": "Quinta da Touriga-Chã, notre vin rouge phare, principalement Touriga Nacional, et Puro, un vin vierge, non fortifié. Douro Supérieur, Portugal."
+    },
+    "where": {
+      "title": "Où nous trouver | Quinta da Touriga-Chã",
+      "description": "Où trouver les vins : Portugal, Canada (Ontario et Québec), Brésil, Suède, Luxembourg, Royaume-Uni et Macao."
+    },
+    "contact": {
+      "title": "Nous contacter | Quinta da Touriga-Chã",
+      "description": "Contactez Quinta da Touriga-Chã : Jorge Rosas, Vinhos - Unipessoal Lda, Apartado 17, 5150-909 Vila Nova de Foz Côa, Portugal."
+    },
+    "siteName": "Quinta da Touriga-Chã"
   }
 }

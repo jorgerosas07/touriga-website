@@ -4,13 +4,13 @@ import BiographyDialog from './BiographyDialog'
 export default function Founders({ dictionary }: { dictionary: any }) {
   const f = dictionary.founders
   const people = [
-    { ...f.jarpr, id: 'jose-antonio', src: '/images/founder-jarpr.png', alt: 'José António Rosas in his winery', pos: 'center', gray: true },
-    { ...f.jorge, id: 'jorge-rosas', src: '/images/founder-jorge.jpg', alt: 'Jorge Rosas among the barrels', pos: 'center 20%', gray: false },
+    { ...f.jarpr, id: 'jose-antonio', src: '/images/founder-jarpr.png', alt: dictionary.alts.jose, pos: 'center', gray: true },
+    { ...f.jorge, id: 'jorge-rosas', src: '/images/founder-jorge.jpg', alt: dictionary.alts.jorge, pos: 'center 20%', gray: false },
   ]
   return (
     <section id="founders" className="flex min-h-[100svh] items-center bg-[var(--surface)] py-20">
       <div className="wrap">
-        <h2 className="h2">{f.title}</h2>
+        <h1 className="h2">{f.title}</h1>
         <div className="mt-12 grid gap-12 md:grid-cols-2 md:gap-6">
           {people.map((p) => (
             <article key={p.name} id={p.id} className="grid gap-6 sm:grid-cols-[200px_1fr] md:pr-10">
@@ -18,7 +18,7 @@ export default function Founders({ dictionary }: { dictionary: any }) {
                 <Image src={p.src} alt={p.alt} fill sizes="200px" className={`object-cover ${p.gray ? 'grayscale' : ''}`} style={{ objectPosition: p.pos }} />
               </div>
               <div>
-                <h3 className="text-2xl leading-tight md:text-3xl">{p.name}</h3>
+                <h2 className="text-2xl leading-tight md:text-3xl">{p.name}</h2>
                 <p className="label mt-2 mb-4">{p.years}</p>
                 <p className="muted">{p.text}</p>
                 {p.bio && <BiographyDialog bio={p.bio} portrait={p.src} portraitAlt={p.alt} closeLabel={dictionary.nav.close} />}
@@ -26,17 +26,17 @@ export default function Founders({ dictionary }: { dictionary: any }) {
             </article>
           ))}
         </div>
-        <h3 id="family-today" className="mt-14 text-center text-3xl leading-tight md:text-4xl">{f.groupTitle}</h3>
+        <h2 id="family-today" className="mt-14 text-center text-3xl leading-tight md:text-4xl">{f.groupTitle}</h2>
         <div className="photo mx-auto mt-6 aspect-[1066/493] md:w-1/2">
-          <Image src="/images/familia-grupo.jpg" alt="The Rosas family with their dogs on a terrace above the Douro" fill quality={90} sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" style={{ objectPosition: 'center 30%' }} />
+          <Image src="/images/familia-grupo.jpg" alt={dictionary.alts.family} fill quality={90} sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" style={{ objectPosition: 'center 30%' }} />
         </div>
 
         <div id="sixth-generation" className="mt-20 border-t border-[var(--line)] pt-14">
-          <h3 className="text-3xl leading-tight md:text-4xl">{f.sixth.title}</h3>
+          <h2 className="text-3xl leading-tight md:text-4xl">{f.sixth.title}</h2>
           <div className="mt-8 grid gap-10 md:grid-cols-3 md:gap-8">
             {f.sixth.people.map((p: { name: string; text: string }) => (
               <article key={p.name}>
-                <h4 className="text-2xl leading-tight">{p.name}</h4>
+                <h3 className="text-2xl leading-tight">{p.name}</h3>
                 <p className="muted mt-3 text-[15px] leading-relaxed">{p.text}</p>
               </article>
             ))}

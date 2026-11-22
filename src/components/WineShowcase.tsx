@@ -7,17 +7,17 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
   const labels = { open: dictionary.nav.open, close: dictionary.nav.close }
   const wines = [
     { ...w.tinto, key: 'tinto', src: '/images/quinta-rotulos.jpg', w: 2000, h: 1333, pos: '53% center', fit: 'object-cover', frame: 'aspect-[4/3]',
-      alt: 'Three bottles of Quinta da Touriga-Chã lying on their sides, labels facing up' },
+      alt: dictionary.alts.tinto },
     { ...w.puro, key: 'puro', src: '/images/puro-caixa.jpg', w: 2400, h: 2117, pos: 'center', fit: 'object-contain', frame: 'aspect-[4/3] !bg-[var(--bg)]',
-      alt: 'Puro, Quinta da Touriga: the bottle and its six-bottle case' },
+      alt: dictionary.alts.puro },
   ]
   return (
     <section id="wines" className="flex min-h-[calc(100svh-var(--nav-h))] items-center py-8 md:py-10">
       <div className="wrap">
-        <h2 className="h2">{w.title}</h2>
+        <h1 className="h2">{w.title}</h1>
 
         <div className="mt-8 grid gap-6 md:mt-10 md:grid-cols-12">
-          <ZoomPhoto src="/images/capsula.jpg" alt="The gold JR seal on the burgundy capsule of a bottle" width={876} height={1315} labels={labels}
+          <ZoomPhoto src="/images/capsula.jpg" alt={dictionary.alts.capsule} width={876} height={1315} labels={labels}
             className="md:col-span-4 md:h-full" frameClass="aspect-[4/3] md:aspect-auto md:h-full" position="center 32%" />
 
           {wines.map((x) => (
@@ -25,7 +25,7 @@ export default function WineShowcase({ dictionary }: { dictionary: any }) {
               <ZoomPhoto src={x.src} alt={x.alt} width={x.w} height={x.h} labels={labels} className="w-full"
                 frameClass={x.frame} imgClass={x.fit} position={x.pos} />
               <div className="mt-6">
-                <h3 className="text-2xl md:text-[28px] md:leading-tight">{x.name}</h3>
+                <h2 className="text-2xl md:text-[28px] md:leading-tight">{x.name}</h2>
                 <p className="mt-3">{x.concept}</p>
                 <p className="muted mt-1">{x.tasting}</p>
               </div>

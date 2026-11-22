@@ -32,6 +32,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths (_next) and static assets
-    '/((?!_next|api|favicon.ico|assets|images|compare).*)',
+    '/((?!_next|api|favicon.ico|icon.png|apple-icon.png|robots.txt|sitemap.xml|llms.txt|og.jpg|assets|images|compare).*)',
   ],
 }

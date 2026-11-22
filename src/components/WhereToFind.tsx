@@ -11,12 +11,12 @@ export default function WhereToFind({ dictionary, lang }: { dictionary: any; lan
   return (
     <section id="where" className="min-h-[calc(100svh-var(--nav-h))] py-12 md:py-16">
       <div className="wrap">
-        <h2 className="h2">{w.title}</h2>
+        <h1 className="h2">{w.title}</h1>
 
         <div className="mt-10 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
           {order.map((r) => (
             <div key={r.key}>
-              <h3 className="border-b border-[var(--line)] pb-3 text-2xl">{w.regions[r.key]}</h3>
+              <h2 className="border-b border-[var(--line)] pb-3 text-2xl">{w.regions[r.key]}</h2>
               <ul className="mt-4 text-[16px] leading-6">
                 {r.codes.map((c) => ({ c, n: names.of(c) ?? c })).sort((a, b) => a.n.localeCompare(b.n, lang)).map(({ c, n }) => (
                   <li key={c} className="relative py-0.5">

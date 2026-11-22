@@ -285,5 +285,14 @@
       "description": "Contacte a Quinta da Touriga-Chã: Jorge Rosas, Vinhos - Unipessoal Lda, Apartado 17, 5150-909 Vila Nova de Foz Côa, Portugal."
     },
     "siteName": "Quinta da Touriga-Chã"
+  },
+  "awards": {
+    "title": "Prémios",
+    "sub": "Quinta da Touriga-Chã · DOC Douro",
+    "all": "Todas as distinções por colheita",
+    "vintage": "Colheita",
+    "n1": "distinção",
+    "nn": "distinções",
+    "note": "Resultados registados pelo produtor."
   }
 }

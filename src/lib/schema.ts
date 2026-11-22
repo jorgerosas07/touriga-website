@@ -1,4 +1,5 @@
 import { SITE_URL } from './site'
+import awards from '@/data/awards.json'
 
 export const wineryId = `${SITE_URL}/#winery`
 
@@ -25,6 +26,7 @@ export function organizationSchema(lang: string, description: string) {
         addressRegion: 'Douro Superior',
         addressCountry: 'PT',
       },
+      award: awards.highlights.map((h) => h.schema).filter(Boolean),
       founder: { '@type': 'Person', name: 'José António Castro Ramos Pinto Rosas', birthDate: '1919', deathDate: '1996' },
     },
     {

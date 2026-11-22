@@ -19,6 +19,16 @@ export default function Pillars({ dictionary }: { dictionary: any }) {
               <h2 className="h2">{it.title}</h2>
               <p className="lead mt-7">{it.subtitle}</p>
               <p className="muted mt-5">{it.text}</p>
+              {it.facts && (
+                <dl className="mt-8 grid border-t border-[var(--line)] text-[15px]">
+                  {it.facts.map((f: { label: string; value: string }) => (
+                    <div key={f.label} className="grid gap-x-6 border-b border-[var(--line)] py-3 sm:grid-cols-[11rem_1fr]">
+                      <dt className="muted">{f.label}</dt>
+                      <dd>{f.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
             </div>
           </div>
         </section>

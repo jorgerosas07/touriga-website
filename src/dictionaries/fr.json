@@ -45,7 +45,33 @@
     "eyebrow": "Pilier II",
     "title": "Viticulture",
     "subtitle": "Sauvegarder le patrimoine génétique du Douro grâce à une production intégrée et durable. Chaque vigne plantée avec intention. Chaque système racinaire, un lien direct avec le schiste fracturé en dessous.",
-    "text": "Le vignoble est planté majoritairement en Touriga Nacional — le cépage que José António fut le premier à défendre comme le meilleur du Portugal. De faibles rendements, une forte densité et une philosophie d'intervention minimale permettent à la personnalité de chaque parcelle de s'exprimer sans interférence. Le résultat est un fruit d'une concentration extraordinaire et d'une précision aromatique."
+    "text": "Le vignoble est planté majoritairement en Touriga Nacional — le cépage que José António fut le premier à défendre comme le meilleur du Portugal. De faibles rendements, une forte densité et une philosophie d'intervention minimale permettent à la personnalité de chaque parcelle de s'exprimer sans interférence. Le résultat est un fruit d'une concentration extraordinaire et d'une précision aromatique.",
+    "facts": [
+      {
+        "label": "Exposition au soleil",
+        "value": "Plateau légèrement incliné vers le sud."
+      },
+      {
+        "label": "Altitude moyenne",
+        "value": "350 mètres – Effet 2 en 1"
+      },
+      {
+        "label": "Sol",
+        "value": "Schiste, très peu fertile."
+      },
+      {
+        "label": "Surface totale",
+        "value": "11 hectares"
+      },
+      {
+        "label": "Cépages",
+        "value": "80 % Touriga Nacional · 20 % Tinta Roriz / Touriga Francesa"
+      },
+      {
+        "label": "Patrimoine génétique",
+        "value": "100 % sélection massale (20 ans de recherche)"
+      }
+    ]
   },
   "vinificacao": {
     "eyebrow": "Pilier III",
@@ -120,7 +146,25 @@
       "years": "Cinquième Génération",
       "text": "Fils de José António. Gardien de la Quinta da Touriga-Chã depuis le décès de son père. A construit la cave primée de 2004. Poursuit l'héritage avec le même dévouement sans compromis envers le Douro, ses vignobles et ses vins."
     },
-    "groupTitle": "La famille aujourd'hui"
+    "groupTitle": "La famille aujourd'hui",
+    "sixth": {
+      "title": "La Sixième Génération",
+      "people": [
+        {
+          "name": "João Rosas",
+          "text": "João a débuté sa carrière dans un cabinet mondial de conseil en gestion, conseillant des multinationales et des sociétés de portefeuille de fonds de capital-investissement sur l'amélioration opérationnelle et la création de valeur. Il est titulaire d'un MBA de la Saïd Business School de l'Université d'Oxford, où il a figuré au Dean’s List, et d'une licence en économie industrielle de l'Université de Nottingham. Il est actuellement Associate chez Headway Capital Partners, une société d'investissement en capital-investissement basée à Londres. João parle couramment l'anglais, le français, l'espagnol et le portugais."
+        },
+        {
+          "name": "José Maria Rosas",
+          "text": "José Maria est titulaire d'un Master en finance de l'ESCP Business School, classé n° 1 mondial des masters en finance par le Financial Times, et d'une licence en management international et finance de l'Université de Warwick. Il a acquis de l'expérience dans le crédit privé et le financement d'acquisitions avant de rejoindre LGT Capital Partners à Londres. Parlant couramment l'anglais, le français, l'espagnol et le portugais, il a fondé la Warwick Wine Society et détient la certification WSET niveau 2."
+        },
+        {
+          "name": "Jorge Rosas",
+          "text": "Jorge poursuit actuellement une licence en management à la Nova School of Business and Economics, l'une des principales écoles de commerce d'Europe. Il a obtenu son diplôme du Lycée Français International de Porto avec les plus hautes félicitations, se classant parmi les 10 % des meilleurs élèves du monde au baccalauréat français. Il parle couramment le portugais, l'anglais, le français et l'espagnol. Il seconde son père dans divers aspects de l'exploitation du domaine."
+        }
+      ],
+      "closing": "Ensemble, João, José Maria et Jorge représentent la sixième génération de la famille Rosas, alliant un héritage profondément enraciné dans la vallée du Douro à l'expérience et à la formation acquises dans certaines des principales universités et institutions financières d'Europe."
+    }
   },
   "contact": {
     "eyebrow": "Nous contacter",

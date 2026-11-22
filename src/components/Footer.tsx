@@ -23,7 +23,7 @@ export default function Footer({ dictionary, lang }: { dictionary: any; lang: st
     { href: '#winemaking', title: dictionary.vinificacao.title },
     { href: '#winery', title: dictionary.adega.title },
     { href: '#family', title: dictionary.familia.title, items: [
-      { href: '#jose-antonio', label: f.jarpr.name }, { href: '#jorge-rosas', label: f.jorge.name }, { href: '#family-today', label: f.groupTitle },
+      { href: '#jose-antonio', label: f.jarpr.name }, { href: '#jorge-rosas', label: f.jorge.name }, { href: '#family-today', label: f.groupTitle }, { href: '#sixth-generation', label: f.sixth.title },
     ] },
     { href: '#wines', title: dictionary.wines.title, items: [
       { href: '#wine-tinto', label: dictionary.wines.tinto.name }, { href: '#wine-puro', label: dictionary.wines.puro.name },

@@ -45,7 +45,33 @@
     "eyebrow": "Pillar II",
     "title": "Viticulture",
     "subtitle": "Safeguarding the genetic heritage of the Douro through integrated, sustainable production. Every vine planted with intention. Every root system a direct connection to the fractured schist below.",
-    "text": "The vineyard is planted predominantly to Touriga Nacional — the variety José António was the first to champion as Portugal's finest. Low yields, high density, and a philosophy of minimum intervention allow the personality of each parcel to speak without interference. The result is fruit of extraordinary concentration and aromatic precision."
+    "text": "The vineyard is planted predominantly to Touriga Nacional — the variety José António was the first to champion as Portugal's finest. Low yields, high density, and a philosophy of minimum intervention allow the personality of each parcel to speak without interference. The result is fruit of extraordinary concentration and aromatic precision.",
+    "facts": [
+      {
+        "label": "Exposition to the sun",
+        "value": "Plateau slightly pending to south."
+      },
+      {
+        "label": "Average altitude",
+        "value": "350 meters – Effect 2 in 1"
+      },
+      {
+        "label": "Soil",
+        "value": "Xiste, very unfertile."
+      },
+      {
+        "label": "Total area",
+        "value": "11 hectares"
+      },
+      {
+        "label": "Grape varieties",
+        "value": "80 % Touriga Nacional · 20 % Tinta Roriz / Touriga Francesa"
+      },
+      {
+        "label": "Genetic heritage",
+        "value": "100 % massal selection (20 years of research)"
+      }
+    ]
   },
   "vinificacao": {
     "eyebrow": "Pillar III",
@@ -120,7 +146,25 @@
       "years": "Fifth Generation",
       "text": "Son of José António. Steward of the Quinta da Touriga-Chã since his father's passing. Built the award-winning 2004 winery. Continues the legacy with the same uncompromising dedication to the Douro, its vineyards, and its wines."
     },
-    "groupTitle": "The family today"
+    "groupTitle": "The family today",
+    "sixth": {
+      "title": "The Sixth Generation",
+      "people": [
+        {
+          "name": "João Rosas",
+          "text": "João began his career in global management consulting firm advising multinational corporations and private equity portfolio companies on operational improvement and value creation initiatives. He holds an MBA from Saïd Business School, University of Oxford, where he was a Dean’s List recipient, and a Bachelor's degree in Industrial Economics from the University of Nottingham. He is currently an Associate at Headway Capital Partners, a London-based private equity investment firm. João is fluent in English, French, Spanish and Portuguese."
+        },
+        {
+          "name": "José Maria Rosas",
+          "text": "José Maria holds a Master in Finance from ESCP Business School, ranked the world's No. 1 Master in Finance by the Financial Times, and a degree in International Management with Finance from the University of Warwick. He gained experience in private credit and acquisition finance before joining LGT Capital Partners in London. Fluent in English, French, Spanish and Portuguese, he founded the Warwick Wine Society and holds a WSET Level 2 certification."
+        },
+        {
+          "name": "Jorge Rosas",
+          "text": "Jorge is currently pursuing a BSc in Management at Nova School of Business and Economics, one of Europe's leading business schools. He graduated with highest honours from the Lycée Français International de Porto, ranking among the top 10% of students worldwide in the French Baccalauréat. Fluent in Portuguese, English, French and Spanish. He supports his father in various aspects of the estate's operations."
+        }
+      ],
+      "closing": "Together, João, José Maria and Jorge represent the sixth generation of the Rosas family, combining a heritage deeply rooted in the Douro Valley with experience and education acquired at some of Europe's leading universities and financial institutions."
+    }
   },
   "contact": {
     "eyebrow": "Contact Us",

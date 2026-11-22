@@ -16,6 +16,9 @@ export default function Awards({ dictionary, lang }: { dictionary: any; lang: st
         <p className="muted mt-3 text-lg">{a.sub}</p>
 
         <ul className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-14 lg:grid-cols-3">
+          <li className="flex items-center bg-[var(--brand)] p-7 text-[#fbf7f0] sm:col-span-2 md:p-9 lg:row-span-2">
+            <p className="font-[family-name:var(--font-display)] text-2xl leading-snug md:text-[32px] md:leading-tight lg:text-[40px]">{data.record.text[i]}</p>
+          </li>
           {data.highlights.map((h) => (
             <li key={h.line[0]} className="border border-[var(--line)] bg-[var(--bg)] p-6">
               <p className="font-[family-name:var(--font-display)] text-5xl leading-none text-[var(--accent)]">{h.big[i]}</p>

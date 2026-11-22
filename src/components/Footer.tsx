@@ -16,7 +16,7 @@ export default function Footer({ dictionary, lang }: { dictionary: any; lang: st
   const markets = REGIONS.flatMap((r) => r.codes).map((c) => names.of(c) ?? c).sort((a, b) => a.localeCompare(b, intlLocale(lang)))
 
   const blocks: Block[] = [
-    { href: '#terroir', title: dictionary.nav.terroir, items: [
+    { href: '#quinta', title: dictionary.nav.terroir, items: [
       { href: '#terroir-1', label: t.soil.title }, { href: '#terroir-2', label: t.climate.title }, { href: '#terroir-3', label: t.expression.title },
     ] },
     { href: '#viticulture', title: dictionary.viticulture.title },

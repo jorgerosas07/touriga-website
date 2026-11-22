@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero'
 import Family from '@/components/Family'
+import Quinta from '@/components/Quinta'
 import Founders from '@/components/Founders'
 import PhotoChapters from '@/components/PhotoChapters'
 import Pillars from '@/components/Pillars'
@@ -15,6 +16,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
   return (
     <>
       <Hero dictionary={dictionary} />
+      <Quinta dictionary={dictionary} />
       <PhotoChapters dictionary={dictionary} />
       <Pillars dictionary={dictionary} />
       <Family dictionary={dictionary} />

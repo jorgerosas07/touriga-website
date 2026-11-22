@@ -15,3 +15,9 @@ export const getDictionary = (l: string) => DICTIONARIES[isLocale(l) ? l : DEFAU
 export const intlLocale = (l: string) => ({ en: 'en', pt: 'pt-PT', fr: 'fr-FR' })[isLocale(l) ? l : DEFAULT_LOCALE]
 /** Open Graph locale */
 export const ogLocale = (l: string) => ({ en: 'en_GB', pt: 'pt_PT', fr: 'fr_FR' })[isLocale(l) ? l : DEFAULT_LOCALE]
+
+/** canonical + language alternates for a page path ('' for the home page, '/family' ...) */
+export const alternates = (lang: string, path = '') => ({
+  canonical: `/${lang}${path}`,
+  languages: Object.fromEntries([...LOCALES.map((l) => [l, `/${l}${path}`]), ['x-default', `/${DEFAULT_LOCALE}${path}`]]),
+})

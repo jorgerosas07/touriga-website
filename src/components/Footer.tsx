@@ -8,6 +8,7 @@ type Block = { href: string; title: string; items?: Item[] }
 // The site map: every section of the page as a heading, with the layers inside it listed below, each one a link.
 export default function Footer({ dictionary, lang }: { dictionary: any; lang: string }) {
   const ft = dictionary.footer
+  const b = `/${lang}`
   const t = dictionary.terroir
   const f = dictionary.founders
   const head = 'font-[family-name:var(--font-display)] text-xl hover:underline underline-offset-4'
@@ -16,20 +17,20 @@ export default function Footer({ dictionary, lang }: { dictionary: any; lang: st
   const markets = REGIONS.flatMap((r) => r.codes).map((c) => names.of(c) ?? c).sort((a, b) => a.localeCompare(b, intlLocale(lang)))
 
   const blocks: Block[] = [
-    { href: '#quinta', title: dictionary.nav.terroir, items: [
-      { href: '#terroir-1', label: t.soil.title }, { href: '#terroir-2', label: t.climate.title }, { href: '#terroir-3', label: t.expression.title },
+    { href: `${b}#quinta`, title: dictionary.nav.terroir, items: [
+      { href: `${b}#terroir-1`, label: t.soil.title }, { href: `${b}#terroir-2`, label: t.climate.title }, { href: `${b}#terroir-3`, label: t.expression.title },
     ] },
-    { href: '#viticulture', title: dictionary.viticulture.title },
-    { href: '#winemaking', title: dictionary.vinificacao.title },
-    { href: '#winery', title: dictionary.adega.title },
-    { href: '#family', title: dictionary.familia.title, items: [
-      { href: '#jose-antonio', label: f.jarpr.name }, { href: '#jorge-rosas', label: f.jorge.name }, { href: '#family-today', label: f.groupTitle }, { href: '#sixth-generation', label: f.sixth.title },
+    { href: `${b}#viticulture`, title: dictionary.viticulture.title },
+    { href: `${b}#winemaking`, title: dictionary.vinificacao.title },
+    { href: `${b}#winery`, title: dictionary.adega.title },
+    { href: `${b}/family`, title: dictionary.familia.title, items: [
+      { href: `${b}/family#jose-antonio`, label: f.jarpr.name }, { href: `${b}/family#jorge-rosas`, label: f.jorge.name }, { href: `${b}/family#family-today`, label: f.groupTitle }, { href: `${b}/family#sixth-generation`, label: f.sixth.title },
     ] },
-    { href: '#wines', title: dictionary.wines.title, items: [
-      { href: '#wine-tinto', label: dictionary.wines.tinto.name }, { href: '#wine-puro', label: dictionary.wines.puro.name },
+    { href: `${b}/wines`, title: dictionary.wines.title, items: [
+      { href: `${b}/wines#wine-tinto`, label: dictionary.wines.tinto.name }, { href: `${b}/wines#wine-puro`, label: dictionary.wines.puro.name },
     ] },
-    { href: '#where', title: dictionary.where.title, items: markets.map((m) => ({ href: '#where', label: m })) },
-    { href: '#contact', title: dictionary.contact.eyebrow, items: [{ href: '#contact', label: dictionary.contact.send }] },
+    { href: `${b}/where`, title: dictionary.where.title, items: markets.map((m) => ({ href: `${b}/where`, label: m })) },
+    { href: `${b}/contact`, title: dictionary.contact.eyebrow, items: [{ href: `${b}/contact`, label: dictionary.contact.send }] },
   ]
   // the three single sections (Viticulture, Winemaking, The Winery) share one column
   const single = blocks.filter((b) => !b.items && b.href !== '#terroir')

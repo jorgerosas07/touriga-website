@@ -12,7 +12,7 @@ export default function ContactForm({ labels, countries, to }: { labels: Labels;
   }
 
   return (
-    <div id="contact" className="mt-16 scroll-mt-[max(1.5rem,calc((100svh-var(--nav-h)-700px)/2))] md:mt-24">
+    <div id="contact">
     <h3 className="h2 mb-8 md:mb-10">{labels.title}</h3>
     <form onSubmit={submit} className="grid max-w-3xl gap-6">
       <div className="field"><label htmlFor="w-name">{labels.name} <span aria-hidden>*</span></label><input id="w-name" name="name" autoComplete="name" required /></div>

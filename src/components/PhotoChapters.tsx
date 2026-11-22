@@ -6,16 +6,16 @@ import Image from 'next/image'
 // photo-chapters moment (tasteskill): the section holds while each photograph is uncovered from its
 // foot over the one before. At rest (reduced motion, a screen under 600px tall) the chapters stand side by side.
 const PICS = [
-  { src: '/images/vineyard-terrace.jpg', alt: 'Vine rows over dark schist shards in the soil', pos: 'center 92%' },
-  { src: '/images/winery-summer.jpg', alt: 'A dry stone wall of schist in summer light', pos: 'center' },
-  { src: '/images/adega-floor.jpg', alt: 'Raw schist and concrete inside the winery', pos: 'center' },
+  { src: '/images/vineyard-terrace.jpg', alt: 'soil', pos: 'center 92%' },
+  { src: '/images/clima-por-do-sol.jpg', alt: 'sunset', pos: '62% center' },
+  { src: '/images/adega-floor.jpg', alt: 'floor', pos: 'center' },
 ]
 const clamp = (v: number) => Math.min(1, Math.max(0, v))
 const easeOut = (t: number) => 1 - Math.pow(1 - t, 3)
 
 export default function PhotoChapters({ dictionary }: { dictionary: any }) {
   const t = dictionary.terroir
-  const items = [t.soil, t.climate, t.expression].map((it: any, i: number) => ({ ...it, ...PICS[i] }))
+  const items = [t.soil, t.climate, t.expression].map((it: any, i: number) => ({ ...it, ...PICS[i], alt: dictionary.alts[PICS[i].alt] }))
   const n = items.length
   const hold = n <= 3 ? 2 : 3
   const ref = useRef<HTMLElement>(null)

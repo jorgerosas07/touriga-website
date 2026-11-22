@@ -1,0 +1,24 @@
+# Quinta da Touriga-Chã
+
+> Family wine estate in the Douro Superior, near Vila Nova de Foz Côa, Portugal. Touriga Nacional grown on schist, made by the Rosas family, now in its sixth generation. Company: Jorge Rosas, Vinhos - Unipessoal Lda.
+
+The estate was founded by José António Castro Ramos Pinto Rosas (1919-1996), known as the Pioneer of the Douro, who at 72 acquired a virgin 20-hectare property and planted 8.5 hectares from scratch, with more than 80% Touriga Nacional. Today the estate covers about 40 hectares and is managed by his son Jorge Rosas, the fifth generation. A winery was built in 2004.
+
+Wines:
+- Quinta da Touriga-Chã: the flagship red, predominantly Touriga Nacional.
+- Puro: a virgin, unfortified wine, a raw expression of the schistous soil.
+
+## Pages (English)
+- [Home: the estate, terroir, viticulture, winemaking, winery](https://touriga-website.vercel.app/en)
+- [The Family](https://touriga-website.vercel.app/en/family)
+- [Our Wines](https://touriga-website.vercel.app/en/wines)
+- [Where to find us](https://touriga-website.vercel.app/en/where)
+- [Contact Us](https://touriga-website.vercel.app/en/contact)
+
+## Other languages
+- Português: https://touriga-website.vercel.app/pt
+- Français: https://touriga-website.vercel.app/fr
+
+## Contact
+- Email: tourigaporto@gmail.com
+- Address: Apartado 17, Quinta da Touriga, Chã, 5150-909 Vila Nova de Foz Côa, Portugal

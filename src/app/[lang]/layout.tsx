@@ -4,7 +4,10 @@ import { Literata, Figtree, Cormorant_SC } from 'next/font/google'
 import CinematicAgeGate from '@/components/CinematicAgeGate'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
-import { getDictionary, LOCALES, ogLocale } from '@/lib/i18n'
+import { getDictionary, LOCALES } from '@/lib/i18n'
+import { SITE_URL } from '@/lib/site'
+import JsonLd from '@/components/JsonLd'
+import { organizationSchema } from '@/lib/schema'
 
 const literata = Literata({
   subsets: ['latin'],
@@ -30,20 +33,9 @@ export async function generateStaticParams() {
   return LOCALES.map((lang) => ({ lang }))
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = await params
-  return {
-    metadataBase: new URL('https://touriga-website.vercel.app'),
-    title: 'Quinta da Touriga-Chã | Douro Superior',
-    description: 'The perfect estate in the oldest appellation in the world.',
-    openGraph: {
-      title: 'Quinta da Touriga-Chã | Douro Superior',
-      description: 'The perfect estate in the oldest appellation in the world.',
-      images: ['/images/hero-bg.jpg'],
-      locale: ogLocale(lang),
-      type: 'website',
-    },
-  }
+export const metadata = {
+  metadataBase: new URL(SITE_URL),
+  robots: { index: true, follow: true },
 }
 
 export default async function RootLayout({
@@ -62,7 +54,8 @@ export default async function RootLayout({
       <body id="top" className="antialiased">
                   {/* Inject the strict Age Gate before any other content */}
           <CinematicAgeGate dictionary={dictionary} />
-          <a href="#main" className="skip-link">{dictionary.nav.skip}</a>
+          <JsonLd data={organizationSchema(resolvedParams.lang, dictionary.seo.home.description)} />
+        <a href="#main" className="skip-link">{dictionary.nav.skip}</a>
           <Navigation lang={resolvedParams.lang} dictionary={dictionary} />
           <main id="main" className="relative w-full">
             {children}

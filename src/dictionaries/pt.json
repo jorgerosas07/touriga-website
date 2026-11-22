@@ -242,5 +242,48 @@
         "text": "Musculado e elegante"
       }
     ]
+  },
+  "alts": {
+    "hero": "As vinhas em socalcos da quinta, sobre o Douro Superior",
+    "quinta": "A vinha e as oliveiras da quinta sobre o vale",
+    "aerial": "A adega entre as árvores e as vinhas, vista de cima",
+    "soil": "Fileiras de vinha sobre fragmentos escuros de xisto no solo",
+    "floor": "Xisto e betão em bruto no interior da adega",
+    "viticulture": "Folhas jovens e gavinhas da videira ao sol",
+    "winemaking": "Vinho tinto a salpicar à luz durante a fermentação",
+    "winery": "A adega, com paredes de xisto encaixadas na encosta",
+    "jose": "José António Rosas na sua adega",
+    "jorge": "Jorge Rosas entre as barricas",
+    "family": "A família Rosas com os seus cães num terraço sobre o Douro",
+    "capsule": "O selo dourado JR na cápsula bordeaux de uma garrafa",
+    "tinto": "Três garrafas de Quinta da Touriga-Chã deitadas, com os rótulos para cima",
+    "puro": "Puro, Quinta da Touriga: a garrafa e a sua caixa de seis garrafas",
+    "terrace": "O terraço da adega entre arbustos selvagens",
+    "dusk": "A quinta ao fim do dia",
+    "sun": "A quinta ao sol",
+    "sunset": "Vinhas ao fim do dia, com as montanhas do Douro sob um céu de pôr do sol"
+  },
+  "seo": {
+    "home": {
+      "title": "Quinta da Touriga-Chã | Quinta vitivinícola no Douro Superior",
+      "description": "Quinta de vinhos familiar no Douro Superior, perto de Vila Nova de Foz Côa: Touriga Nacional em xisto, seis gerações da família Rosas e uma adega construída em 2004."
+    },
+    "family": {
+      "title": "A Família | Quinta da Touriga-Chã",
+      "description": "José António Rosas, o Pioneiro do Douro, o filho Jorge Rosas, a quinta geração, e a sexta geração da família Rosas."
+    },
+    "wines": {
+      "title": "Os Nossos Vinhos | Quinta da Touriga-Chã",
+      "description": "Quinta da Touriga-Chã, o nosso Tinto de excelência, maioritariamente Touriga Nacional, e o Puro, um vinho virgem, não fortificado. Douro Superior, Portugal."
+    },
+    "where": {
+      "title": "Onde nos encontrar | Quinta da Touriga-Chã",
+      "description": "Onde encontrar os vinhos: Portugal, Canadá (Ontário e Quebeque), Brasil, Suécia, Luxemburgo, Reino Unido e Macau."
+    },
+    "contact": {
+      "title": "Contacte-nos | Quinta da Touriga-Chã",
+      "description": "Contacte a Quinta da Touriga-Chã: Jorge Rosas, Vinhos - Unipessoal Lda, Apartado 17, 5150-909 Vila Nova de Foz Côa, Portugal."
+    },
+    "siteName": "Quinta da Touriga-Chã"
   }
 }

@@ -11,7 +11,7 @@ export default function Quinta({ dictionary }: { dictionary: any }) {
         <div className="contents md:col-span-4 md:row-start-1 md:flex md:flex-col md:gap-8">
           <h2 className="h2">{q.title}</h2>
           <div className="photo order-3 aspect-[4/5] md:relative md:order-none md:aspect-auto md:min-h-[320px] md:flex-1">
-            <Image src="/images/familia-estate.jpg" alt="The estate's vineyard and olive trees above the valley" fill quality={90} sizes="(min-width: 768px) 30vw, 100vw" className="object-cover" style={{ objectPosition: 'center 40%' }} />
+            <Image src="/images/familia-estate.jpg" alt={dictionary.alts.quinta} fill quality={90} sizes="(min-width: 768px) 30vw, 100vw" className="object-cover" style={{ objectPosition: 'center 40%' }} />
           </div>
         </div>
         <div className="order-2 md:order-none md:col-span-8 md:col-start-5 md:row-start-1 md:columns-2 md:gap-x-10">

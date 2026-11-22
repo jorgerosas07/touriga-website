@@ -3,9 +3,9 @@ import Image from 'next/image'
 // One pillar per screen: the photograph gets half the width, so it is served sharp (not a narrow third-column crop)
 export default function Pillars({ dictionary }: { dictionary: any }) {
   const items = [
-    { ...dictionary.viticulture, id: 'viticulture', src: '/images/vineyard-soil.jpg', alt: 'Young vine leaves and tendrils in the sun', pos: '58% center' },
-    { ...dictionary.vinificacao, id: 'winemaking', src: '/images/vinificacao-vinho.jpg', alt: 'Red wine splashing in the light during fermentation', pos: 'center' },
-    { ...dictionary.adega, id: 'winery', src: '/images/adega.jpg', alt: 'The winery, schist walls set into the slope', pos: 'center 40%' },
+    { ...dictionary.viticulture, id: 'viticulture', src: '/images/vineyard-soil.jpg', alt: dictionary.alts.viticulture, pos: '58% center' },
+    { ...dictionary.vinificacao, id: 'winemaking', src: '/images/vinificacao-vinho.jpg', alt: dictionary.alts.winemaking, pos: 'center' },
+    { ...dictionary.adega, id: 'winery', src: '/images/adega.jpg', alt: dictionary.alts.winery, pos: 'center 40%' },
   ]
   return (
     <>
